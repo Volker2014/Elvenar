@@ -1,12 +1,47 @@
 ﻿<Window x:Class="Elvenar.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Elvenar"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Elvenar Makros" Height="350" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DockPanel Grid.Column="0">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
+                <Button x:Name="btnMakro" Click="RunMacro" Content="Ausführen" Margin="10,10,20,0" />
+                <Button x:Name="load" Click="Load" Content="Laden" Margin="10,10,0,0" />
+                <Button x:Name="save" Click="Save" Content="Speichern" Margin="10,10,0,0" />
+                <Button x:Name="help" Click="ShowHelp" Content="Hilfe" Margin="10,10,0,0" />
+            </StackPanel>
+            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridMacros" ItemsSource="{Binding Macros}" MouseUp="dataGridMacros_MouseUp"
+            Margin="10,10" />
+        </DockPanel>
+
+        <DataGrid Grid.Column="1" x:Name="dataGridSteps" ItemsSource="{Binding Path=Steps}"
+                 Margin="10,40,10,10">
+        </DataGrid>
+
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <Button x:Name="addSymbol" Content="&lt;" Click="AddSymbol" Margin="10,10,10,0" />
+            <Button x:Name="removeSymbol" Content="&gt;" Click="RemoveSymbol" Margin="10,10,10,0" />
+            <Button x:Name="upSymbol" Content="^" Click="MoveSymbolUp" Margin="10,10,10,0" />
+            <Button x:Name="downSymbol" Content="v" Click="MoveSymbolDown" Margin="10,10,10,0" />
+        </StackPanel>
         
+        <DockPanel Grid.Column="3">
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
+                <Button x:Name="btnSymbolSelect" Click="SelectSymbol" Content="Bestimme" Margin="10,10,10,0" />
+                <Button x:Name="btnSymbolShow" Click="ShowSymbol" Content="Gehe zu" Margin="10,10,0,0" />
+                <Label x:Name="labelXY" Content="" Margin="10,5,0,0" />
+            </StackPanel>
+            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridSymbols" ItemsSource="{Binding Path=Symbols}"
+                  Margin="10,10" >
+            </DataGrid>
+        </DockPanel>
     </Grid>
 </Window>
