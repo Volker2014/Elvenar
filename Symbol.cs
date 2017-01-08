@@ -22,5 +22,7 @@ namespace Elvenar
         public string Name { get; set; }
 
         public Position Position { get; set; }
+
+        public int Delay { get; set; }
     }
 }

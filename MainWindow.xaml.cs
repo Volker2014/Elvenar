@@ -32,9 +32,9 @@ namespace Elvenar
             DataContext = this;
             Symbols = new ObservableCollection<Symbol>();
             Macros = new ObservableCollection<Macro>();
-            Load(null, null);
             mouseHook.MouseMove += mouseHook_MouseMove;
             mouseHook.MouseDown += mouseHook_MouseDown;
+            Loaded += Load;
         }
 
         private void Load(object sender, RoutedEventArgs e)
@@ -87,7 +87,7 @@ namespace Elvenar
                 selectedSymbol.Position = pos;
             }
             else
-                Symbols.Add(new Symbol { Name = dataGridSymbols.Items.Count.ToString(), Position = pos });
+                Symbols.Add(new Symbol { Name = dataGridSymbols.Items.Count.ToString(), Position = pos, Delay = 1 });
             dataGridSymbols.ItemsSource = null;
             dataGridSymbols.ItemsSource = Symbols;
         }
@@ -159,7 +159,7 @@ namespace Elvenar
             if (SelectedMacro == null) return;
             var selectedSymbol = dataGridSymbols.SelectedItem as Symbol;
             if (selectedSymbol == null) return;
-            Steps.Add(new Step { Symbol = selectedSymbol.Name, Delay = 1 });
+            Steps.Add(new Step { Symbol = selectedSymbol.Name, Delay = selectedSymbol.Delay });
             dataGridSteps.ItemsSource = Steps;
         }
 
