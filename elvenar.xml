@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elvenar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Symbols>
+    <Symbol Name="Gilde rechts">
+      <Position X="154" Y="408" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 1">
+      <Position X="1080" Y="455" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 9">
+      <Position X="1079" Y="777" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde links">
+      <Position X="86" Y="409" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Gilde nächste Seite">
+      <Position X="1020" Y="861" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Nachbarhilfe">
+      <Position X="1023" Y="1043" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 3">
+      <Position X="1078" Y="539" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 2">
+      <Position X="1084" Y="498" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 4">
+      <Position X="1083" Y="580" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 5">
+      <Position X="1083" Y="619" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 6">
+      <Position X="1074" Y="659" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 7">
+      <Position X="1076" Y="697" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Gilde pos 8">
+      <Position X="1083" Y="737" />
+      <Delay>4</Delay>
+    </Symbol>
+    <Symbol Name="Quest unten">
+      <Position X="35" Y="669" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Quest oben">
+      <Position X="36" Y="570" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Marktplatz">
+      <Position X="1018" Y="1044" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Markt erstellen">
+      <Position X="743" Y="367" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Bieten öffnen">
+      <Position X="1038" Y="509" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Bieten Marmor">
+      <Position X="899" Y="532" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Bieten Stahl">
+      <Position X="917" Y="568" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Bieten Holz">
+      <Position X="939" Y="602" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Suche öffnen">
+      <Position X="1034" Y="551" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Suche Marmor">
+      <Position X="918" Y="581" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Suche Stahl">
+      <Position X="939" Y="612" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Suche Holz">
+      <Position X="872" Y="649" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Biete +">
+      <Position X="1248" Y="509" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Bestätigen">
+      <Position X="1119" Y="844" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Markt verlassen">
+      <Position X="1346" Y="303" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Händler">
+      <Position X="1029" Y="356" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Hauptgut -&gt; Güter 1">
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Geld -&gt; Güter 1">
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Werkzeug -&gt; Güter 1">
+      <Position X="1214" Y="582" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Hauptgut -&gt; Güter 2">
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Geld -&gt; Güter 2">
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Werkzeug -&gt; Güter 2">
+      <Position X="1209" Y="814" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Quest Schalter rechts">
+      <Position X="1117" Y="843" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Händler nächste Seite">
+      <Position X="1017" Y="862" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Quest Schalter Mitte">
+      <Position X="964" Y="839" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Quest Schalter links">
+      <Position X="826" Y="835" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Quest ablehnen">
+      <Position X="1119" Y="692" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Werkstatt 1">
+      <Position X="707" Y="446" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Werkstatt 2">
+      <Position X="789" Y="411" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Werkstatt 3">
+      <Position X="859" Y="374" />
+      <Delay>1</Delay>
+    </Symbol>
+  </Symbols>
+  <Macros>
+    <Macro Name="Poliere 1">
+      <Steps>
+        <Step Symbol="Gilde links" Delay="1" />
+        <Step Symbol="Gilde pos 1" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 9">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 9" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 10">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 1" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 19">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 1" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 3">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 3" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 4">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 4" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 2">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 2" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 5">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 5" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 6">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 6" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 7">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 7" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 8">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde pos 8" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 11">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 2" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 12">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 3" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 13">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 4" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="4" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 14">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 5" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 15">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 6" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 16">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 7" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 17">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 8" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 18">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 9" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 20">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 2" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 21">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 3" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 22">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 4" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 23">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 5" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 24">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 6" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Poliere 25">
+      <Steps>
+        <Step Symbol="Gilde rechts" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde nächste Seite" Delay="1" />
+        <Step Symbol="Gilde pos 7" Delay="4" />
+        <Step Symbol="Nachbarhilfe" Delay="0" />
+      </Steps>
+    </Macro>
+    <Macro Name="Quest Güter 1">
+      <Steps>
+        <Step Symbol="Marktplatz" Delay="1" />
+        <Step Symbol="Händler" Delay="1" />
+        <Step Symbol="Werkzeug -&gt; Güter 1" Delay="1" />
+        <Step Symbol="Werkzeug -&gt; Güter 1" Delay="1" />
+        <Step Symbol="Markt verlassen" Delay="1" />
+        <Step Symbol="Quest unten" Delay="1" />
+        <Step Symbol="Quest Schalter Mitte" Delay="1" />
+        <Step Symbol="Quest Schalter Mitte" Delay="1" />
+      </Steps>
+    </Macro>
+    <Macro Name="Quest Güter 2">
+      <Steps>
+        <Step Symbol="Marktplatz" Delay="1" />
+        <Step Symbol="Händler" Delay="1" />
+        <Step Symbol="Werkzeug -&gt; Güter 2" Delay="1" />
+        <Step Symbol="Werkzeug -&gt; Güter 2" Delay="1" />
+        <Step Symbol="Markt verlassen" Delay="1" />
+        <Step Symbol="Quest unten" Delay="1" />
+        <Step Symbol="Quest Schalter Mitte" Delay="1" />
+        <Step Symbol="Quest Schalter Mitte" Delay="1" />
+      </Steps>
+    </Macro>
+    <Macro Name="Quest Ablehnen">
+      <Steps>
+        <Step Symbol="Quest unten" Delay="1" />
+        <Step Symbol="Quest Schalter links" Delay="1" />
+        <Step Symbol="Quest ablehnen" Delay="1" />
+      </Steps>
+    </Macro>
+    <Macro Name="Quest Abschliessen">
+      <Steps>
+        <Step Symbol="Quest unten" Delay="1" />
+        <Step Symbol="Quest Schalter Mitte" Delay="1" />
+        <Step Symbol="Quest Schalter Mitte" Delay="1" />
+      </Steps>
+    </Macro>
+  </Macros>
+</Elvenar>

@@ -2,20 +2,21 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Windows;
 using System.Windows.Forms;
-using System.Xml.Serialization;
 
 namespace Elvenar
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         private MouseHook mouseHook = new MouseHook();
 
@@ -24,17 +25,37 @@ namespace Elvenar
         public Macro SelectedMacro { get; set; }
         public ObservableCollection<Step> Steps { get; set; }
 
-        private string Filename { get; set; }
+        public Brush SaveBorder { get; set; }
+
+        private string _filename = "";
+        private bool _isModified = false;
+        private MacroService _macroService;
+        private ElvenarService _elvenarService;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged(String propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public MainWindow()
         {
             InitializeComponent();
             DataContext = this;
-            Symbols = new ObservableCollection<Symbol>();
-            Macros = new ObservableCollection<Macro>();
+            _elvenarService = new ElvenarService();
+            InitServices(new ElvenarEnv());
             mouseHook.MouseMove += mouseHook_MouseMove;
             mouseHook.MouseDown += mouseHook_MouseDown;
             Loaded += Load;
+            SaveBorder = Brushes.Black;
+        }
+
+        private void InitServices(ElvenarEnv elvenar)
+        {
+            Symbols = new ObservableCollection<Symbol>(elvenar.Symbols ?? new Symbol[0]);
+            Macros = new ObservableCollection<Macro>(elvenar.Macros ?? new Macro[0]);
+            _macroService = new MacroService(Symbols);
         }
 
         private void Load(object sender, RoutedEventArgs e)
@@ -43,23 +64,21 @@ namespace Elvenar
             dlg.FileName = "elvenar.xml";
             dlg.InitialDirectory = Path.GetDirectoryName(GetType().Assembly.Location);
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.Cancel) return;
-            Filename = dlg.FileName;
-            Title = "Elvenar Makros - " + Filename;
+            _filename = dlg.FileName;
+            Title = "Elvenar Makros - " + _filename;
 
-            var serializer = new XmlSerializer(typeof(ElvenarEnv));
-            var writer = new StreamReader(Filename);
-            var elvenar = serializer.Deserialize(writer) as ElvenarEnv;
-            Symbols = new ObservableCollection<Symbol>(elvenar.Symbols ?? new Symbol[0]);
-            dataGridSymbols.ItemsSource = Symbols;
-            Macros = new ObservableCollection<Macro>(elvenar.Macros ?? new Macro[0]);
-            dataGridMacros.ItemsSource = Macros;
+            ElvenarEnv elvenar = _elvenarService.Load(_filename);
+            InitServices(elvenar);
+
+            NotifyPropertyChanged("Symbols");
+            NotifyPropertyChanged("Macros");
         }
 
         private void ShowHelp(object sender, RoutedEventArgs e)
         {
             var message = "Elvenar Makro Tool - Version " + Assembly.GetExecutingAssembly().GetName().Version +
                 "\n\nLinke Seite:\nListe der Makros. Auswählen und Ausführen\n" +
-                "Mitte:\nListe der Symbole mit Verzögerung vor Klick. Reihenfolge über Pfeil nach oben/unten. "+
+                "Mitte:\nListe der Symbole mit Warten nach dem Klick. Reihenfolge über Pfeil nach oben/unten. "+
                 "Entfernen über Pfeil nach rechts.\n" +
                 "rechte Seite:\nListe der Symbole. Bestimme, um neues Symbol mit Position aufzunehmen\n" +
                 "Auswählen und zum Makro hinzufügen (Pfeil nach links) oder Position anzeigen.";
@@ -75,8 +94,8 @@ namespace Elvenar
         {
             btnSymbolSelect.Content = "Bestimme";
             mouseHook.Stop();
-            var point = btnSymbolSelect.PointFromScreen(new Point(e.X, e.Y));
-            var rect = new Rect(new Point(0, 0), new Size(btnSymbolSelect.ActualWidth, btnSymbolSelect.ActualHeight));
+            var point = btnSymbolSelect.PointFromScreen(new System.Windows.Point(e.X, e.Y));
+            var rect = new Rect(new System.Windows.Point(0, 0), new System.Windows.Size(btnSymbolSelect.ActualWidth, btnSymbolSelect.ActualHeight));
             if (rect.Contains(point))
                 return;
 
@@ -88,26 +107,20 @@ namespace Elvenar
             }
             else
                 Symbols.Add(new Symbol { Name = dataGridSymbols.Items.Count.ToString(), Position = pos, Delay = 1 });
-            dataGridSymbols.ItemsSource = null;
-            dataGridSymbols.ItemsSource = Symbols;
+            SetModified(true);
+            NotifyPropertyChanged("Symbols");
         }
 
         private void RunMacro(object sender, RoutedEventArgs e)
         {
-            if (Steps == null) return;
-            foreach (var step in Steps)
-            {
-                var symbol = Symbols.FirstOrDefault(s => s.Name == step.Symbol);
-                if (symbol == null) continue;
-                LeftClick(symbol.Position.X, symbol.Position.Y, step.Delay);
-            }
+            _macroService.Run(Steps, LeftClick);
         }
 
-        private void LeftClick(int x, int y, int wait)
+        private void LeftClick(int x, int y, int delay)
         {
-            Thread.Sleep(wait * 1000);
             MouseSimulator.Position = new System.Drawing.Point(x, y);
             MouseSimulator.Click(MouseButton.Left);
+            Thread.Sleep(delay * 1000);
         }
 
         private void SelectSymbol(object sender, RoutedEventArgs e)
@@ -122,19 +135,27 @@ namespace Elvenar
             if (SelectedMacro != null)
                 SelectedMacro.Steps = Steps.ToArray();
 
-            if (Filename == null)
+            if (_filename == null)
             {
                 var dlg = new SaveFileDialog();
                 dlg.FileName = "elvenar.xml";
                 dlg.InitialDirectory = Path.GetDirectoryName(GetType().Assembly.Location);
                 if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.Cancel) return;
-                Filename = dlg.FileName;
+                _filename = dlg.FileName;
             }
 
-            var elvenar = new ElvenarEnv { Symbols = Symbols.ToArray(), Macros = Macros.ToArray() };
-            var serializer = new XmlSerializer(elvenar.GetType());
-            var writer = new StreamWriter(Filename);
-            serializer.Serialize(writer, elvenar);
+            _elvenarService.Save(Symbols, Macros, _filename);
+
+            SetModified(_elvenarService.IsModified);
+        }
+
+        private void SetModified(bool modified)
+        {
+            _isModified = modified;
+            if (modified)
+                SaveBorder = Brushes.Red;
+            else
+                SaveBorder = Brushes.Black;
         }
 
         private void ShowSymbol(object sender, RoutedEventArgs e)
@@ -151,7 +172,8 @@ namespace Elvenar
             var step = dataGridSteps.SelectedItem as Step;
             if (step == null) return;
             Steps.Remove(step);
-            dataGridSteps.ItemsSource = Steps;
+            SetModified(true);
+            NotifyPropertyChanged("Steps");
         }
 
         private void AddSymbol(object sender, RoutedEventArgs e)
@@ -160,7 +182,8 @@ namespace Elvenar
             var selectedSymbol = dataGridSymbols.SelectedItem as Symbol;
             if (selectedSymbol == null) return;
             Steps.Add(new Step { Symbol = selectedSymbol.Name, Delay = selectedSymbol.Delay });
-            dataGridSteps.ItemsSource = Steps;
+            SetModified(true);
+            NotifyPropertyChanged("Steps");
         }
 
         private void MoveSymbolUp(object sender, RoutedEventArgs e)
@@ -168,7 +191,8 @@ namespace Elvenar
             if (dataGridSteps.SelectedIndex <= 0) return;
             Steps.Insert(dataGridSteps.SelectedIndex - 1, dataGridSteps.SelectedItem as Step);
             Steps.RemoveAt(dataGridSteps.SelectedIndex);
-            dataGridSteps.ItemsSource = Steps;
+            SetModified(true);
+            NotifyPropertyChanged("Steps");
         }
 
         private void MoveSymbolDown(object sender, RoutedEventArgs e)
@@ -176,7 +200,8 @@ namespace Elvenar
             if (dataGridSteps.SelectedIndex < 0 || dataGridSteps.SelectedIndex+1 >= dataGridSteps.Items.Count) return;
             Steps.Insert(dataGridSteps.SelectedIndex + 2, dataGridSteps.SelectedItem as Step);
             Steps.RemoveAt(dataGridSteps.SelectedIndex);
-            dataGridSteps.ItemsSource = Steps;
+            SetModified(true);
+            NotifyPropertyChanged("Steps");
         }
 
         private void dataGridMacros_MouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -189,7 +214,18 @@ namespace Elvenar
                 macro.Steps = new List<Step>().ToArray();
             SelectedMacro = macro;
             Steps = new ObservableCollection<Step>(macro.Steps);
-            dataGridSteps.ItemsSource = Steps;
+            NotifyPropertyChanged("Steps");
+        }
+
+        private void dataGridSymbols_CellEditEnding(object sender, System.Windows.Controls.DataGridCellEditEndingEventArgs e)
+        {
+            var symbol = e.EditingElement.DataContext as Symbol;
+            var textBox = e.EditingElement as System.Windows.Controls.TextBox;
+            if (symbol == null || textBox == null || e.Column.DisplayIndex != 0 || symbol.Name == textBox.Text) return;
+
+            new MacroService(Symbols).ReplaceSymbolName(Macros, symbol.Name, textBox.Text);
+            dataGridMacros_MouseUp(null, null);
+            SetModified(true);
         }
     }
 }
