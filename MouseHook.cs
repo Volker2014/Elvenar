@@ -9,7 +9,7 @@ namespace MouseKeyboardLibrary
     /// <summary>
     /// Captures global mouse events
     /// </summary>
-    public class MouseHook : GlobalHook
+    public class MouseHook : GlobalHook, IMouseHook
     {
 
         #region MouseEventType Enum

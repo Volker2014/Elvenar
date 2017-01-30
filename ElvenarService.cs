@@ -22,14 +22,17 @@ namespace Elvenar
             return elvenar;
         }
 
-        public void Save(IEnumerable<Symbol> symbols, IEnumerable<Macro> macros, string filename)
+        public void Save(ElvenarEnv elvenar, IEnumerable<string> polierenList, 
+            IEnumerable<string> quests, string filename)
         {
-            Save(symbols, macros, new StreamWriter(filename));
+            Save(elvenar, polierenList, quests, new StreamWriter(filename));
         }
 
-        public void Save(IEnumerable<Symbol> symbols, IEnumerable<Macro> macros, TextWriter writer)
+        public void Save(ElvenarEnv elvenar, IEnumerable<string> polierenList, 
+            IEnumerable<string> quests, TextWriter writer)
         {
-            var elvenar = new ElvenarEnv { Symbols = symbols.ToArray(), Macros = macros.ToArray() };
+            elvenar.Polieren = polierenList.ToArray();
+            elvenar.Quests = quests.ToArray();
             var serializer = new XmlSerializer(elvenar.GetType());
             serializer.Serialize(writer, elvenar);
             IsModified = false;

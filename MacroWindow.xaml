@@ -1,0 +1,70 @@
+﻿<Window x:Class="Elvenar.MacroWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Elvenar"
+        mc:Ignorable="d"
+        Title="MacroWindow" Height="300" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="150" Width="3*"/>
+            <ColumnDefinition MinWidth="150" Width="3*"/>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition MinWidth="250" Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <DockPanel Grid.Column="0" MinWidth="50">
+            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridMacros" ItemsSource="{Binding Macros}" MouseUp="dataGridMacros_MouseUp"
+            Margin="10" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+
+        <DockPanel Grid.Column="1">
+            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridSteps" ItemsSource="{Binding Steps}"
+                 Margin="10" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Symbol" Binding="{Binding Symbol}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Warte" Binding="{Binding Delay}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <Button x:Name="addSymbol" Click="AddSymbol" Margin="5" ToolTip="Kopiere Symbol in Makroliste" >
+                <Path Fill="Black" Data="M 20 0 L 20 20 L 0 10 Z"/>
+            </Button>
+            <Button x:Name="removeSymbol" Click="RemoveSymbol" Margin="5" ToolTip="Entferne Symbol aus Makroliste" >
+                <Path Fill="Black" Data="M 0 0 L 0 20 L 20 10 Z"/>
+            </Button>
+            <Button x:Name="upSymbol" Click="MoveSymbolUp" Margin="5" ToolTip="Setze Symbol eine Eintrag nach oben" >
+                <Path Fill="Black" Data="M 0 20 L 10 0 L 20 20 Z"/>
+            </Button>
+            <Button x:Name="downSymbol" Click="MoveSymbolDown" Margin="5" ToolTip="Setze Symbol einen Eintrag nach unten">
+                <Path Fill="Black" Data="M 0 0 L 20 0 L 10 20 Z"/>
+            </Button>
+        </StackPanel>
+
+        <DockPanel Grid.Column="3">
+            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridSymbols" ItemsSource="{Binding Path=Symbols}"
+                  Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Symbol" Binding="{Binding Name}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="4" Orientation="Horizontal">
+            <Button x:Name="btnOk" Click="CommitChanges" Content="Übernehmen" Margin="10" ToolTip="Übernehme Änderungen (Speichern notwendig)"/>
+            <Button x:Name="btnCancel" Click="CancelChanges" Content="Verwerfen" Margin="10" ToolTip="Verwerfe alle Änderungen" />
+        </StackPanel>
+    </Grid>
+</Window>

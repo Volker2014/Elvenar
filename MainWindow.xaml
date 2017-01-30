@@ -2,71 +2,70 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Elvenar"
-        Title="Elvenar Makros" Height="350" Width="855" MinWidth="150">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition MinWidth="150" Width="3*"/>
-            <ColumnDefinition MinWidth="150" Width="3*"/>
-            <ColumnDefinition Width="35"/>
-            <ColumnDefinition MinWidth="250" Width="5*"/>
-        </Grid.ColumnDefinitions>
+        Title="Elvenar Makros" Height="350" Width="500" MinWidth="150">
+    <StackPanel>
+        <Menu IsMainMenu="True" Grid.Column="0">
+            <MenuItem Header="Datei">
+                <MenuItem Click="Load" Header="Laden"  />
+                <MenuItem Click="Save" Header="Speichern"  />
+            </MenuItem>
+            <MenuItem Header="_Konfiguration">
+                <MenuItem Click="OpenSymbolWindow" Header="Symbole bestimmen"/>
+                <MenuItem Click="OpenMacroWindow" Header="Makros verwalten"/>
+                <Separator/>
+                <MenuItem IsCheckable="True" Header="Vordergrund" IsChecked="{Binding Topmost, Mode=TwoWay}"/>
+            </MenuItem>
+            <MenuItem Header="_Listen">
+                <MenuItem Click="TransformList" Header="Elvenar response umwandeln" />
+                <MenuItem Click="CityEntities" Header="Elvenar Gebäude umwandeln" />
+            </MenuItem>
+            <MenuItem Click="ShowHelp" Header="_Hilfe"  />
+        </Menu>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="150" Width="3*"/>
+                <ColumnDefinition MinWidth="150" Width="3*"/>
+            </Grid.ColumnDefinitions>
 
-        <DockPanel Grid.Column="0" MinWidth="50">
-            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
-                <Button x:Name="btnMakro" Click="RunMacro" Content="Ausführen" Margin="10,10,20,0" />
-                <CheckBox Content="Vordergrund" IsChecked="{Binding Topmost}" Margin="30,10,0,0" HorizontalAlignment="Right"/>
+            <StackPanel Grid.Column="0" MinWidth="50">
+                <StackPanel Orientation="Horizontal" Height="30">
+                    <Button x:Name="btnPolieren" Click="RunPolieren" Content="Polieren" Margin="10,10,20,0" ToolTip="Führen das gewähltes Polieren Makro aus" />
+                    <Button x:Name="addPolieren" Click="AddPolieren" Margin="5,5,0,0" >
+                        <Path Fill="Black" Data="M 20 0 L 20 20 L 0 10 Z"/>
+                    </Button>
+                    <Button x:Name="removePolieren" Click="RemovePolieren" Margin="5,5,0,0" >
+                        <Path Fill="Black" Data="M 0 0 L 0 20 L 20 10 Z"/>
+                    </Button>
+                </StackPanel>
+                <ComboBox x:Name="cbxPolieren" ItemsSource="{Binding PolierenList}" Margin="10,10,0,10"/>
+                <Separator />
+                <StackPanel Orientation="Horizontal" Height="30">
+                    <Button x:Name="btnFinish" Click="RunFinish" Content="Abschliessen" Margin="10,10,20,0" ToolTip="Schliesse Quest ab"/>
+                    <Button x:Name="btnCancel" Click="RunCancel" Content="Ablehnen" Margin="10,10,20,0" ToolTip="Lehne Quest ab" />
+                </StackPanel>
+                <Label Content="aktuelle Quest" Margin="10,10,0,0"/>
+                <ComboBox x:Name="cbxQuestCurrent" ItemsSource="{Binding QuestList}" Margin="10,0,0,0"/>
+                <Label Content="nächste Quest" Margin="10,0,0,0"/>
+                <ComboBox x:Name="cbxQuestNext" ItemsSource="{Binding QuestList}" Margin="10,0,0,10"/>
+                <Separator />
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnKampfPaladin" Click="RunKampfPaladin" Content="Kampf Paladin" Margin="10,10,20,0" ToolTip="Autom. Kampf mit 5 Paladin starten"/>
+                    <Button x:Name="btnKampf" Click="RunKampf" Content="Kampf" Margin="10,10,20,0" ToolTip="Autom. Kampf starten"/>
+                    <Button x:Name="btnProvinz" Click="RunProvinz" Content="Provinz" Margin="10,10,20,0" ToolTip="Kampf erfolgreich beenden" />
+                </StackPanel>
             </StackPanel>
-            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridMacros" ItemsSource="{Binding Macros}" MouseUp="dataGridMacros_MouseUp"
-            Margin="10" AutoGenerateColumns="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
-                </DataGrid.Columns>
-            </DataGrid>
-        </DockPanel>
 
-        <DockPanel Grid.Column="1">
-            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                <Button x:Name="load" Click="Load" Content="Laden" Margin="10,10,0,0" />
-                <Button x:Name="save" Click="Save" Content="Speichern" Margin="10,10,0,0" />
-                <Button x:Name="help" Click="ShowHelp" Content="Hilfe" Margin="10,10,0,0" />
-            </StackPanel>
-            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridSteps" ItemsSource="{Binding Steps}"
-                 Margin="10" AutoGenerateColumns="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Symbol" Binding="{Binding Symbol}" IsReadOnly="True"/>
-                    <DataGridTextColumn Header="Warte" Binding="{Binding Delay}"/>
-                </DataGrid.Columns>
-            </DataGrid>
-        </DockPanel>
-
-        <StackPanel Grid.Column="2" VerticalAlignment="Center">
-            <Button x:Name="addSymbol" Click="AddSymbol" Margin="5" >
-                <Path Fill="Black" Data="M 20 0 L 20 20 L 0 10 Z"/>
-            </Button>
-            <Button x:Name="removeSymbol" Click="RemoveSymbol" Margin="5" >
-                <Path Fill="Black" Data="M 0 0 L 0 20 L 20 10 Z"/>
-            </Button>
-            <Button x:Name="upSymbol" Click="MoveSymbolUp" Margin="5" >
-                <Path Fill="Black" Data="M 0 20 L 10 0 L 20 20 Z"/>
-            </Button>
-            <Button x:Name="downSymbol" Click="MoveSymbolDown" Margin="5">
-                <Path Fill="Black" Data="M 0 0 L 20 0 L 10 20 Z"/>
-            </Button>
-        </StackPanel>
-        
-        <DockPanel Grid.Column="3">
-            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
-                <Button x:Name="btnSymbolSelect" Click="SelectSymbol" Content="Bestimme" Margin="10,10,10,0" />
-                <Button x:Name="btnSymbolShow" Click="ShowSymbol" Content="Gehe zu" Margin="10,10,0,0" />
-                <Label x:Name="labelXY" Content="X: ?, Y: ?" Margin="10,5,0,0" />
-            </StackPanel>
-            <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridSymbols" ItemsSource="{Binding Path=Symbols}"
-                  Margin="10" AutoGenerateColumns="False" CellEditEnding="dataGridSymbols_CellEditEnding">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Symbol" Binding="{Binding Name}"/>
-                    <DataGridTextColumn Header="Positon" Binding="{Binding Position}" IsReadOnly="True"/>
-                    <DataGridTextColumn Header="Warte" Binding="{Binding Delay}"/>
-                </DataGrid.Columns>            </DataGrid>
-        </DockPanel>
-    </Grid>
+            <DockPanel Grid.Column="1" MinWidth="50">
+                <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
+                    <Button x:Name="btnMakro" Click="RunMacro" Content="Ausführen" Margin="10,10,20,0" ToolTip="Führe gewähltes Makro aus" />
+                </StackPanel>
+                <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridMacros" ItemsSource="{Binding Macros}"
+            Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </DockPanel>
+        </Grid>
+    </StackPanel>
 </Window>
