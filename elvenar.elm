@@ -169,6 +169,78 @@
       <Position X="859" Y="374" />
       <Delay>1</Delay>
     </Symbol>
+    <Symbol Name="Rangliste">
+      <Position X="112" Y="319" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Turniere">
+      <Position X="886" Y="361" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Turnier letzte Seite">
+      <Position X="1075" Y="855" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Spieler1 Name">
+      <Position X="821" Y="500" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Spieler1 Punkte">
+      <Position X="1157" Y="503" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Spieler8 Name">
+      <Position X="758" Y="784" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Flash Einstellung 1">
+      <Position X="757" Y="724" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Flash Einstellung 8">
+      <Position X="752" Y="680" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Flash schliessen">
+      <Position X="1045" Y="644" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Seite zurück">
+      <Position X="873" Y="853" />
+      <Delay>1</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Gilde1 Name">
+      <Position X="778" Y="642" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Gilde1 Punkte">
+      <Position X="1291" Y="641" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Turnier Gilde Seite vor">
+      <Position X="1018" Y="854" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Gilde1 Name">
+      <Position X="713" Y="464" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Gilde1 Punkte">
+      <Position X="956" Y="458" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Gilde Seite vor">
+      <Position X="1015" Y="858" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Mitglieder">
+      <Position X="756" Y="362" />
+      <Delay>0</Delay>
+    </Symbol>
+    <Symbol Name="Gemeinschaft">
+      <Position X="914" Y="300" />
+      <Delay>0</Delay>
+    </Symbol>
   </Symbols>
   <Macros>
     <Macro Name="Poliere 1">
@@ -395,17 +467,52 @@
     </Macro>
     <Macro Name="Quest Ablehnen">
       <Steps>
-        <Step Symbol="Quest unten" Delay="1" />
+        <Step Symbol="Quest oben" Delay="1" />
         <Step Symbol="Quest Schalter links" Delay="1" />
         <Step Symbol="Quest ablehnen" Delay="1" />
       </Steps>
     </Macro>
     <Macro Name="Quest Abschliessen">
       <Steps>
-        <Step Symbol="Quest unten" Delay="1" />
+        <Step Symbol="Quest oben" Delay="1" />
         <Step Symbol="Quest Schalter Mitte" Delay="1" />
         <Step Symbol="Quest Schalter Mitte" Delay="1" />
       </Steps>
     </Macro>
   </Macros>
+  <Polieren>
+    <string>Poliere 1</string>
+    <string>Poliere 2</string>
+    <string>Poliere 3</string>
+    <string>Poliere 4</string>
+    <string>Poliere 5</string>
+    <string>Poliere 6</string>
+    <string>Poliere 7</string>
+    <string>Poliere 8</string>
+    <string>Poliere 9</string>
+    <string>Poliere 10</string>
+    <string>Poliere 11</string>
+    <string>Poliere 12</string>
+    <string>Poliere 13</string>
+    <string>Poliere 14</string>
+    <string>Poliere 15</string>
+    <string>Poliere 16</string>
+    <string>Poliere 17</string>
+    <string>Poliere 18</string>
+    <string>Poliere 19</string>
+    <string>Poliere 20</string>
+    <string>Poliere 21</string>
+    <string>Poliere 22</string>
+    <string>Poliere 23</string>
+  </Polieren>
+  <Quests>
+    <string>Gebäude 4. Stufe</string>
+    <string>Provinz abschliessen</string>
+    <string>3 Provinzbegegnungen</string>
+    <string>5000 Münzen</string>
+    <string>100 Marmor</string>
+    <string>40 Stahl</string>
+    <string>40 Holz</string>
+    <string>500 Vorräte</string>
+  </Quests>
 </Elvenar>

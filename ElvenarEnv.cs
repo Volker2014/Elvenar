@@ -10,5 +10,11 @@ namespace Elvenar
 
         [XmlArray("Macros")]
         public Macro[] Macros { get; set; }
+
+        [XmlArray("Polieren")]
+        public string[] Polieren { get; set; }
+
+        [XmlArray("Quests")]
+        public string[] Quests { get; set; }
     }
 }

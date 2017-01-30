@@ -7,6 +7,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elvenar", "Elvenar.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElvenarTests", "..\ElvenarTests\ElvenarTests.csproj", "{A1A5881F-8CBB-4718-89BA-16CD1EAA5988}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elvenar_city_html", "elvenar_city_html", "{B90FB368-D06C-4646-AC93-266872D68F8B}"
+	ProjectSection(SolutionItems) = preProject
+		..\elvenar_city_html\elvenar_city.css = ..\elvenar_city_html\elvenar_city.css
+		..\elvenar_city_html\elvenar_city.elc = ..\elvenar_city_html\elvenar_city.elc
+		..\elvenar_city_html\index.php = ..\elvenar_city_html\index.php
+		..\elvenar_city_html\render_elvenar_data.php = ..\elvenar_city_html\render_elvenar_data.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elvenar_panel", "elvenar_panel", "{C0072EED-2231-46E6-87B4-F5C51C703328}"
+	ProjectSection(SolutionItems) = preProject
+		..\elvenar_panel\background.js = ..\elvenar_panel\background.js
+		..\elvenar_panel\devtools.html = ..\elvenar_panel\devtools.html
+		..\elvenar_panel\devtools.js = ..\elvenar_panel\devtools.js
+		..\elvenar_panel\manifest.json = ..\elvenar_panel\manifest.json
+		..\elvenar_panel\panel.html = ..\elvenar_panel\panel.html
+		..\elvenar_panel\panel.js = ..\elvenar_panel\panel.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
