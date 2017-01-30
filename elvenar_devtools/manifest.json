@@ -1,0 +1,12 @@
+{ 
+    "name": "Elvenar Logger",
+    "manifest_version": 2,
+    "version": "0.1",
+    "description": "log Elvenar informations",
+    "devtools_page": "devtools.html",
+    "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "https://de2.elvenar.com/game/"
+    ]
+}

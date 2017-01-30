@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elvenar_city_html", "elvenar_city_html", "{B90FB368-D06C-4646-AC93-266872D68F8B}"
 	ProjectSection(SolutionItems) = preProject
 		..\elvenar_city_html\elvenar_city.css = ..\elvenar_city_html\elvenar_city.css
+		..\elvenar_city_html\elvenar_city.csv = ..\elvenar_city_html\elvenar_city.csv
 		..\elvenar_city_html\elvenar_city.elc = ..\elvenar_city_html\elvenar_city.elc
 		..\elvenar_city_html\index.php = ..\elvenar_city_html\index.php
 		..\elvenar_city_html\render_elvenar_data.php = ..\elvenar_city_html\render_elvenar_data.php
@@ -17,13 +18,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elvenar_city_html", "elvena
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elvenar_panel", "elvenar_panel", "{C0072EED-2231-46E6-87B4-F5C51C703328}"
 	ProjectSection(SolutionItems) = preProject
-		..\elvenar_panel\background.js = ..\elvenar_panel\background.js
 		..\elvenar_panel\devtools.html = ..\elvenar_panel\devtools.html
 		..\elvenar_panel\devtools.js = ..\elvenar_panel\devtools.js
 		..\elvenar_panel\manifest.json = ..\elvenar_panel\manifest.json
 		..\elvenar_panel\panel.html = ..\elvenar_panel\panel.html
 		..\elvenar_panel\panel.js = ..\elvenar_panel\panel.js
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elvenar_city", "elvenar_city\elvenar_city.csproj", "{3531F0F8-714F-40F5-AE7C-151548364086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elvenar_devtools", "elvenar_devtools\elvenar_devtools.csproj", "{5E3E209E-D0D9-4200-8F88-2B583CA268F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{A1A5881F-8CBB-4718-89BA-16CD1EAA5988}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1A5881F-8CBB-4718-89BA-16CD1EAA5988}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1A5881F-8CBB-4718-89BA-16CD1EAA5988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3531F0F8-714F-40F5-AE7C-151548364086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3531F0F8-714F-40F5-AE7C-151548364086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3E209E-D0D9-4200-8F88-2B583CA268F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3E209E-D0D9-4200-8F88-2B583CA268F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
