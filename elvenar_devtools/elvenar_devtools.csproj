@@ -72,8 +72,10 @@
     <Content Include="background.js" />
     <Content Include="devtools.html" />
     <Content Include="devtools.js" />
+    <Content Include="icon.png" />
     <Content Include="panel.html" />
     <Content Include="panel.js" />
+    <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="manifest.json" />

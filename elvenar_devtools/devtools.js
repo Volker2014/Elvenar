@@ -1,63 +1,65 @@
 var _window; // Going to hold the reference to panel.html's `window`
 
-function addLine(content, id)
+function setContent(content, id)
 {
-    //var check = _window.document.querySelector('#guild_check');
-    //_window.document.write(check);
-    //var textArea = _window.document.querySelector('#guild_text');
-    //_window.document.write(textArea);
-    _window.document.write(content + "<br/>");
+    var element = _window.document.getElementById(id);
+    if (element == null) return;
+    element.innerHTML = content;
 }
 
-function copyToClipboard(text) {
-    if (window.clipboardData && window.clipboardData.setData) {
-        // IE specific code path to prevent textarea being shown while dialog is visible.
-        return clipboardData.setData("Text", text);
+function addContent(content, id) {
+    var element = _window.document.getElementById(id);
+    if (element == null) return;
+    element.innerHTML = element.innerHTML + content + "\n";
+}
 
-    } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
-        var textarea = document.createElement("textarea");
-        textarea.textContent = text;
-        textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
-        document.body.appendChild(textarea);
-        textarea.select();
-        try {
-            return document.execCommand("copy");  // Security exception may be thrown by some browsers.
-        } catch (ex) {
-            console.warn("Copy to clipboard failed.", ex);
-            return false;
-        } finally {
-            document.body.removeChild(textarea);
-        }
-    }
+function isChecked(id)
+{
+    var check = _window.document.getElementById(id);
+    if (check == null) return false;
+    return check.checked;
+}
+
+function setContentWithCheck(content, id)
+{
+    if (!isChecked(id + '_check')) return;
+    setContent(content, id + '_text');
+}
+
+function setCityMap(content, user) {
+    var id = "citymap";
+    if (!isChecked(id + '_check')) return;
+    setContent(user, id + '_label');
+    setContent(content, id + '_text');
 }
 
 function createGuild(responseData)
 {
-    addLine("Gilde: " + responseData.name, "guild");
+    line = "Gilde: " + responseData.name + "\n";
     for (var i = 0; i < responseData.members.length; i++)
     {
         var member = responseData.members[i];
-        addLine(member.player.name + ": " + member.score, "guild");
+        line = line + member.player.name + " " + member.score + "\n";
     }
-    addLine("", "guild");
+    setContentWithCheck(line, "guild");
 }
 
 function createTournament(responseData)
 {
     if (responseData.contributors == undefined) return;
-    addLine("Turnier", "tournament");
+    var line = "";
     for (var i = 0; i < responseData.contributors.length; i++)
     {
         var contributor = responseData.contributors[i];
-        addLine(contributor.player.name + ": " + contributor.score, "tournament");
+        line = line + contributor.player.name + " " + contributor.score + "\n";
     }
-    addLine("", "tournament");
+    setContentWithCheck(line, "tournament");
 }
 
 function createRanking(responseData)
 {
     if (responseData.rankings == undefined) return;
-    addLine("Turnier", "ranking");
+    var line = "";
     for (var i = 0; i < responseData.rankings.length; i++)
     {
         var ranking = responseData.rankings[i];
@@ -68,9 +70,9 @@ function createRanking(responseData)
             name = ranking.guild_info.name;
         else if (ranking.__class__ == "TournamentRankingVO")
             name = ranking.player.name;
-        addLine(name + ": " + (ranking.points || 0), "ranking");
+        line = line + name + " " + (ranking.points || 0) + "\n";
     }
-    addLine("", "ranking");
+    setContentWithCheck(line, "ranking");
 }
 
 function createCityMap(responseData, userdataProp, usernameProp)
@@ -92,9 +94,7 @@ function createCityMap(responseData, userdataProp, usernameProp)
     var table = { city_map: cityMap, user_data: { race: userdata.race}};
     var jsonCity = JSON.stringify(table);
     var encoding = btoa(jsonCity);
-    addLine("CityMap for Elvenar Architect of " + userdata.name, "citymap");
-    addLine(encoding, "citymap");
-    copyToClipboard(encoding);
+    setCityMap(encoding, userdata[usernameProp]);
 }
 
 function createEnity(entity) {
@@ -120,58 +120,62 @@ function createEnity(entity) {
         }
     }
 
-    addLine(line, "cityentities");
+    addContent(line, "cityentities_text");
 }
 
 function showProps(object)
 {
-    addLine("-----------------", "development");
+    if (!isChecked("development_check")) return;
     Object.keys(object).forEach(function (key) {
-        addLine(key + " " + object[key], "development");
+        addContent(key + " " + object[key], "development_text");
     });
 }
 
-chrome.devtools.panels.create('Elvenar', '/icon.png', '/panel.html', function(extensionPanel) 
+function parseContent(content, encoding)
+{
+    serverResponse = JSON.parse(content);
+    var lastClass = "";
+    for (var i = 0; i < serverResponse.length; i++) {
+        if (serverResponse[i].__class__ == 'ServerResponseVO') {
+            if (serverResponse[i].requestClass == 'GuildService')
+                createGuild(serverResponse[i].responseData);
+            else if (serverResponse[i].requestClass == 'TournamentService')
+                createTournament(serverResponse[i].responseData);
+            else if (serverResponse[i].requestClass == 'RankingService')
+                createRanking(serverResponse[i].responseData);
+            else if (serverResponse[i].requestClass == 'StartupService')
+                createCityMap(serverResponse[i].responseData, "user_data", "user_name");
+            else if (serverResponse[i].requestClass == 'OtherPlayerService')
+                createCityMap(serverResponse[i].responseData, "other_player", "name");
+            else if (serverResponse[i].requestClass !== undefined)
+            {
+                if (isChecked("development_check"))
+                    addContent(serverResponse[i].requestClass, "development_text");
+            }
+        }
+        else if (serverResponse[i].__class__ == 'CityEntityVO') {
+            if (isChecked("cityentities_check"))
+            {
+                if (lastClass == "")
+                {
+                    addContent("id;name;race;type;level;width;length;construction_time;rankingPoints;upgrade;money;population;" +
+                        "demand_for_happiness;mana;production;option;time;scrolls;mana;money;supplies;population", "cityentities_text");
+                }
+                createEnity(serverResponse[i]);
+            }
+        }
+        else if (isChecked("development_check"))
+            addContent(serverResponse[i].__class__, "development_text");
+        lastClass = serverResponse[i].__class__;
+    }
+}
+
+chrome.devtools.panels.create('Elvenar', 'icon.png', 'panel.html', function(extensionPanel) 
 {	
     chrome.devtools.network.onRequestFinished.addListener(function(request) 
     {
         if (request.response.content.mimeType !== 'application/json') return;
-        request.getContent(function (content, encoding)
-        {
-            serverResponse = JSON.parse(content);
-            var lastClass = "";
-            for (var i = 0; i < serverResponse.length; i++) 
-            {
-                if (serverResponse[i].__class__ == 'ServerResponseVO')
-                {
-                    if (serverResponse[i].requestClass == 'GuildService')
-                        createGuild(serverResponse[i].responseData);
-                    else if (serverResponse[i].requestClass == 'TournamentService')
-                        createTournament(serverResponse[i].responseData);
-                    else if (serverResponse[i].requestClass == 'RankingService')
-                        createRanking(serverResponse[i].responseData);
-                    else if (serverResponse[i].requestClass == 'StartupService')
-                        createCityMap(serverResponse[i].responseData, "user_data", "user_name");
-                    else if (serverResponse[i].requestClass == 'OtherPlayerService')
-                        createCityMap(serverResponse[i].responseData, "other_player", "name");
-                    else if (serverResponse[i].requestClass !== undefined)
-                        addLine(serverResponse[i].requestClass);
-                }
-                else if (serverResponse[i].__class__ == 'CityEntityVO')
-                {
-                    if (lastClass == "")
-                    {
-                        addLine("CityEntities", "cityentities");
-                        addLine("id;name;race;type;level;width;length;construction_time;rankingPoints;upgrade;money;population;" +
-                            "demand_for_happiness;mana;production;option;time;scrolls;mana;money;supplies;population", "cityentities");
-                    }
-                    createEnity(serverResponse[i]);
-                }
-                else
-                    addLine(serverResponse[i].__class__, "development");
-                lastClass = serverResponse[i].__class__;
-            }
-        });
+        request.getContent(parseContent);
     });
     
     extensionPanel.onShown.addListener(function tmp(panelWindow) {		
