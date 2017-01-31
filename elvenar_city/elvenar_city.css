@@ -1,13 +1,13 @@
 *{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html,body{
-	font-family: "lucida grande", "lucida sans unicode", arial, "bitstream vera sans", sans-serif;/*mac,windoze,linux*/
-	color: rgb(0,0,0);
-	background-color: rgb(255,255,255);
-	line-height: 1.5;
+    font-family: "lucida grande", "lucida sans unicode", arial, "bitstream vera sans", sans-serif;/*mac,windoze,linux*/
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+    line-height: 1.5;
 }
 
 table tr:nth-child(even) {

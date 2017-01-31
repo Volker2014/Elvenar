@@ -12,10 +12,10 @@ include ('render_elvenar_data.php');
 </head>
 	<body>
 		<div>
-			<h2>Elvenar Gebäude</h2>
+			<a href="elvenar_city.csv"><h2>Elvenar Gebäude</h2></a>
 			<?php
 				if(function_exists('render_elvenar_data')){
-					render_elvenar_data('elvenar_city.elc');
+					render_elvenar_data('elvenar_city.csv');
 				}else{
 					echo null;//allows the page to continue rendering
 				}

@@ -1,24 +1,38 @@
 <?php
 
-function render_elvenar_data($path_to_xml_file){
-		if (!file_exists($path_to_xml_file)){
-			return;
-		}else{
-			$chars_to_replace = array('[\r]','[\n]','[\t]');
-			$xmlstring = trim(preg_replace($chars_to_replace, '', file_get_contents($path_to_xml_file)));
-		}
-		echo '<table border="1">'."\n";
-		echo '<tr><th>Id</th><th>Name</th><th>Level</th><th>Race</th><th>Size</th></tr>'."\n";
-		$xml = new SimpleXMLElement($xmlstring);
-		foreach ($xml->CityEntity as $record) {
-			echo '<tr>'."\n";			
-			echo '<td>'.$record->Id.'</td>'."\n";
-			echo '<td>'.$record->Name.'</td>'."\n";
-			echo '<td>'.$record->Level.'</td>'."\n";
-			echo '<td>'.$record->Race.'</td>'."\n";
-			echo '<td>'.$record->Size['X'].' x '.$record->Size['Y'].'</td>'."\n";
-			echo '</tr>'."\n";
-		}
-		echo '</table>'."\n";
-	}
+function render_elvenar_data($path_to_file){
+        if (!file_exists($path_to_file)){
+            return;
+        }else{
+            $chars_to_replace = array('[\r]','[\n]','[\t]');
+            $xmlstring = trim(preg_replace($chars_to_replace, '', file_get_contents($path_to_file)));
+        }
+        
+        $hasTitle = true; 
+
+        echo '<table border="1">';
+        
+        $handle = fopen($path_to_file, "r"); 
+        $start = 0; 
+
+        while (($data = fgetcsv($handle, 1000, ";")) !== FALSE)  
+        { 
+          echo '<tr>' . "\n"; 
+   
+          for ( $x = 0; $x < count($data); $x++) 
+          { 
+            if ($start == 0 && $hasTitle == true) 
+                echo '<th>'.$data[$x].'</th>' . "\n"; 
+            else 
+                echo '<td>'.$data[$x].'</td>' . "\n"; 
+          } 
+     
+          $start++; 
+     
+          echo '</tr>' . "\n";    
+        } 
+
+        fclose($handle);
+        echo '</table>'."\n";
+    }
 ?>

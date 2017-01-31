@@ -1,7 +1,11 @@
 var _window; // Going to hold the reference to panel.html's `window`
 
-function addLine(content)
+function addLine(content, id)
 {
+    //var check = _window.document.querySelector('#guild_check');
+    //_window.document.write(check);
+    //var textArea = _window.document.querySelector('#guild_text');
+    //_window.document.write(textArea);
     _window.document.write(content + "<br/>");
 }
 
@@ -29,31 +33,31 @@ function copyToClipboard(text) {
 
 function createGuild(responseData)
 {
-    addLine("Gilde: " + responseData.name);
+    addLine("Gilde: " + responseData.name, "guild");
     for (var i = 0; i < responseData.members.length; i++)
     {
         var member = responseData.members[i];
-        addLine(member.player.name + ": " + member.score);
+        addLine(member.player.name + ": " + member.score, "guild");
     }
-    addLine("");
+    addLine("", "guild");
 }
 
 function createTournament(responseData)
 {
     if (responseData.contributors == undefined) return;
-    addLine("Turnier");
+    addLine("Turnier", "tournament");
     for (var i = 0; i < responseData.contributors.length; i++)
     {
         var contributor = responseData.contributors[i];
-        addLine(contributor.player.name + ": " + contributor.score);
+        addLine(contributor.player.name + ": " + contributor.score, "tournament");
     }
-    addLine("");
+    addLine("", "tournament");
 }
 
 function createRanking(responseData)
 {
     if (responseData.rankings == undefined) return;
-    addLine("Turnier");
+    addLine("Turnier", "ranking");
     for (var i = 0; i < responseData.rankings.length; i++)
     {
         var ranking = responseData.rankings[i];
@@ -64,9 +68,9 @@ function createRanking(responseData)
             name = ranking.guild_info.name;
         else if (ranking.__class__ == "TournamentRankingVO")
             name = ranking.player.name;
-        addLine(name + ": " + (ranking.points || 0));
+        addLine(name + ": " + (ranking.points || 0), "ranking");
     }
-    addLine("");
+    addLine("", "ranking");
 }
 
 function createCityMap(responseData, userdataProp, usernameProp)
@@ -88,8 +92,8 @@ function createCityMap(responseData, userdataProp, usernameProp)
     var table = { city_map: cityMap, user_data: { race: userdata.race}};
     var jsonCity = JSON.stringify(table);
     var encoding = btoa(jsonCity);
-    addLine("CityMap for Elvenar Architect of " + userdata.name);
-    addLine(encoding);
+    addLine("CityMap for Elvenar Architect of " + userdata.name, "citymap");
+    addLine(encoding, "citymap");
     copyToClipboard(encoding);
 }
 
@@ -116,14 +120,14 @@ function createEnity(entity) {
         }
     }
 
-    addLine(line);
+    addLine(line, "cityentities");
 }
 
 function showProps(object)
 {
-    addLine("-----------------");
+    addLine("-----------------", "development");
     Object.keys(object).forEach(function (key) {
-        addLine(key + " " + object[key]);
+        addLine(key + " " + object[key], "development");
     });
 }
 
@@ -157,14 +161,14 @@ chrome.devtools.panels.create('Elvenar', '/icon.png', '/panel.html', function(ex
                 {
                     if (lastClass == "")
                     {
-                        addLine("CityEntities");
+                        addLine("CityEntities", "cityentities");
                         addLine("id;name;race;type;level;width;length;construction_time;rankingPoints;upgrade;money;population;" +
-                            "demand_for_happiness;mana;production;option;time;scrolls;mana;money;supplies;population");
+                            "demand_for_happiness;mana;production;option;time;scrolls;mana;money;supplies;population", "cityentities");
                     }
                     createEnity(serverResponse[i]);
                 }
                 else
-                    addLine(serverResponse[i].__class__);
+                    addLine(serverResponse[i].__class__, "development");
                 lastClass = serverResponse[i].__class__;
             }
         });
@@ -173,6 +177,6 @@ chrome.devtools.panels.create('Elvenar', '/icon.png', '/panel.html', function(ex
     extensionPanel.onShown.addListener(function tmp(panelWindow) {		
         extensionPanel.onShown.removeListener(tmp); // Run once only
         _window = panelWindow;
+        addLine("test", "guild");
     });
-    
 });

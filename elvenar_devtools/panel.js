@@ -1,3 +1,0 @@
-document.documentElement.onclick = function() {
-
-};
