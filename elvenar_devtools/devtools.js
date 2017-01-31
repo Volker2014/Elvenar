@@ -177,6 +177,5 @@ chrome.devtools.panels.create('Elvenar', '/icon.png', '/panel.html', function(ex
     extensionPanel.onShown.addListener(function tmp(panelWindow) {		
         extensionPanel.onShown.removeListener(tmp); // Run once only
         _window = panelWindow;
-        addLine("test", "guild");
     });
 });
