@@ -3,39 +3,58 @@
 <body>
     <table>
         <tr>
-            <td style="width:50%">
+            <td>
+                <input type="checkbox" id="citymap_check" value="citymap">Stadt von </input>
+                <label id="citymap_label"></label>
+                <button id="copy_citymap">Kopieren</button>
+            </td>
+        </tr>
+        <tr><td><textarea id="citymap_text" rows="10" readonly="readonly"></textarea>
+        <tr>
+            <td>
                 <input type="checkbox" id="guild_check" value="guild">Gilde</input>
                 <button id="copy_guild">Kopieren</button>
             </td>
-            <td style="width:50%">
+        </tr>
+        <tr>
+            <td><textarea id="guild_text" rows="10" cols="30" readonly="readonly"></textarea></td>
+        </tr>
+        <tr>
+            <td>
                 <input type="checkbox" id="tournament_check" value="tournament">Turnier</input>
                 <button id="copy_tournament">Kopieren</button>
             </td>
         </tr>
         <tr>
-            <td><textarea id="guild_text" rows="10" cols="30" readonly="readonly"></textarea></td>
             <td><textarea id="tournament_text" rows="10" cols="30" readonly="readonly"></textarea></td>
         </tr>
-        <tr><td>
-            <input type="checkbox" id="citymap_check" value="citymap">Stadt von </input>
-            <label id="citymap_label"></label>
-            <button id="copy_citymap">Kopieren</button>
-        </td></tr>
-        <tr><td><textarea id="citymap_text" rows="10" readonly="readonly"></textarea>
-        <tr><td>
-            <input type="checkbox" id="ranking_check" value="ranking">Rangliste</input>
-            <button id="copy_ranking">Kopieren</button>
-        </td></tr>
+    </table>
+    <table style="visibility:hidden">
+        <tr>
+            <td>
+                <input type="checkbox" id="ranking_check" value="ranking">Rangliste</input>
+                <button id="copy_ranking">Kopieren</button>
+            </td>
+        </tr>
         <tr><td><textarea id="ranking_text" rows="10" readonly="readonly"></textarea></tr>
+        <tr>
+            <td style="width:50%">
+                <input type="checkbox" id="cityentities_check" value="cityentities">Liste der Stadtgebilde</input>
+                <button id="copy_cityentities">Kopieren</button>
+            </td>
+            <td style="width:50%">
+                <input type="checkbox" id="research_check" value="research">Liste der Forschungen</input>
+                <button id="copy_research">Kopieren</button>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:50%"><textarea id="cityentities_text" rows="20" cols="40" readonly="readonly"></textarea></td>
+            <td style="width:50%"><textarea id="research_text" rows="20" cols="40" readonly="readonly"></textarea></td>
+        </tr>
         <tr><td>
-            <input type="checkbox" id="cityentities_check" value="cityentities" disabled="disabled">Liste der Stadtgebilde</input>
-            <button id="copy_cityentities" disabled="disabled">Kopieren</button>
-        </td></tr>
-        <tr><td><textarea id="cityentities_text" rows="20" cols="40" readonly="readonly"></textarea></td></tr>
-        <tr style="visibility:hidden"><td>
             <input type="checkbox" id="development_check" value="development">Entwicklung</input>
         </td></tr>
-        <tr style="visibility:hidden"><td><textarea id="development_text" rows="10" readonly="readonly"></textarea></td></tr>
+        <tr><td><textarea id="development_text" rows="10" readonly="readonly"></textarea></td></tr>
     </table>
     <script src="panel.js"></script>
 </body>

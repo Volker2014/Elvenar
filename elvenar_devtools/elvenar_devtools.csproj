@@ -73,6 +73,7 @@
     <Content Include="devtools.html" />
     <Content Include="devtools.js" />
     <Content Include="icon.png" />
+    <Content Include="install.html" />
     <Content Include="panel.html" />
     <Content Include="panel.js" />
     <Content Include="readme.txt" />

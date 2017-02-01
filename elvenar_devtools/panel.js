@@ -44,3 +44,7 @@ document.querySelector('#copy_ranking').addEventListener('click', function () {
 document.querySelector('#copy_cityentities').addEventListener('click', function () {
     copyTextArea("cityentities_text");
 }, false);
+
+document.querySelector('#copy_research').addEventListener('click', function () {
+    copyTextArea("research_text");
+}, false);

@@ -123,6 +123,16 @@ function createEnity(entity) {
     addContent(line, "cityentities_text");
 }
 
+function createResearch(research)
+{
+    if (research.childrenIds !== undefined)
+    {
+        for (var i = 0; i < research.childrenIds.length; i++)
+            addContent(research.id + " -> " + research.childrenIds[i] + ";", "research_text");
+    }
+    addContent(research.id + ' [label="' + (research.name || research.id) + '"];', "research_text");
+}
+
 function showProps(object)
 {
     if (!isChecked("development_check")) return;
@@ -153,16 +163,32 @@ function parseContent(content, encoding)
                     addContent(serverResponse[i].requestClass, "development_text");
             }
         }
-        else if (serverResponse[i].__class__ == 'CityEntityVO') {
+        else if (serverResponse[i].__class__ == 'CityEntityVO') 
+        {
             if (isChecked("cityentities_check"))
             {
-                if (lastClass == "")
+                if (lastClass != 'CityEntityVO')
                 {
                     addContent("id;name;race;type;level;width;length;construction_time;rankingPoints;upgrade;money;population;" +
                         "demand_for_happiness;mana;production;option;time;scrolls;mana;money;supplies;population", "cityentities_text");
                 }
                 createEnity(serverResponse[i]);
             }
+        }
+        else if (serverResponse[i].__class__ == 'ResearchTechnologyConfigVO') 
+        {
+            if (isChecked("research_check")) 
+            {
+                if (lastClass != 'ResearchTechnologyConfigVO')
+                {
+                    addContent("digraph elvenar_research {", "research_text");
+                }
+                createResearch(serverResponse[i]);
+            }
+        }
+        else if (lastClass == 'ResearchTechnologyConfigVO')
+        {
+            addContent("}", "research_text");
         }
         else if (isChecked("development_check"))
             addContent(serverResponse[i].__class__, "development_text");
