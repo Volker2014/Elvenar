@@ -33,6 +33,16 @@ namespace Elvenar
                 Symbols.Add(new Symbol { Name = Symbols.Count.ToString(), Position = pos, Delay = 1 });
             IsModified = true;
             NotifyPropertyChanged("Symbols");
+        }
+
+        public void ChangePositionOrAddSymbol(Symbol selected, char key)
+        {
+            if (selected != null)
+                selected.Key = key;
+            else
+                Symbols.Add(new Symbol { Name = Symbols.Count.ToString(), Key = key, Delay = 1 });
+            IsModified = true;
+            NotifyPropertyChanged("Symbols");
 
         }
 

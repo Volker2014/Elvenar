@@ -5,6 +5,8 @@ namespace Elvenar
     [XmlRoot("Elvenar")]
     public class ElvenarEnv
     {
+        public int MyPosition { get; set; }
+
         [XmlArray("Symbols")]
         public Symbol[] Symbols { get; set; }
 

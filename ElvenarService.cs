@@ -22,15 +22,16 @@ namespace Elvenar
             return elvenar;
         }
 
-        public void Save(ElvenarEnv elvenar, IEnumerable<string> polierenList, 
+        public void Save(ElvenarEnv elvenar, int myPosition, IEnumerable<string> polierenList, 
             IEnumerable<string> quests, string filename)
         {
-            Save(elvenar, polierenList, quests, new StreamWriter(filename));
+            Save(elvenar, myPosition, polierenList, quests, new StreamWriter(filename));
         }
 
-        public void Save(ElvenarEnv elvenar, IEnumerable<string> polierenList, 
+        public void Save(ElvenarEnv elvenar, int myPosition, IEnumerable<string> polierenList, 
             IEnumerable<string> quests, TextWriter writer)
         {
+            elvenar.MyPosition = myPosition;
             elvenar.Polieren = polierenList.ToArray();
             elvenar.Quests = quests.ToArray();
             var serializer = new XmlSerializer(elvenar.GetType());

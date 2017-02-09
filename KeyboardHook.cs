@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
@@ -9,7 +8,7 @@ namespace MouseKeyboardLibrary
     /// <summary>
     /// Captures global keyboard events
     /// </summary>
-    public class KeyboardHook : GlobalHook
+    public class KeyboardHook : GlobalHook, IKeyboardHook
     {
 
         #region Events

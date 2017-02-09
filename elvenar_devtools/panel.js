@@ -29,16 +29,18 @@ document.querySelector('#copy_guild').addEventListener('click', function () {
     copyTextArea("guild_text");
 }, false);
 
-document.querySelector('#copy_tournament').addEventListener('click', function () {
+document.querySelector('#copy_resources').addEventListener('click', function ()
+{
+    copyTextArea("resources_text");
+}, false);
+
+document.querySelector('#copy_tournament').addEventListener('click', function ()
+{
     copyTextArea("tournament_text");
 }, false);
 
 document.querySelector('#copy_citymap').addEventListener('click', function () {
     copyTextArea("citymap_text");
-}, false);
-
-document.querySelector('#copy_ranking').addEventListener('click', function () {
-    copyTextArea("ranking_text");
 }, false);
 
 document.querySelector('#copy_cityentities').addEventListener('click', function () {
@@ -48,3 +50,50 @@ document.querySelector('#copy_cityentities').addEventListener('click', function 
 document.querySelector('#copy_research').addEventListener('click', function () {
     copyTextArea("research_text");
 }, false);
+
+document.querySelector('#copy_service').addEventListener('click', function ()
+{
+    copyTextArea("service_text");
+}, false);
+
+document.querySelector('#simulatekey').addEventListener('click', function ()
+{
+    Podium.keydown('s');
+}, false);
+
+Podium = {};
+Podium.keydown = function (k)
+{
+    var oEvent = document.createEvent('KeyboardEvent');
+
+    // Chromium Hack
+    Object.defineProperty(oEvent, 'keyCode', {
+        get: function ()
+        {
+            return this.keyCodeVal;
+        }
+    });
+    Object.defineProperty(oEvent, 'which', {
+        get: function ()
+        {
+            return this.keyCodeVal;
+        }
+    });
+
+    if (oEvent.initKeyboardEvent)
+    {
+        oEvent.initKeyboardEvent("keydown", true, true, document.defaultView, false, false, false, false, k, k);
+    } else
+    {
+        oEvent.initKeyEvent("keydown", true, true, document.defaultView, false, false, false, false, k, 0);
+    }
+
+    oEvent.keyCodeVal = k;
+
+    if (oEvent.keyCode !== k)
+    {
+        alert("keyCode mismatch " + oEvent.keyCode + "(" + oEvent.which + ")");
+    }
+
+    document.dispatchEvent(oEvent);
+}

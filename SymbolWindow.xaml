@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Elvenar"
         mc:Ignorable="d"
-        Title="Symbole bestimmen" Height="500" Width="300">
+        Title="Symbole bestimmen" Height="500" Width="350">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
             <Button x:Name="btnSymbolSelect" Click="SelectSymbol" Content="Bestimme" Margin="10,10,10,0" ToolTip="Klicke auf ein Symbol und bestimme damit seine Position (neues oder bestehendes Symbol)" />
@@ -22,6 +22,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Symbol" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Positon" Binding="{Binding Position}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Key" Binding="{Binding Key}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Warte" Binding="{Binding Delay}"/>
             </DataGrid.Columns>
         </DataGrid>

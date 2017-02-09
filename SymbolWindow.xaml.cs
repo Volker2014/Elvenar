@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Threading;
 using System.Windows;
 using System.Windows.Forms;
+using System;
 
 namespace Elvenar
 {
@@ -12,9 +13,10 @@ namespace Elvenar
     public partial class SymbolWindow : Window
     {
         private IMouseHook _mouseHook;
+        private IKeyboardHook _keyboardHook;
         private SymbolViewModel _viewModel;
 
-        public SymbolWindow(SymbolViewModel viewModel, IMouseHook mouseHook)
+        public SymbolWindow(SymbolViewModel viewModel, IMouseHook mouseHook, IKeyboardHook keyboardHook)
         {
             InitializeComponent();
             _viewModel = viewModel;
@@ -24,6 +26,15 @@ namespace Elvenar
             _mouseHook.MouseMove += mouseHook_MouseMove;
             _mouseHook.MouseDown += mouseHook_MouseDown;
 
+            _keyboardHook = keyboardHook;
+            _keyboardHook.KeyPress += keyboardHook_KeyPress;
+        }
+
+        private void keyboardHook_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            StopHook();
+            var selectedSymbol = dataGridSymbols.SelectedItem as Symbol;
+            _viewModel.ChangePositionOrAddSymbol(selectedSymbol, e.KeyChar);
         }
 
         private void mouseHook_MouseMove(object sender, MouseEventArgs e)
@@ -33,8 +44,7 @@ namespace Elvenar
 
         private void mouseHook_MouseDown(object sender, MouseEventArgs e)
         {
-            btnSymbolSelect.Content = "Bestimme";
-            _mouseHook.Stop();
+            StopHook();
             var point = btnSymbolSelect.PointFromScreen(new System.Windows.Point(e.X, e.Y));
             var rect = new Rect(new System.Windows.Point(0, 0), new System.Windows.Size(btnSymbolSelect.ActualWidth, btnSymbolSelect.ActualHeight));
             if (rect.Contains(point))
@@ -45,10 +55,18 @@ namespace Elvenar
             _viewModel.ChangePositionOrAddSymbol(selectedSymbol, pos);
         }
 
+        private void StopHook()
+        {
+            btnSymbolSelect.Content = "Bestimme";
+            _mouseHook.Stop();
+            _keyboardHook.Stop();
+        }
+
         internal void SelectSymbol(object sender, RoutedEventArgs e)
         {
-            if (_mouseHook.IsStarted) return;
+            if (_mouseHook.IsStarted || _keyboardHook.IsStarted) return;
             _mouseHook.Start();
+            _keyboardHook.Start();
             btnSymbolSelect.Content = "Abbruch";
         }
 

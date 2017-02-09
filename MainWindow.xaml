@@ -2,9 +2,26 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Elvenar"
-        Title="Elvenar Makros" Height="350" Width="500" MinWidth="150">
-    <StackPanel>
-        <Menu IsMainMenu="True" Grid.Column="0">
+        Title="Elvenar Makros" Height="70" Width="600">
+    <StackPanel Orientation="Horizontal">
+        <ComboBox Name="cbxSelection" Margin="2">
+            <ComboBoxItem x:Name="iMenu">Menu</ComboBoxItem>
+            <ComboBoxItem x:Name="iQuest" IsSelected="True">Quest</ComboBoxItem>
+            <ComboBoxItem x:Name="iPolieren">Polieren</ComboBoxItem>
+            <ComboBoxItem x:Name="iOther">Other</ComboBoxItem>
+        </ComboBox>
+        <Menu IsMainMenu="True">
+            <Menu.Style>
+                <Style>
+                    <Setter Property="Expander.Visibility" Value="Collapsed"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger 
+                            Binding="{Binding ElementName=iMenu, Path=IsSelected}" Value="true">
+                            <Setter Property="Expander.Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Menu.Style>
             <MenuItem Header="Datei">
                 <MenuItem Click="Load" Header="Laden"  />
                 <MenuItem Click="Save" Header="Speichern"  />
@@ -15,57 +32,70 @@
                 <Separator/>
                 <MenuItem IsCheckable="True" Header="Vordergrund" IsChecked="{Binding Topmost, Mode=TwoWay}"/>
             </MenuItem>
-            <MenuItem Header="_Listen">
-                <MenuItem Click="TransformList" Header="Elvenar response umwandeln" />
-                <MenuItem Click="CityEntities" Header="Elvenar Gebäude umwandeln" />
-            </MenuItem>
             <MenuItem Click="ShowHelp" Header="_Hilfe"  />
         </Menu>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition MinWidth="150" Width="3*"/>
-                <ColumnDefinition MinWidth="150" Width="3*"/>
-            </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Style>
+                <Style>
+                    <Setter Property="Expander.Visibility" Value="Collapsed"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger 
+                            Binding="{Binding ElementName=iQuest, Path=IsSelected}" Value="true">
+                            <Setter Property="Expander.Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+            <Button x:Name="btnFinish" Click="RunFinish" Content="Abschliessen" Margin="2" ToolTip="Schliesse Quest ab"/>
+            <Button x:Name="btnCancel" Click="RunCancel" Content="Ablehnen" Margin="2" ToolTip="Lehne Quest ab" />
+            <Label Content="aktuelle" Margin="2"/>
+            <ComboBox x:Name="cbxQuestCurrent" ItemsSource="{Binding QuestList}" Margin="2" MinWidth="100"/>
+            <Label Content="nächste" Margin="1" />
+            <ComboBox x:Name="cbxQuestNext" ItemsSource="{Binding QuestList}" Margin="2" MinWidth="100"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Style>
+                <Style>
+                    <Setter Property="Expander.Visibility" Value="Collapsed"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger 
+                            Binding="{Binding ElementName=iPolieren, Path=IsSelected}" Value="true">
+                            <Setter Property="Expander.Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+            <Button x:Name="btnPolieren" Click="RunPolieren" Content="Polieren" Margin="2" ToolTip="Führen das gewähltes Polieren Makro aus" />
+            <Label Content="Meine Position" Margin="2"/>
+            <TextBox x:Name="txtMyPos" Margin="2" Text="{Binding MyPosition}" MinWidth="30"/>
+            <Label Content="nächste" Margin="2"/>
+            <ComboBox x:Name="cbxPolieren" ItemsSource="{Binding PolierenList}" Margin="2" MinWidth="100"/>
+        </StackPanel>
+        <StackPanel>
+            <StackPanel.Style>
+                <Style>
+                    <Setter Property="Expander.Visibility" Value="Collapsed"></Setter>
+                    <Style.Triggers>
+                        <DataTrigger 
+                            Binding="{Binding ElementName=iOther, Path=IsSelected}" Value="true">
+                            <Setter Property="Expander.Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+            <Button x:Name="addPolieren" Click="AddPolieren" Margin="5,5,0,0" >
+                <Path Fill="Black" Data="M 20 0 L 20 20 L 0 10 Z"/>
+            </Button>
+            <Button x:Name="removePolieren" Click="RemovePolieren" Margin="5,5,0,0" >
+                <Path Fill="Black" Data="M 0 0 L 0 20 L 20 10 Z"/>
+            </Button>
+            <Button x:Name="btnKampfPaladin" Click="RunKampfPaladin" Content="Kampf Paladin" Margin="10,10,20,0" ToolTip="Autom. Kampf mit 5 Paladin starten"/>
+            <Button x:Name="btnKampf" Click="RunKampf" Content="Kampf" Margin="10,10,20,0" ToolTip="Autom. Kampf starten"/>
+            <Button x:Name="btnProvinz" Click="RunProvinz" Content="Provinz" Margin="10,10,20,0" ToolTip="Kampf erfolgreich beenden" />
 
-            <StackPanel Grid.Column="0" MinWidth="50">
-                <StackPanel Orientation="Horizontal" Height="30">
-                    <Button x:Name="btnPolieren" Click="RunPolieren" Content="Polieren" Margin="10,10,20,0" ToolTip="Führen das gewähltes Polieren Makro aus" />
-                    <Button x:Name="addPolieren" Click="AddPolieren" Margin="5,5,0,0" >
-                        <Path Fill="Black" Data="M 20 0 L 20 20 L 0 10 Z"/>
-                    </Button>
-                    <Button x:Name="removePolieren" Click="RemovePolieren" Margin="5,5,0,0" >
-                        <Path Fill="Black" Data="M 0 0 L 0 20 L 20 10 Z"/>
-                    </Button>
-                </StackPanel>
-                <ComboBox x:Name="cbxPolieren" ItemsSource="{Binding PolierenList}" Margin="10,10,0,10"/>
-                <Separator />
-                <StackPanel Orientation="Horizontal" Height="30">
-                    <Button x:Name="btnFinish" Click="RunFinish" Content="Abschliessen" Margin="10,10,20,0" ToolTip="Schliesse Quest ab"/>
-                    <Button x:Name="btnCancel" Click="RunCancel" Content="Ablehnen" Margin="10,10,20,0" ToolTip="Lehne Quest ab" />
-                </StackPanel>
-                <Label Content="aktuelle Quest" Margin="10,10,0,0"/>
-                <ComboBox x:Name="cbxQuestCurrent" ItemsSource="{Binding QuestList}" Margin="10,0,0,0"/>
-                <Label Content="nächste Quest" Margin="10,0,0,0"/>
-                <ComboBox x:Name="cbxQuestNext" ItemsSource="{Binding QuestList}" Margin="10,0,0,10"/>
-                <Separator />
-                <StackPanel Orientation="Horizontal">
-                    <Button x:Name="btnKampfPaladin" Click="RunKampfPaladin" Content="Kampf Paladin" Margin="10,10,20,0" ToolTip="Autom. Kampf mit 5 Paladin starten"/>
-                    <Button x:Name="btnKampf" Click="RunKampf" Content="Kampf" Margin="10,10,20,0" ToolTip="Autom. Kampf starten"/>
-                    <Button x:Name="btnProvinz" Click="RunProvinz" Content="Provinz" Margin="10,10,20,0" ToolTip="Kampf erfolgreich beenden" />
-                </StackPanel>
-            </StackPanel>
-
-            <DockPanel Grid.Column="1" MinWidth="50">
-                <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30">
-                    <Button x:Name="btnMakro" Click="RunMacro" Content="Ausführen" Margin="10,10,20,0" ToolTip="Führe gewähltes Makro aus" />
-                </StackPanel>
-                <DataGrid DockPanel.Dock="Bottom" x:Name="dataGridMacros" ItemsSource="{Binding Macros}"
-            Margin="10" AutoGenerateColumns="False" IsReadOnly="True">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </DockPanel>
-        </Grid>
+            <Button x:Name="btnMakro" Click="RunMacro" Content="Ausführen" Margin="10,10,20,0" ToolTip="Führe gewähltes Makro aus" />
+            <ComboBox DockPanel.Dock="Bottom" x:Name="dataGridMacros" ItemsSource="{Binding Macros, Mode=OneWay}"
+                DisplayMemberPath="Name" Margin="10"/>
+        </StackPanel>
     </StackPanel>
 </Window>

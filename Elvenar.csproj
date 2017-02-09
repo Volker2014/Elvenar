@@ -97,6 +97,7 @@
     <Compile Include="ElvenarPlayer.cs" />
     <Compile Include="ElvenarService.cs" />
     <Compile Include="Gilde.cs" />
+    <Compile Include="IKeyboardHook.cs" />
     <Compile Include="IMouseHook.cs" />
     <Compile Include="KeyboardHook.cs" />
     <Compile Include="KeyboardSimulator.cs" />
@@ -185,11 +186,6 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="elvenar.elm">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Phoenix.ico" />

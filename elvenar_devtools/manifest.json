@@ -1,7 +1,7 @@
 { 
     "name": "Elvenar Logger",
     "manifest_version": 2,
-    "version": "1.0",
+    "version": "1.1",
     "description": "Elvenar informations, see readme.txt",
     "devtools_page": "devtools.html",
     "icons": {

@@ -1,0 +1,549 @@
+id;name;race;type;level;width;length;construction_time;rankingPoints;upgrade;money;population;demand_for_happiness;mana;production;option;time;scrolls;mana;money;supplies;population
+H_Elves_Townhall_1;Hauptgebäude;elves;main_building;1;6;6;10;0;;;;;
+H_Elves_Townhall_2;Hauptgebäude;elves;main_building;2;6;6;600;42;;3300;34;0;0
+H_Elves_Townhall_3;Hauptgebäude;elves;main_building;3;6;6;13980;88;;14000;24;0;0
+H_Elves_Townhall_4;Hauptgebäude;elves;main_building;4;6;6;17580;166;;35700;33;0;0
+H_Elves_Townhall_5;Hauptgebäude;elves;main_building;5;6;6;21900;288;;63400;44;0;0
+H_Elves_Townhall_6;Hauptgebäude;elves;main_building;6;6;6;27000;402;;102000;49;0;0
+H_Elves_Townhall_7;Hauptgebäude;elves;main_building;7;6;6;33000;549;;156000;68;0;0
+H_Elves_Townhall_8;Hauptgebäude;elves;main_building;8;6;6;39900;727;;225000;85;0;0
+H_Elves_Townhall_9;Hauptgebäude;elves;main_building;9;6;6;47760;931;;307000;97;0;0
+H_Elves_Townhall_10;Hauptgebäude;elves;main_building;10;6;6;56760;1180;;416000;127;0;0
+H_Elves_Townhall_11;Hauptgebäude;elves;main_building;11;6;6;66960;1473;;553000;156;0;0
+H_Elves_Townhall_12;Hauptgebäude;elves;main_building;12;6;6;78360;1835;;725000;209;0;0
+H_Elves_Townhall_13;Hauptgebäude;elves;main_building;13;6;6;91080;2238;;927000;235;0;0
+H_Elves_Townhall_14;Hauptgebäude;elves;main_building;14;6;6;105000;2686;;1160000;263;0;0
+H_Elves_Townhall_15;Hauptgebäude;elves;main_building;15;6;6;120000;3219;;1440000;332;0;0
+H_Elves_Townhall_16;Hauptgebäude;elves;main_building;16;6;6;122400;3683;;1870000;154;0;0
+H_Elves_Townhall_17;Hauptgebäude;elves;main_building;17;6;6;122400;4336;;2320000;304;0;0
+H_Elves_Townhall_18;Hauptgebäude;elves;main_building;18;6;6;129600;5073;;2380000;345;0;0
+H_Elves_Townhall_19;Hauptgebäude;elves;main_building;19;6;6;136800;5852;;2440000;340;0;0
+H_Elves_Townhall_20;Hauptgebäude;elves;main_building;20;6;6;147600;6832;;2500000;489;0;0
+H_Elves_Townhall_21;Hauptgebäude;elves;main_building;21;6;6;154800;7930;;2800000;549;0;0
+H_Elves_Townhall_22;Hauptgebäude;elves;main_building;22;7;6;162000;9101;;3000000;558;0;133000
+H_Elves_Townhall_23;Hauptgebäude;elves;main_building;23;7;6;169200;10415;;3300000;630;0;160000
+H_Elves_Townhall_24;Hauptgebäude;elves;main_building;24;7;6;176400;11888;;3600000;711;0;192000
+H_Elves_Townhall_25;Hauptgebäude;elves;main_building;25;7;6;183600;13557;;3900000;819;0;230000
+H_Elves_Townhall_26;Hauptgebäude;elves;main_building;26;7;7;190800;15372;;4200000;870;0;280000
+H_Elves_Townhall_27;Hauptgebäude;elves;main_building;27;7;7;198000;17408;;4600000;985;0;330000
+H_Elves_Townhall_28;Hauptgebäude;elves;main_building;28;7;7;205200;19722;;4900000;1146;0;390000
+H_Elves_Townhall_29;Hauptgebäude;elves;main_building;29;7;7;212400;22006;;5300000;986;0;470000
+H_Elves_Townhall_30;Hauptgebäude;elves;main_building;30;8;7;216000;24825;;5700000;1379;0;550000
+H_Elves_Townhall_31;Hauptgebäude;elves;main_building;31;8;7;223200;27849;;6100000;1425;0;650000
+H_Elves_Townhall_32;Hauptgebäude;elves;main_building;32;8;7;226800;31191;;6500000;1570;0;770000
+H_Elves_Townhall_33;Hauptgebäude;elves;main_building;33;8;7;234000;35153;;6900000;1997;0;910000
+Z_Elves_WorkerHut_1;Baumeisterhütte ;elves;worker_hut;1;3;3;3;0;;;;;
+Z_Elves_WorkerHut_2;Baumeisterhütte ;elves;worker_hut;2;3;3;3;0;;0;0;0;0
+Z_Elves_WorkerHut_3;Baumeisterhütte ;elves;worker_hut;3;3;3;3;0;;0;0;0;0
+Z_Elves_WorkerHut_4;Baumeisterhütte ;elves;worker_hut;4;3;3;3;0;;0;0;0;0
+Z_Elves_WorkerHut_5;Baumeisterhütte ;elves;worker_hut;5;3;3;3;0;;0;0;0;0
+R_Elves_Residential_1;Wohngebäude;elves;residential;1;2;2;10;0;;;;;;;option1;18000;0;0;0;0;0
+R_Elves_Residential_2;Wohngebäude;elves;residential;2;2;2;60;3;;900;0;0;0;;option1;19800;0;0;0;0;0
+R_Elves_Residential_3;Wohngebäude;elves;residential;3;2;2;5580;7;;2600;0;0;0;;option1;21600;0;0;0;0;0
+R_Elves_Residential_4;Wohngebäude;elves;residential;4;2;3;7020;19;;4700;0;0;0;;option1;23400;0;0;0;0;0
+R_Elves_Residential_5;Wohngebäude;elves;residential;5;2;3;8700;30;;6700;0;0;0;;option1;25200;0;0;0;0;0
+R_Elves_Residential_6;Wohngebäude;elves;residential;6;2;3;10680;36;;9800;0;0;0;;option1;27000;0;0;0;0;0
+R_Elves_Residential_7;Wohngebäude;elves;residential;7;2;3;12960;40;;13000;0;0;0;;option1;28800;0;0;0;0;0
+R_Elves_Residential_8;Wohngebäude;elves;residential;8;3;3;15300;67;;16000;0;0;0;;option1;30600;0;0;0;0;0
+R_Elves_Residential_9;Wohngebäude;elves;residential;9;3;3;15780;74;;12000;0;0;0;;option1;32400;0;0;0;0;0
+R_Elves_Residential_10;Wohngebäude;elves;residential;10;3;3;18000;83;;13000;0;0;0;;option1;34200;0;0;0;0;0
+R_Elves_Residential_11;Wohngebäude;elves;residential;11;3;3;18480;90;;31000;0;0;0;;option1;36000;0;0;0;0;0
+R_Elves_Residential_12;Wohngebäude;elves;residential;12;3;3;18960;96;;31000;0;0;0;;option1;37800;0;0;0;0;0
+R_Elves_Residential_13;Wohngebäude;elves;residential;13;3;3;19500;103;;0;0;0;0;;option1;39600;0;0;0;0;0
+R_Elves_Residential_14;Wohngebäude;elves;residential;14;3;3;19980;111;;58000;0;0;0;;option1;41400;0;0;0;0;0
+R_Elves_Residential_15;Wohngebäude;elves;residential;15;3;3;20460;118;;7000;0;0;0;;option1;43200;0;0;0;0;0
+R_Elves_Residential_16;Wohngebäude;elves;residential;16;2;4;18540;155;;53600;0;0;0;;option1;45000;0;0;0;0;0
+R_Elves_Residential_17;Wohngebäude;elves;residential;17;2;4;18900;172;;0;0;0;0;;option1;46800;0;0;0;0;0
+R_Elves_Residential_18;Wohngebäude;elves;residential;18;2;4;35160;190;;373000;0;0;0;;option1;48600;0;0;0;0;0
+R_Elves_Residential_19;Wohngebäude;elves;residential;19;2;4;36000;210;;312000;0;0;0;;option1;50400;0;0;0;0;0
+R_Elves_Residential_20;Wohngebäude;elves;residential;20;4;3;49980;347;;544000;0;0;0;;option1;52200;0;0;0;0;0
+R_Elves_Residential_21;Wohngebäude;elves;residential;21;4;3;50580;382;;544000;0;0;0;;option1;54000;0;0;0;0;0
+R_Elves_Residential_22;Wohngebäude;elves;residential;22;4;3;51180;428;;587000;0;0;0;;option1;55800;0;0;0;0;0
+R_Elves_Residential_23;Wohngebäude;elves;residential;23;4;3;51720;475;;613000;0;0;0;;option1;57600;0;0;0;0;0
+R_Elves_Residential_24;Wohngebäude;elves;residential;24;3;5;65160;656;;800000;0;0;0;;option1;59400;0;0;0;0;0
+R_Elves_Residential_25;Wohngebäude;elves;residential;25;3;5;65520;724;;860000;0;0;0;;option1;61200;0;0;0;0;0
+R_Elves_Residential_26;Wohngebäude;elves;residential;26;3;5;66060;800;;1080000;0;0;0;;option1;63000;0;0;0;0;0
+R_Elves_Residential_27;Wohngebäude;elves;residential;27;3;5;66420;883;;920000;0;0;0;;option1;64800;0;0;0;0;0
+R_Elves_Residential_28;Wohngebäude;elves;residential;28;4;4;71460;1041;;1050000;0;0;0;;option1;66600;0;0;0;0;0
+R_Elves_Residential_29;Wohngebäude;elves;residential;29;4;4;71880;1149;;1050000;0;0;0;;option1;68400;0;0;0;0;0
+R_Elves_Residential_30;Wohngebäude;elves;residential;30;4;4;72480;1269;;1100000;0;0;0;;option1;70200;0;0;0;0;0
+R_Elves_Residential_31;Wohngebäude;elves;residential;31;4;4;72900;1400;;1170000;0;0;0;;option1;72000;0;0;0;0;0
+R_Elves_Residential_32;Wohngebäude;elves;residential;32;5;3;68880;1449;;1140000;0;0;0;;option1;73800;0;0;0;0;0
+R_Elves_Residential_33;Wohngebäude;elves;residential;33;5;3;69300;1599;;1190000;0;0;0;;option1;75600;0;0;0;0;0
+P_Elves_Workshop_1;Werkstatt;elves;production;1;2;2;10;18;;;;;;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_2;Werkstatt;elves;production;2;2;2;90;26;;3700;6;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_3;Werkstatt;elves;production;3;2;2;9000;39;;13000;8;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_4;Werkstatt;elves;production;4;2;2;11280;54;;29000;8;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_5;Werkstatt;elves;production;5;3;2;13980;107;;43000;32;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_6;Werkstatt;elves;production;6;3;2;17160;122;;63000;9;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_7;Werkstatt;elves;production;7;3;2;20880;140;;84000;12;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_8;Werkstatt;elves;production;8;3;2;25260;160;;110000;14;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_9;Werkstatt;elves;production;9;4;3;30300;353;;140000;130;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_10;Werkstatt;elves;production;10;4;3;32580;396;;180000;32;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_11;Werkstatt;elves;production;11;4;3;33600;438;;220000;33;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_12;Werkstatt;elves;production;12;4;3;34560;493;;270000;45;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_13;Werkstatt;elves;production;13;4;3;35460;542;;320000;41;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_14;Werkstatt;elves;production;14;4;3;36360;589;;380000;39;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_15;Werkstatt;elves;production;15;4;3;37200;645;;440000;49;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_16;Werkstatt;elves;production;16;5;3;47400;903;;722000;136;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_17;Werkstatt;elves;production;17;5;3;48360;985;;895000;48;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_18;Werkstatt;elves;production;18;3;6;64920;1296;;1310000;202;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_19;Werkstatt;elves;production;19;3;6;65340;1404;;1390000;60;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_20;Werkstatt;elves;production;20;3;6;65640;1556;;1470000;101;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_21;Werkstatt;elves;production;21;3;6;65880;1721;;1560000;109;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_22;Werkstatt;elves;production;22;4;5;74400;2119;;1840000;257;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_23;Werkstatt;elves;production;23;4;5;75360;2346;;1940000;145;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_24;Werkstatt;elves;production;24;4;5;76140;2593;;2050000;159;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_25;Werkstatt;elves;production;25;4;5;76800;2868;;2160000;179;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_26;Werkstatt;elves;production;26;3;7;81480;3323;;2400000;293;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_27;Werkstatt;elves;production;27;3;7;82200;3667;;2530000;222;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_28;Werkstatt;elves;production;28;3;7;82980;4067;;2660000;263;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_29;Werkstatt;elves;production;29;3;7;83700;4425;;2800000;209;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_30;Werkstatt;elves;production;30;4;6;93600;5602;;3370000;764;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_31;Werkstatt;elves;production;31;4;6;97200;6165;;3550000;356;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_32;Werkstatt;elves;production;32;4;6;97200;6792;;3730000;396;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Workshop_33;Werkstatt;elves;production;33;4;6;97200;7550;;3920000;506;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+S_Elves_Trail;Trampelpfad;elves;street;1;1;1;0;0;;;;;
+R_Elves_Premium_Residential_1;Magisches Wohngebäude;elves;premium_residential;1;2;2;10;9;;;;;;;option1;21600;0;0;0;0;0
+R_Elves_Premium_Residential_2;Magisches Wohngebäude;elves;premium_residential;2;2;3;10;48;;0;0;0;0;;option1;27000;0;0;0;0;0
+R_Elves_Premium_Residential_3;Magisches Wohngebäude;elves;premium_residential;3;2;3;10;66;;0;0;0;0;;option1;32400;0;0;0;0;0
+R_Elves_Premium_Residential_4;Magisches Wohngebäude;elves;premium_residential;4;3;3;10;126;;0;0;0;0;;option1;37800;0;0;0;0;0
+R_Elves_Premium_Residential_5;Magisches Wohngebäude;elves;premium_residential;5;3;3;10;145;;0;0;0;0;;option1;41400;0;0;0;0;0
+R_Elves_Premium_Residential_6;Magisches Wohngebäude;elves;premium_residential;6;2;4;10;200;;0;0;0;0;;option1;45000;0;0;0;0;0
+R_Elves_Premium_Residential_7;Magisches Wohngebäude;elves;premium_residential;7;2;4;10;240;;0;0;0;0;;option1;48600;0;0;0;0;0
+R_Elves_Premium_Residential_8;Magisches Wohngebäude;elves;premium_residential;8;4;3;10;450;;0;0;0;0;;option1;52200;0;0;0;0;0
+R_Elves_Premium_Residential_9;Magisches Wohngebäude;elves;premium_residential;9;4;3;10;550;;0;0;0;0;;option1;55800;0;0;0;0;0
+R_Elves_Premium_Residential_10;Magisches Wohngebäude;elves;premium_residential;10;3;5;10;850;;0;0;0;0;;option1;59400;0;0;0;0;0
+R_Elves_Premium_Residential_11;Magisches Wohngebäude;elves;premium_residential;11;3;5;10;1040;;0;0;0;0;;option1;63000;0;0;0;0;0
+R_Elves_Premium_Residential_12;Magisches Wohngebäude;elves;premium_residential;12;4;4;10;1350;;0;0;0;0;;option1;66600;0;0;0;0;0
+R_Elves_Premium_Residential_13;Magisches Wohngebäude;elves;premium_residential;13;4;4;10;1640;;0;0;0;0;;option1;70200;0;0;0;0;0
+R_Elves_Premium_Residential_14;Magisches Wohngebäude;elves;premium_residential;14;5;3;10;1880;;0;0;0;0;;option1;73800;0;0;0;0;0
+P_Elves_Premium_Workshop_1;Magische Werkstatt;elves;premium_production;1;2;2;10;49;;;;;;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_2;Magische Werkstatt;elves;premium_production;2;3;2;10;157;;0;63;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_3;Magische Werkstatt;elves;premium_production;3;3;2;10;227;;0;49;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_4;Magische Werkstatt;elves;premium_production;4;4;3;10;619;;0;278;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_5;Magische Werkstatt;elves;premium_production;5;4;3;10;750;;0;110;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_6;Magische Werkstatt;elves;premium_production;6;5;3;10;1200;;0;290;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_7;Magische Werkstatt;elves;premium_production;7;3;6;10;1680;;0;290;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_8;Magische Werkstatt;elves;premium_production;8;3;6;10;2010;;0;200;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_9;Magische Werkstatt;elves;premium_production;9;4;5;10;2740;;0;480;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_10;Magische Werkstatt;elves;premium_production;10;4;5;10;3370;;0;400;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_11;Magische Werkstatt;elves;premium_production;11;3;7;10;4300;;0;600;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_12;Magische Werkstatt;elves;premium_production;12;3;7;10;5240;;0;600;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_13;Magische Werkstatt;elves;premium_production;13;4;6;10;7200;;0;1300;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+P_Elves_Premium_Workshop_14;Magische Werkstatt;elves;premium_production;14;4;6;10;8700;;0;900;0;0;;option1;300;0;0;0;0;0;option2;900;0;0;0;0;0;option3;3600;0;0;0;0;0;option4;10800;0;0;0;0;0;option5;32400;0;0;0;0;0;option6;86400;0;0;0;0;0
+Y_Elves_Trader_1;Marktplatz;elves;trader;1;3;4;30;50;;;;;
+Y_Elves_Trader_2;Marktplatz;elves;trader;2;4;5;86400;1000;;5000000;450;0;100000
+D_Elves_MagicAcademy_1;Magische Akademie;elves;academy;1;5;5;14400;0;;;;;;;option1;57600;0;0;0;0;0;option2;57600;0;0;0;0;0;option3;115200;0;0;0;0;0;option4;86400;0;0;0;0;0
+D_Elves_MagicAcademy_2;Magische Akademie;elves;academy;2;5;5;18000;0;;10000;0;0;0;;option1;46800;0;0;0;0;0;option2;46800;0;0;0;0;0;option3;93600;0;0;0;0;0;option4;70200;0;0;0;0;0
+D_Elves_MagicAcademy_3;Magische Akademie;elves;academy;3;5;5;10;0;;0;0;0;0;;option1;36000;0;0;0;0;0;option2;36000;0;0;0;0;0;option3;72000;0;0;0;0;0;option4;54000;0;0;0;0;0
+D_Elves_MagicAcademy_4;Magische Akademie;elves;academy;4;5;5;10;0;;0;0;0;0;;option1;25200;0;0;0;0;0;option2;25200;0;0;0;0;0;option3;50400;0;0;0;0;0;option4;37800;0;0;0;0;0
+D_Elves_MagicAcademy_5;Magische Akademie;elves;academy;5;5;5;10;0;;0;0;0;0;;option1;14400;0;0;0;0;0;option2;14400;0;0;0;0;0;option3;28800;0;0;0;0;0;option4;21600;0;0;0;0;0
+S_Elves_Alley;Einfacher Weg;elves;street;1;1;1;0;0;;;;;
+S_Elves_Road;Gepflasterte Straße;elves;street;1;1;1;0;0;;;;;
+S_Elves_Street;Verzierte Straße;elves;street;1;1;1;0;0;;;;;
+S_Elves_Dwarven;Zwergenstraße;elves;street;1;1;1;0;0;;;;;
+S_Elves_Fairies;Blumenstraße;elves;street;1;1;1;0;0;;;;;
+S_Elves_Orcs;Holzweg;elves;street;1;1;1;0;0;;;;;
+S_Elves_Gr4;Begrünter Weg;elves;street;1;1;1;0;0;;;;;
+S_Elves_Gr5;Straße der Sagen;elves;street;1;1;1;0;0;;;;;
+S_Elves_Gr6;!! Missing Description;elves;street;1;1;1;0;0;;;;;
+S_Elves_Gr7;!! Missing Description;elves;street;1;1;1;0;0;;;;;
+S_Elves_Gr8;!! Missing Description;elves;street;1;1;1;0;0;;;;;
+S_Elves_Gr9;!! Missing Description;elves;street;1;1;1;0;0;;;;;
+M_Elves_Barracks_1;Kaserne;elves;military;1;4;3;60;9;;;;;;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_2;Kaserne;elves;military;2;4;3;3180;27;;2200;8;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_3;Kaserne;elves;military;3;4;3;9960;67;;7100;12;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_4;Kaserne;elves;military;4;4;3;12480;139;;14000;16;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_5;Kaserne;elves;military;5;4;3;15480;258;;6000;22;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_6;Kaserne;elves;military;6;5;4;19080;365;;21000;25;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_7;Kaserne;elves;military;7;5;4;23280;497;;30000;34;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_8;Kaserne;elves;military;8;5;4;28200;655;;46000;42;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_9;Kaserne;elves;military;9;5;4;33780;838;;33000;49;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_10;Kaserne;elves;military;10;6;5;40200;1054;;100000;63;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_11;Kaserne;elves;military;11;6;5;47400;1303;;110000;78;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_12;Kaserne;elves;military;12;6;5;54060;1599;;120000;105;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_13;Kaserne;elves;military;13;6;5;55500;1928;;170000;118;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_14;Kaserne;elves;military;14;6;5;56880;2290;;130000;131;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_15;Kaserne;elves;military;15;6;5;58260;2707;;160000;166;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_16;Kaserne;elves;military;16;4;8;59940;3172;;363000;77;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_17;Kaserne;elves;military;17;4;8;61140;3760;;279000;152;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_18;Kaserne;elves;military;18;4;7;78960;4422;;0;173;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_19;Kaserne;elves;military;19;4;7;84060;5140;;990000;169;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_20;Kaserne;elves;military;20;4;7;86400;5999;;90000;245;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_21;Kaserne;elves;military;21;4;7;93600;6959;;1040000;274;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_22;Kaserne;elves;military;22;5;7;97200;8004;;0;279;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_23;Kaserne;elves;military;23;5;7;100800;9175;;0;316;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_24;Kaserne;elves;military;24;5;7;104400;10484;;300000;355;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_25;Kaserne;elves;military;25;5;7;111600;11955;;1430000;410;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_26;Kaserne;elves;military;26;6;6;115200;13571;;0;434;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_27;Kaserne;elves;military;27;6;6;118800;15378;;340000;493;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_28;Kaserne;elves;military;28;6;6;122400;17411;;0;573;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_29;Kaserne;elves;military;29;6;6;126000;19526;;1880000;493;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_30;Kaserne;elves;military;30;5;8;129600;22017;;2110000;690;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_31;Kaserne;elves;military;31;5;8;133200;24726;;2100000;712;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_32;Kaserne;elves;military;32;5;8;136800;27727;;1940000;785;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+M_Elves_Barracks_33;Kaserne;elves;military;33;5;8;140400;31181;;1720000;999;0;0;;option1;0;0;0;0;0;0;option2;0;0;0;0;0;0;option3;0;0;0;0;0;0;option4;0;0;0;0;0;0;option5;0;0;0;0;0;0
+O_Elves_Armory_1;Rüstkammer;elves;armory;1;2;2;60;18;;;;;
+O_Elves_Armory_2;Rüstkammer;elves;armory;2;2;2;1560;31;;960;3;0;0
+O_Elves_Armory_3;Rüstkammer;elves;armory;3;2;2;4200;50;;2300;3;0;0
+O_Elves_Armory_4;Rüstkammer;elves;armory;4;2;2;5280;75;;3830;3;0;0
+O_Elves_Armory_5;Rüstkammer;elves;armory;5;3;3;6540;238;;12000;42;0;0
+O_Elves_Armory_6;Rüstkammer;elves;armory;6;3;3;8040;279;;14500;9;0;0
+O_Elves_Armory_7;Rüstkammer;elves;armory;7;3;3;9780;314;;18400;10;0;0
+O_Elves_Armory_8;Rüstkammer;elves;armory;8;3;3;10080;352;;23200;12;0;0
+O_Elves_Armory_9;Rüstkammer;elves;armory;9;4;4;12060;691;;50200;98;0;0
+O_Elves_Armory_10;Rüstkammer;elves;armory;10;4;4;14280;781;;59600;32;0;0
+O_Elves_Armory_11;Rüstkammer;elves;armory;11;4;4;14700;858;;68700;31;0;0
+O_Elves_Armory_12;Rüstkammer;elves;armory;12;4;4;15060;946;;83600;42;0;0
+O_Elves_Armory_13;Rüstkammer;elves;armory;13;4;4;15480;1035;;100000;42;0;0
+O_Elves_Armory_14;Rüstkammer;elves;armory;14;4;4;15900;1123;;118000;41;0;0
+O_Elves_Armory_15;Rüstkammer;elves;armory;15;4;4;16260;1224;;137000;53;0;0
+O_Elves_Armory_16;Rüstkammer;elves;armory;16;5;4;18780;1788;;224000;156;0;0
+O_Elves_Armory_17;Rüstkammer;elves;armory;17;5;4;19140;1960;;278000;37;0;0
+O_Elves_Armory_18;Rüstkammer;elves;armory;18;6;3;21240;2059;;290000;32;0;0
+O_Elves_Armory_19;Rüstkammer;elves;armory;19;6;3;22260;2176;;320000;33;0;0
+O_Elves_Armory_20;Rüstkammer (Brutstätte);elves;armory;20;5;5;23220;3266;;350000;295;0;0;;option1;43200;0;0;0;8300;0;option2;86400;0;0;0;12200;0;option3;172800;0;0;0;17600;0;option4;345600;0;0;0;26000;0
+O_Elves_Armory_21;Rüstkammer (Brutstätte);elves;armory;21;5;5;24120;3606;;380000;105;0;0;;option1;43200;0;0;0;9300;0;option2;86400;0;0;0;13500;0;option3;172800;0;0;0;19600;0;option4;345600;0;0;0;29000;0
+O_Elves_Armory_22;Rüstkammer (Brutstätte);elves;armory;22;5;5;24960;4013;;410000;115;0;0;;option1;43200;0;0;0;10300;0;option2;86400;0;0;0;15100;0;option3;172800;0;0;0;22000;0;option4;345600;0;0;0;32000;0
+O_Elves_Armory_23;Rüstkammer (Brutstätte);elves;armory;23;5;5;25740;4454;;440000;126;0;0;;option1;43200;0;0;0;11500;0;option2;86400;0;0;0;16700;0;option3;172800;0;0;0;24000;0;option4;345600;0;0;0;36000;0
+O_Elves_Armory_24;Rüstkammer (Brutstätte);elves;armory;24;6;4;26460;4733;;480000;79;0;0;;option1;43200;0;0;0;12800;0;option2;86400;0;0;0;18600;0;option3;172800;0;0;0;27000;0;option4;345600;0;0;0;40000;0
+O_Elves_Armory_25;Rüstkammer (Brutstätte);elves;armory;25;6;4;27120;5236;;510000;151;0;0;;option1;43200;0;0;0;14100;0;option2;86400;0;0;0;21000;0;option3;172800;0;0;0;30000;0;option4;345600;0;0;0;44000;0
+O_Elves_Armory_26;Rüstkammer (Brutstätte);elves;armory;26;6;4;27720;5789;;540000;159;0;0;;option1;43200;0;0;0;15400;0;option2;86400;0;0;0;22000;0;option3;172800;0;0;0;33000;0;option4;345600;0;0;0;48000;0
+O_Elves_Armory_27;Rüstkammer (Brutstätte);elves;armory;27;6;4;28320;6394;;580000;177;0;0;;option1;43200;0;0;0;17000;0;option2;86400;0;0;0;25000;0;option3;172800;0;0;0;36000;0;option4;345600;0;0;0;53000;0
+O_Elves_Armory_28;Rüstkammer (Brutstätte);elves;armory;28;7;3;28800;6714;;620000;95;0;0;;option1;43200;0;0;0;18300;0;option2;86400;0;0;0;27000;0;option3;172800;0;0;0;39000;0;option4;345600;0;0;0;58000;0
+O_Elves_Armory_29;Rüstkammer (Brutstätte);elves;armory;29;7;3;29280;7050;;650000;100;0;0;;option1;43200;0;0;0;20000;0;option2;86400;0;0;0;29000;0;option3;172800;0;0;0;43000;0;option4;345600;0;0;0;63000;0
+O_Elves_Armory_30;Rüstkammer (Brutstätte);elves;armory;30;7;3;29700;7527;;690000;113;0;0;;option1;43200;0;0;0;22000;0;option2;86400;0;0;0;32000;0;option3;172800;0;0;0;47000;0;option4;345600;0;0;0;67000;0
+O_Elves_Armory_31;Rüstkammer (Brutstätte);elves;armory;31;7;3;30060;8301;;730000;218;0;0;;option1;43200;0;0;0;24000;0;option2;86400;0;0;0;35000;0;option3;172800;0;0;0;51000;0;option4;345600;0;0;0;74000;0
+O_Elves_Armory_32;Rüstkammer (Brutstätte);elves;armory;32;4;7;30420;12216;;770000;1132;0;0;;option1;43200;0;0;0;26000;0;option2;86400;0;0;0;38000;0;option3;172800;0;0;0;55000;0;option4;345600;0;0;0;80000;0
+O_Elves_Armory_33;Rüstkammer (Brutstätte);elves;armory;33;4;7;30720;13529;;810000;411;0;0;;option1;43200;0;0;0;28000;0;option2;86400;0;0;0;41000;0;option3;172800;0;0;0;60000;0;option4;345600;0;0;0;87000;0
+G_Elves_FactoryStone_1;Marmormanufaktur;elves;goods;1;1;2;40;20;;;;;;;option1;10800;0;0;60;6;0;option2;32400;0;0;100;10;0;option3;86400;0;0;180;18;0;option4;172800;0;0;280;28;0
+G_Elves_FactoryStone_2;Marmormanufaktur;elves;goods;2;1;2;360;24;;510;2;0;0;;option1;10800;0;0;80;8;0;option2;32400;0;0;140;14;0;option3;86400;0;0;260;26;0;option4;172800;0;0;360;36;0
+G_Elves_FactoryStone_3;Marmormanufaktur;elves;goods;3;1;2;1200;29;;1000;3;0;0;;option1;10800;0;0;100;10;0;option2;32400;0;0;180;18;0;option3;86400;0;0;320;32;0;option4;172800;0;0;460;46;0
+G_Elves_FactoryStone_4;Marmormanufaktur;elves;goods;4;1;2;1500;34;;700;2;0;0;;option1;10800;0;0;120;12;0;option2;32400;0;0;220;22;0;option3;86400;0;0;380;38;0;option4;172800;0;0;560;56;0
+G_Elves_FactoryStone_5;Marmormanufaktur;elves;goods;5;1;2;1860;40;;900;3;0;0;;option1;10800;0;0;140;14;0;option2;32400;0;0;260;26;0;option3;86400;0;0;440;44;0;option4;172800;0;0;640;64;0
+G_Elves_FactoryStone_6;Marmormanufaktur;elves;goods;6;2;2;4620;90;;2400;38;0;0;;option1;10800;0;0;320;32;0;option2;32400;0;0;580;58;0;option3;86400;0;0;1000;100;0;option4;172800;0;0;1480;148;0
+G_Elves_FactoryStone_7;Marmormanufaktur;elves;goods;7;2;2;4800;102;;3200;9;0;0;;option1;10800;0;0;360;36;0;option2;32400;0;0;660;66;0;option3;86400;0;0;1120;112;0;option4;172800;0;0;1660;166;0
+G_Elves_FactoryStone_8;Marmormanufaktur;elves;goods;8;2;2;4980;117;;4000;12;0;0;;option1;10800;0;0;420;42;0;option2;32400;0;0;760;76;0;option3;86400;0;0;1320;132;0;option4;172800;0;0;1920;192;0
+G_Elves_FactoryStone_9;Marmormanufaktur;elves;goods;9;2;2;5160;132;;5000;12;0;0;;option1;10800;0;0;460;46;0;option2;32400;0;0;840;84;0;option3;86400;0;0;1440;144;0;option4;172800;0;0;2120;212;0
+G_Elves_FactoryStone_10;Marmormanufaktur;elves;goods;10;3;2;7980;224;;9000;72;0;0;;option1;10800;0;0;760;76;0;option2;32400;0;0;1400;140;0;option3;86400;0;0;2380;238;0;option4;172800;0;0;3500;350;0
+G_Elves_FactoryStone_11;Marmormanufaktur;elves;goods;11;3;2;8220;257;;10000;27;0;0;;option1;10800;0;0;820;82;0;option2;32400;0;0;1500;150;0;option3;86400;0;0;2580;258;0;option4;172800;0;0;3760;376;0
+G_Elves_FactoryStone_12;Marmormanufaktur;elves;goods;12;3;2;8460;299;;13000;36;0;0;;option1;10800;0;0;880;88;0;option2;32400;0;0;1620;162;0;option3;86400;0;0;2760;276;0;option4;172800;0;0;4040;404;0
+G_Elves_FactoryStone_13;Marmormanufaktur;elves;goods;13;3;2;8700;342;;15000;36;0;0;;option1;10800;0;0;960;96;0;option2;32400;0;0;1760;176;0;option3;86400;0;0;3020;302;0;option4;172800;0;0;4420;442;0
+G_Elves_FactoryStone_14;Marmormanufaktur;elves;goods;14;3;2;8940;388;;18000;38;0;0;;option1;10800;0;0;1020;102;0;option2;32400;0;0;1860;186;0;option3;86400;0;0;3200;320;0;option4;172800;0;0;4680;468;0
+G_Elves_FactoryStone_15;Marmormanufaktur;elves;goods;15;3;2;9120;443;;21000;46;0;0;;option1;10800;0;0;1100;110;0;option2;32400;0;0;2020;202;0;option3;86400;0;0;3460;346;0;option4;172800;0;0;5060;506;0
+G_Elves_FactoryStone_16;Marmormanufaktur;elves;goods;16;2;5;15540;853;;17600;328;0;0;;option1;10800;0;0;1900;190;0;option2;32400;0;0;3480;348;0;option3;86400;0;0;5960;596;0;option4;172800;0;0;8740;874;0
+G_Elves_FactoryStone_17;Marmormanufaktur;elves;goods;17;2;5;15840;988;;21400;105;0;0;;option1;10800;0;0;2040;204;0;option2;32400;0;0;3740;374;0;option3;86400;0;0;6400;640;0;option4;172800;0;0;9380;938;0
+G_Elves_FactoryStone_18;Marmormanufaktur;elves;goods;18;2;5;16200;1146;;24900;122;0;0;;option1;10800;0;0;2200;220;0;option2;32400;0;0;4020;402;0;option3;86400;0;0;6900;690;0;option4;172800;0;0;10100;1010;0
+G_Elves_FactoryStone_19;Marmormanufaktur;elves;goods;19;2;5;16500;1327;;28400;139;0;0;;option1;10800;0;0;2380;238;0;option2;32400;0;0;4360;436;0;option3;86400;0;0;7460;746;0;option4;172800;0;0;10900;1090;0
+G_Elves_FactoryStone_20;Marmormanufaktur;elves;goods;20;6;3;30960;2748;;96000;1110;0;0;;option1;10800;0;0;4620;462;0;option2;32400;0;0;8460;846;0;option3;86400;0;0;14500;1450;0;option4;172800;0;0;21200;2120;0
+G_Elves_FactoryStone_21;Marmormanufaktur;elves;goods;21;6;3;31380;3186;;101000;332;0;0;;option1;10800;0;0;4980;498;0;option2;32400;0;0;9120;912;0;option3;86400;0;0;15600;1560;0;option4;172800;0;0;22900;2290;0
+G_Elves_FactoryStone_22;Marmormanufaktur;elves;goods;22;6;3;31680;3694;;107000;383;0;0;;option1;10800;0;0;5360;536;0;option2;32400;0;0;9800;980;0;option3;86400;0;0;16800;1680;0;option4;172800;0;0;24600;2460;0
+G_Elves_FactoryStone_23;Marmormanufaktur;elves;goods;23;6;3;31980;4284;;112000;442;0;0;;option1;10800;0;0;5800;580;0;option2;32400;0;0;10600;1060;0;option3;86400;0;0;18200;1820;0;option4;172800;0;0;26600;2660;0
+G_Elves_FactoryStone_24;Marmormanufaktur;elves;goods;24;5;4;36540;5455;;147000;935;0;0;;option1;10800;0;0;6940;694;0;option2;32400;0;0;12700;1270;0;option3;86400;0;0;21800;2180;0;option4;172800;0;0;31900;3190;0
+G_Elves_FactoryStone_25;Marmormanufaktur;elves;goods;25;5;4;36840;6252;;154000;653;0;0;;option1;10800;0;0;7500;750;0;option2;32400;0;0;13700;1370;0;option3;86400;0;0;23500;2350;0;option4;172800;0;0;34500;3450;0
+G_Elves_FactoryStone_26;Marmormanufaktur;elves;goods;26;5;4;37200;7168;;162000;754;0;0;;option1;10800;0;0;8080;808;0;option2;32400;0;0;14800;1480;0;option3;86400;0;0;25400;2540;0;option4;172800;0;0;37100;3710;0
+G_Elves_FactoryStone_27;Marmormanufaktur;elves;goods;27;5;4;37500;8219;;170000;870;0;0;;option1;10800;0;0;8740;874;0;option2;32400;0;0;16000;1600;0;option3;86400;0;0;27400;2740;0;option4;172800;0;0;40200;4020;0
+G_Elves_FactoryMetal_1;Stahlmanufaktur;elves;goods;1;2;2;80;36;;;;;;;option1;10800;0;0;120;12;0;option2;32400;0;0;220;22;0;option3;86400;0;0;380;38;0;option4;172800;0;0;560;56;0
+G_Elves_FactoryMetal_2;Stahlmanufaktur;elves;goods;2;2;2;720;45;;1000;4;0;0;;option1;10800;0;0;160;16;0;option2;32400;0;0;300;30;0;option3;86400;0;0;500;50;0;option4;172800;0;0;740;74;0
+G_Elves_FactoryMetal_3;Stahlmanufaktur;elves;goods;3;2;2;2400;53;;2000;4;0;0;;option1;10800;0;0;200;20;0;option2;32400;0;0;360;36;0;option3;86400;0;0;620;62;0;option4;172800;0;0;920;92;0
+G_Elves_FactoryMetal_4;Stahlmanufaktur;elves;goods;4;2;2;3060;65;;1400;5;0;0;;option1;10800;0;0;240;24;0;option2;32400;0;0;440;44;0;option3;86400;0;0;760;76;0;option4;172800;0;0;1100;110;0
+G_Elves_FactoryMetal_5;Stahlmanufaktur;elves;goods;5;2;3;5700;115;;2800;33;0;0;;option1;10800;0;0;420;42;0;option2;32400;0;0;760;76;0;option3;86400;0;0;1320;132;0;option4;172800;0;0;1920;192;0
+G_Elves_FactoryMetal_6;Stahlmanufaktur;elves;goods;6;2;3;6960;128;;3700;9;0;0;;option1;10800;0;0;480;48;0;option2;32400;0;0;880;88;0;option3;86400;0;0;1500;150;0;option4;172800;0;0;2200;220;0
+G_Elves_FactoryMetal_7;Stahlmanufaktur;elves;goods;7;2;3;7260;146;;5000;14;0;0;;option1;10800;0;0;560;56;0;option2;32400;0;0;1020;102;0;option3;86400;0;0;1760;176;0;option4;172800;0;0;2580;258;0
+G_Elves_FactoryMetal_8;Stahlmanufaktur;elves;goods;8;2;3;7500;166;;6000;15;0;0;;option1;10800;0;0;620;62;0;option2;32400;0;0;1140;114;0;option3;86400;0;0;1940;194;0;option4;172800;0;0;2840;284;0
+G_Elves_FactoryMetal_9;Stahlmanufaktur;elves;goods;9;3;3;11640;280;;10000;84;0;0;;option1;10800;0;0;1040;104;0;option2;32400;0;0;1900;190;0;option3;86400;0;0;3260;326;0;option4;172800;0;0;4780;478;0
+G_Elves_FactoryMetal_10;Stahlmanufaktur;elves;goods;10;3;3;12000;319;;13000;30;0;0;;option1;10800;0;0;1140;114;0;option2;32400;0;0;2080;208;0;option3;86400;0;0;3580;358;0;option4;172800;0;0;5240;524;0
+G_Elves_FactoryMetal_11;Stahlmanufaktur;elves;goods;11;3;3;12360;364;;16000;36;0;0;;option1;10800;0;0;1240;124;0;option2;32400;0;0;2260;226;0;option3;86400;0;0;3900;390;0;option4;172800;0;0;5700;570;0
+G_Elves_FactoryMetal_12;Stahlmanufaktur;elves;goods;12;3;3;12720;423;;19000;49;0;0;;option1;10800;0;0;1340;134;0;option2;32400;0;0;2460;246;0;option3;86400;0;0;4200;420;0;option4;172800;0;0;6160;616;0
+G_Elves_FactoryMetal_13;Stahlmanufaktur;elves;goods;13;3;3;13020;484;;23000;49;0;0;;option1;10800;0;0;1440;144;0;option2;32400;0;0;2640;264;0;option3;86400;0;0;4520;452;0;option4;172800;0;0;6620;662;0
+G_Elves_FactoryMetal_14;Stahlmanufaktur;elves;goods;14;3;3;13380;547;;27000;50;0;0;;option1;10800;0;0;1540;154;0;option2;32400;0;0;2820;282;0;option3;86400;0;0;4840;484;0;option4;172800;0;0;7080;708;0
+G_Elves_FactoryMetal_15;Stahlmanufaktur;elves;goods;15;3;3;13740;623;;31000;62;0;0;;option1;10800;0;0;1640;164;0;option2;32400;0;0;3000;300;0;option3;86400;0;0;5140;514;0;option4;172800;0;0;7540;754;0
+G_Elves_FactoryMetal_16;Stahlmanufaktur;elves;goods;16;3;5;23340;1202;;8800;444;0;0;;option1;10800;0;0;2840;284;0;option2;32400;0;0;5200;520;0;option3;86400;0;0;8920;892;0;option4;172800;0;0;13000;1300;0
+G_Elves_FactoryMetal_17;Stahlmanufaktur;elves;goods;17;3;5;23820;1393;;10700;141;0;0;;option1;10800;0;0;3060;306;0;option2;32400;0;0;5600;560;0;option3;86400;0;0;9600;960;0;option4;172800;0;0;14100;1410;0
+G_Elves_FactoryMetal_18;Stahlmanufaktur;elves;goods;18;3;5;24300;1616;;12500;164;0;0;;option1;10800;0;0;3300;330;0;option2;32400;0;0;6040;604;0;option3;86400;0;0;10400;1040;0;option4;172800;0;0;15200;1520;0
+G_Elves_FactoryMetal_19;Stahlmanufaktur;elves;goods;19;3;5;24780;1875;;14200;189;0;0;;option1;10800;0;0;3560;356;0;option2;32400;0;0;6520;652;0;option3;86400;0;0;11200;1120;0;option4;172800;0;0;16400;1640;0
+G_Elves_FactoryMetal_20;Stahlmanufaktur;elves;goods;20;3;6;30960;2748;;96000;742;0;0;;option1;10800;0;0;4620;462;0;option2;32400;0;0;8460;846;0;option3;86400;0;0;14500;1450;0;option4;172800;0;0;21200;2120;0
+G_Elves_FactoryMetal_21;Stahlmanufaktur;elves;goods;21;3;6;31380;3186;;101000;332;0;0;;option1;10800;0;0;4980;498;0;option2;32400;0;0;9120;912;0;option3;86400;0;0;15600;1560;0;option4;172800;0;0;22900;2290;0
+G_Elves_FactoryMetal_22;Stahlmanufaktur;elves;goods;22;3;6;31680;3694;;107000;383;0;0;;option1;10800;0;0;5360;536;0;option2;32400;0;0;9800;980;0;option3;86400;0;0;16800;1680;0;option4;172800;0;0;24600;2460;0
+G_Elves_FactoryMetal_23;Stahlmanufaktur;elves;goods;23;3;6;31980;4284;;112000;442;0;0;;option1;10800;0;0;5800;580;0;option2;32400;0;0;10600;1060;0;option3;86400;0;0;18200;1820;0;option4;172800;0;0;26600;2660;0
+G_Elves_FactoryMetal_24;Stahlmanufaktur;elves;goods;24;4;5;36540;5455;;147000;935;0;0;;option1;10800;0;0;6940;694;0;option2;32400;0;0;12700;1270;0;option3;86400;0;0;21800;2180;0;option4;172800;0;0;31900;3190;0
+G_Elves_FactoryMetal_25;Stahlmanufaktur;elves;goods;25;4;5;36840;6252;;154000;653;0;0;;option1;10800;0;0;7500;750;0;option2;32400;0;0;13700;1370;0;option3;86400;0;0;23500;2350;0;option4;172800;0;0;34500;3450;0
+G_Elves_FactoryMetal_26;Stahlmanufaktur;elves;goods;26;4;5;37200;7168;;162000;754;0;0;;option1;10800;0;0;8080;808;0;option2;32400;0;0;14800;1480;0;option3;86400;0;0;25400;2540;0;option4;172800;0;0;37100;3710;0
+G_Elves_FactoryMetal_27;Stahlmanufaktur;elves;goods;27;4;5;37500;8219;;170000;870;0;0;;option1;10800;0;0;8740;874;0;option2;32400;0;0;16000;1600;0;option3;86400;0;0;27400;2740;0;option4;172800;0;0;40200;4020;0
+G_Elves_FactoryWood_1;Holzmanufaktur;elves;goods;1;2;1;40;22;;;;;;;option1;10800;0;0;60;6;0;option2;32400;0;0;100;10;0;option3;86400;0;0;180;18;0;option4;172800;0;0;280;28;0
+G_Elves_FactoryWood_2;Holzmanufaktur;elves;goods;2;2;1;360;26;;510;2;0;0;;option1;10800;0;0;80;8;0;option2;32400;0;0;140;14;0;option3;86400;0;0;260;26;0;option4;172800;0;0;360;36;0
+G_Elves_FactoryWood_3;Holzmanufaktur;elves;goods;3;2;1;1200;31;;1000;3;0;0;;option1;10800;0;0;100;10;0;option2;32400;0;0;180;18;0;option3;86400;0;0;320;32;0;option4;172800;0;0;460;46;0
+G_Elves_FactoryWood_4;Holzmanufaktur;elves;goods;4;2;1;1500;36;;700;3;0;0;;option1;10800;0;0;120;12;0;option2;32400;0;0;220;22;0;option3;86400;0;0;380;38;0;option4;172800;0;0;560;56;0
+G_Elves_FactoryWood_5;Holzmanufaktur;elves;goods;5;2;1;1860;43;;900;4;0;0;;option1;10800;0;0;140;14;0;option2;32400;0;0;260;26;0;option3;86400;0;0;440;44;0;option4;172800;0;0;640;64;0
+G_Elves_FactoryWood_6;Holzmanufaktur;elves;goods;6;2;1;2280;47;;1200;3;0;0;;option1;10800;0;0;160;16;0;option2;32400;0;0;300;30;0;option3;86400;0;0;500;50;0;option4;172800;0;0;740;74;0
+G_Elves_FactoryWood_7;Holzmanufaktur;elves;goods;7;2;2;4800;107;;3200;48;0;0;;option1;10800;0;0;360;36;0;option2;32400;0;0;660;66;0;option3;86400;0;0;1120;112;0;option4;172800;0;0;1660;166;0
+G_Elves_FactoryWood_8;Holzmanufaktur;elves;goods;8;2;2;4980;123;;4000;13;0;0;;option1;10800;0;0;420;42;0;option2;32400;0;0;760;76;0;option3;86400;0;0;1320;132;0;option4;172800;0;0;1920;192;0
+G_Elves_FactoryWood_9;Holzmanufaktur;elves;goods;9;2;2;5160;139;;5000;13;0;0;;option1;10800;0;0;460;46;0;option2;32400;0;0;840;84;0;option3;86400;0;0;1440;144;0;option4;172800;0;0;2120;212;0
+G_Elves_FactoryWood_10;Holzmanufaktur;elves;goods;10;2;2;5340;158;;6000;16;0;0;;option1;10800;0;0;500;50;0;option2;32400;0;0;920;92;0;option3;86400;0;0;1560;156;0;option4;172800;0;0;2300;230;0
+G_Elves_FactoryWood_11;Holzmanufaktur;elves;goods;11;3;2;8220;271;;10000;93;0;0;;option1;10800;0;0;820;82;0;option2;32400;0;0;1500;150;0;option3;86400;0;0;2580;258;0;option4;172800;0;0;3760;376;0
+G_Elves_FactoryWood_12;Holzmanufaktur;elves;goods;12;3;2;8460;317;;13000;40;0;0;;option1;10800;0;0;880;88;0;option2;32400;0;0;1620;162;0;option3;86400;0;0;2760;276;0;option4;172800;0;0;4040;404;0
+G_Elves_FactoryWood_13;Holzmanufaktur;elves;goods;13;3;2;8700;363;;15000;40;0;0;;option1;10800;0;0;960;96;0;option2;32400;0;0;1760;176;0;option3;86400;0;0;3020;302;0;option4;172800;0;0;4420;442;0
+G_Elves_FactoryWood_14;Holzmanufaktur;elves;goods;14;3;2;8940;410;;18000;40;0;0;;option1;10800;0;0;1020;102;0;option2;32400;0;0;1860;186;0;option3;86400;0;0;3200;320;0;option4;172800;0;0;4680;468;0
+G_Elves_FactoryWood_15;Holzmanufaktur;elves;goods;15;3;2;9120;469;;21000;51;0;0;;option1;10800;0;0;1100;110;0;option2;32400;0;0;2020;202;0;option3;86400;0;0;3460;346;0;option4;172800;0;0;5060;506;0
+G_Elves_FactoryWood_16;Holzmanufaktur;elves;goods;16;5;2;15540;904;;26300;361;0;0;;option1;10800;0;0;1900;190;0;option2;32400;0;0;3480;348;0;option3;86400;0;0;5960;596;0;option4;172800;0;0;8740;874;0
+G_Elves_FactoryWood_17;Holzmanufaktur;elves;goods;17;5;2;15840;1047;;32100;116;0;0;;option1;10800;0;0;2040;204;0;option2;32400;0;0;3740;374;0;option3;86400;0;0;6400;640;0;option4;172800;0;0;9380;938;0
+G_Elves_FactoryWood_18;Holzmanufaktur;elves;goods;18;5;2;16200;1213;;37400;134;0;0;;option1;10800;0;0;2200;220;0;option2;32400;0;0;4020;402;0;option3;86400;0;0;6900;690;0;option4;172800;0;0;10100;1010;0
+G_Elves_FactoryWood_19;Holzmanufaktur;elves;goods;19;5;2;16500;1405;;42600;154;0;0;;option1;10800;0;0;2380;238;0;option2;32400;0;0;4360;436;0;option3;86400;0;0;7460;746;0;option4;172800;0;0;10900;1090;0
+G_Elves_FactoryWood_20;Holzmanufaktur;elves;goods;20;6;3;30960;2748;;96000;1004;0;0;;option1;10800;0;0;4620;462;0;option2;32400;0;0;8460;846;0;option3;86400;0;0;14500;1450;0;option4;172800;0;0;21200;2120;0
+G_Elves_FactoryWood_21;Holzmanufaktur;elves;goods;21;6;3;31380;3186;;101000;332;0;0;;option1;10800;0;0;4980;498;0;option2;32400;0;0;9120;912;0;option3;86400;0;0;15600;1560;0;option4;172800;0;0;22900;2290;0
+G_Elves_FactoryWood_22;Holzmanufaktur;elves;goods;22;6;3;31680;3694;;107000;383;0;0;;option1;10800;0;0;5360;536;0;option2;32400;0;0;9800;980;0;option3;86400;0;0;16800;1680;0;option4;172800;0;0;24600;2460;0
+G_Elves_FactoryWood_23;Holzmanufaktur;elves;goods;23;6;3;31980;4284;;112000;442;0;0;;option1;10800;0;0;5800;580;0;option2;32400;0;0;10600;1060;0;option3;86400;0;0;18200;1820;0;option4;172800;0;0;26600;2660;0
+G_Elves_FactoryWood_24;Holzmanufaktur;elves;goods;24;4;5;36540;5455;;147000;935;0;0;;option1;10800;0;0;6940;694;0;option2;32400;0;0;12700;1270;0;option3;86400;0;0;21800;2180;0;option4;172800;0;0;31900;3190;0
+G_Elves_FactoryWood_25;Holzmanufaktur;elves;goods;25;4;5;36840;6252;;154000;653;0;0;;option1;10800;0;0;7500;750;0;option2;32400;0;0;13700;1370;0;option3;86400;0;0;23500;2350;0;option4;172800;0;0;34500;3450;0
+G_Elves_FactoryWood_26;Holzmanufaktur;elves;goods;26;4;5;37200;7168;;162000;754;0;0;;option1;10800;0;0;8080;808;0;option2;32400;0;0;14800;1480;0;option3;86400;0;0;25400;2540;0;option4;172800;0;0;37100;3710;0
+G_Elves_FactoryWood_27;Holzmanufaktur;elves;goods;27;4;5;37500;8219;;170000;870;0;0;;option1;10800;0;0;8740;874;0;option2;32400;0;0;16000;1600;0;option3;86400;0;0;27400;2740;0;option4;172800;0;0;40200;4020;0
+G_Elves_FactoryGlass_1;Kristallmanufaktur;elves;goods;1;3;2;1860;92;;;;;;;option1;10800;0;0;720;72;0;option2;32400;0;0;1280;128;0;option3;86400;0;0;2240;224;0;option4;172800;0;0;3280;328;0
+G_Elves_FactoryGlass_2;Kristallmanufaktur;elves;goods;2;3;2;2820;111;;1000;11;0;0;;option1;10800;0;0;960;96;0;option2;32400;0;0;1760;176;0;option3;86400;0;0;3040;304;0;option4;172800;0;0;4400;440;0
+G_Elves_FactoryGlass_3;Kristallmanufaktur;elves;goods;3;3;2;6060;130;;2100;11;0;0;;option1;10800;0;0;1200;120;0;option2;32400;0;0;2160;216;0;option3;86400;0;0;3760;376;0;option4;172800;0;0;5520;552;0
+G_Elves_FactoryGlass_4;Kristallmanufaktur;elves;goods;4;3;2;7680;154;;3600;13;0;0;;option1;10800;0;0;1440;144;0;option2;32400;0;0;2640;264;0;option3;86400;0;0;4480;448;0;option4;172800;0;0;6640;664;0
+G_Elves_FactoryGlass_5;Kristallmanufaktur;elves;goods;5;3;2;9540;179;;5000;14;0;0;;option1;10800;0;0;1680;168;0;option2;32400;0;0;3040;304;0;option3;86400;0;0;5280;528;0;option4;172800;0;0;7680;768;0
+G_Elves_FactoryGlass_6;Kristallmanufaktur;elves;goods;6;3;2;11640;199;;6000;16;0;0;;option1;10800;0;0;1920;192;0;option2;32400;0;0;3520;352;0;option3;86400;0;0;6000;600;0;option4;172800;0;0;8800;880;0
+G_Elves_FactoryGlass_7;Kristallmanufaktur;elves;goods;7;3;3;18120;339;;12000;111;0;0;;option1;10800;0;0;3360;336;0;option2;32400;0;0;6160;616;0;option3;86400;0;0;10600;1060;0;option4;172800;0;0;15400;1540;0
+G_Elves_FactoryGlass_8;Kristallmanufaktur;elves;goods;8;3;3;18780;386;;15000;40;0;0;;option1;10800;0;0;3760;376;0;option2;32400;0;0;6880;688;0;option3;86400;0;0;11800;1180;0;option4;172800;0;0;17300;1730;0
+G_Elves_FactoryGlass_9;Kristallmanufaktur;elves;goods;9;3;3;19380;436;;17000;41;0;0;;option1;10800;0;0;4160;416;0;option2;32400;0;0;7600;760;0;option3;86400;0;0;13000;1300;0;option4;172800;0;0;19100;1910;0
+G_Elves_FactoryGlass_10;Kristallmanufaktur;elves;goods;10;3;3;19980;497;;21000;51;0;0;;option1;10800;0;0;4560;456;0;option2;32400;0;0;8320;832;0;option3;86400;0;0;14300;1430;0;option4;172800;0;0;21000;2100;0
+G_Elves_FactoryGlass_11;Kristallmanufaktur;elves;goods;11;4;3;27480;761;;34000;217;0;0;;option1;10800;0;0;6560;656;0;option2;32400;0;0;12000;1200;0;option3;86400;0;0;20600;2060;0;option4;172800;0;0;30200;3020;0
+G_Elves_FactoryGlass_12;Kristallmanufaktur;elves;goods;12;4;3;28260;886;;43000;110;0;0;;option1;10800;0;0;7120;712;0;option2;32400;0;0;13000;1300;0;option3;86400;0;0;22300;2230;0;option4;172800;0;0;32700;3270;0
+G_Elves_FactoryGlass_13;Kristallmanufaktur;elves;goods;13;4;3;29040;1016;;50000;112;0;0;;option1;10800;0;0;7680;768;0;option2;32400;0;0;14100;1410;0;option3;86400;0;0;24100;2410;0;option4;172800;0;0;35300;3530;0
+G_Elves_FactoryGlass_14;Kristallmanufaktur;elves;goods;14;4;3;29760;1150;;60000;114;0;0;;option1;10800;0;0;8240;824;0;option2;32400;0;0;15000;1500;0;option3;86400;0;0;25800;2580;0;option4;172800;0;0;37800;3780;0
+G_Elves_FactoryGlass_15;Kristallmanufaktur;elves;goods;15;4;3;30480;1315;;70000;143;0;0;;option1;10800;0;0;8720;872;0;option2;32400;0;0;15900;1590;0;option3;86400;0;0;27400;2740;0;option4;172800;0;0;40100;4010;0
+G_Elves_FactoryGlass_16;Kristallmanufaktur;elves;goods;16;4;4;44520;1910;;112000;436;0;0;;option1;10800;0;0;12600;1260;0;option2;32400;0;0;23000;2300;0;option3;86400;0;0;39400;3940;0;option4;172800;0;0;57700;5770;0
+G_Elves_FactoryGlass_17;Kristallmanufaktur;elves;goods;17;4;4;44760;2214;;120000;236;0;0;;option1;10800;0;0;13600;1360;0;option2;32400;0;0;24900;2490;0;option3;86400;0;0;42700;4270;0;option4;172800;0;0;62500;6250;0
+G_Elves_FactoryGlass_18;Kristallmanufaktur;elves;goods;18;4;4;45000;2566;;126000;272;0;0;;option1;10800;0;0;14600;1460;0;option2;32400;0;0;26800;2680;0;option3;86400;0;0;45900;4590;0;option4;172800;0;0;67300;6730;0
+G_Elves_FactoryGlass_19;Kristallmanufaktur;elves;goods;19;4;4;45180;2974;;133000;313;0;0;;option1;10800;0;0;15800;1580;0;option2;32400;0;0;28800;2880;0;option3;86400;0;0;49400;4940;0;option4;172800;0;0;72400;7240;0
+G_Elves_FactoryGlass_20;Kristallmanufaktur;elves;goods;20;4;5;58740;4275;;197000;1007;0;0;;option1;10800;0;0;21300;2130;0;option2;32400;0;0;39000;3900;0;option3;86400;0;0;66800;6680;0;option4;172800;0;0;97800;9780;0
+G_Elves_FactoryGlass_21;Kristallmanufaktur;elves;goods;21;4;5;59280;4956;;207000;516;0;0;;option1;10800;0;0;23000;2300;0;option2;32400;0;0;42000;4200;0;option3;86400;0;0;72100;7210;0;option4;172800;0;0;106000;10600;0
+G_Elves_FactoryGlass_22;Kristallmanufaktur;elves;goods;22;4;5;59880;5746;;220000;596;0;0;;option1;10800;0;0;24800;2480;0;option2;32400;0;0;45400;4540;0;option3;86400;0;0;77800;7780;0;option4;172800;0;0;114000;11400;0
+G_Elves_FactoryGlass_23;Kristallmanufaktur;elves;goods;23;4;5;60360;6663;;232000;687;0;0;;option1;10800;0;0;26700;2670;0;option2;32400;0;0;48900;4890;0;option3;86400;0;0;83800;8380;0;option4;172800;0;0;123000;12300;0
+G_Elves_FactoryGlass_24;Kristallmanufaktur;elves;goods;24;4;6;74460;9272;;324000;1984;0;0;;option1;10800;0;0;34600;3460;0;option2;32400;0;0;63400;6340;0;option3;86400;0;0;109000;10900;0;option4;172800;0;0;159000;15900;0
+G_Elves_FactoryGlass_25;Kristallmanufaktur;elves;goods;25;4;6;75000;10754;;340000;1098;0;0;;option1;10800;0;0;37400;3740;0;option2;32400;0;0;68400;6840;0;option3;86400;0;0;117000;11700;0;option4;172800;0;0;172000;17200;0
+G_Elves_FactoryGlass_26;Kristallmanufaktur;elves;goods;26;4;6;75660;12472;;358000;1266;0;0;;option1;10800;0;0;40300;4030;0;option2;32400;0;0;73800;7380;0;option3;86400;0;0;127000;12700;0;option4;172800;0;0;185000;18500;0
+G_Elves_FactoryGlass_27;Kristallmanufaktur;elves;goods;27;4;6;76200;14467;;375000;1461;0;0;;option1;10800;0;0;43500;4350;0;option2;32400;0;0;79600;7960;0;option3;86400;0;0;137000;13700;0;option4;172800;0;0;200000;20000;0
+G_Elves_FactoryPaper_1;Schriftrollenmanufaktur;elves;goods;1;3;3;2820;113;;;;;;;option1;10800;0;0;1040;104;0;option2;32400;0;0;1920;192;0;option3;86400;0;0;3280;328;0;option4;172800;0;0;4800;480;0
+G_Elves_FactoryPaper_2;Schriftrollenmanufaktur;elves;goods;2;3;3;4260;141;;1400;13;0;0;;option1;10800;0;0;1440;144;0;option2;32400;0;0;2640;264;0;option3;86400;0;0;4480;448;0;option4;172800;0;0;6640;664;0
+G_Elves_FactoryPaper_3;Schriftrollenmanufaktur;elves;goods;3;3;3;9120;169;;3200;14;0;0;;option1;10800;0;0;1760;176;0;option2;32400;0;0;3200;320;0;option3;86400;0;0;5520;552;0;option4;172800;0;0;8080;808;0
+G_Elves_FactoryPaper_4;Schriftrollenmanufaktur;elves;goods;4;3;3;11520;205;;5000;16;0;0;;option1;10800;0;0;2160;216;0;option2;32400;0;0;3920;392;0;option3;86400;0;0;6800;680;0;option4;172800;0;0;9920;992;0
+G_Elves_FactoryPaper_5;Schriftrollenmanufaktur;elves;goods;5;3;3;14340;243;;7000;17;0;0;;option1;10800;0;0;2560;256;0;option2;32400;0;0;4720;472;0;option3;86400;0;0;8000;800;0;option4;172800;0;0;11800;1180;0
+G_Elves_FactoryPaper_6;Schriftrollenmanufaktur;elves;goods;6;3;4;23340;360;;12000;83;0;0;;option1;10800;0;0;3920;392;0;option2;32400;0;0;7200;720;0;option3;86400;0;0;12300;1230;0;option4;172800;0;0;18000;1800;0
+G_Elves_FactoryPaper_7;Schriftrollenmanufaktur;elves;goods;7;3;4;24180;408;;16000;37;0;0;;option1;10800;0;0;4400;440;0;option2;32400;0;0;8080;808;0;option3;86400;0;0;13800;1380;0;option4;172800;0;0;20200;2020;0
+G_Elves_FactoryPaper_8;Schriftrollenmanufaktur;elves;goods;8;3;4;25020;464;;20000;43;0;0;;option1;10800;0;0;4960;496;0;option2;32400;0;0;9040;904;0;option3;86400;0;0;15600;1560;0;option4;172800;0;0;22800;2280;0
+G_Elves_FactoryPaper_9;Schriftrollenmanufaktur;elves;goods;9;3;4;25860;523;;23000;45;0;0;;option1;10800;0;0;5520;552;0;option2;32400;0;0;10100;1010;0;option3;86400;0;0;17400;1740;0;option4;172800;0;0;25400;2540;0
+G_Elves_FactoryPaper_10;Schriftrollenmanufaktur;elves;goods;10;4;4;35580;792;;38000;201;0;0;;option1;10800;0;0;8080;808;0;option2;32400;0;0;14800;1480;0;option3;86400;0;0;25400;2540;0;option4;172800;0;0;37100;3710;0
+G_Elves_FactoryPaper_11;Schriftrollenmanufaktur;elves;goods;11;4;4;36660;907;;46000;91;0;0;;option1;10800;0;0;8800;880;0;option2;32400;0;0;16100;1610;0;option3;86400;0;0;27600;2760;0;option4;172800;0;0;40400;4040;0
+G_Elves_FactoryPaper_12;Schriftrollenmanufaktur;elves;goods;12;4;4;37680;1053;;60000;120;0;0;;option1;10800;0;0;9520;952;0;option2;32400;0;0;17400;1740;0;option3;86400;0;0;29800;2980;0;option4;172800;0;0;43800;4380;0
+G_Elves_FactoryPaper_13;Schriftrollenmanufaktur;elves;goods;13;4;4;38700;1204;;70000;122;0;0;;option1;10800;0;0;10200;1020;0;option2;32400;0;0;18700;1870;0;option3;86400;0;0;32200;3220;0;option4;172800;0;0;47000;4700;0
+G_Elves_FactoryPaper_14;Schriftrollenmanufaktur;elves;goods;14;4;4;39720;1361;;80000;125;0;0;;option1;10800;0;0;11000;1100;0;option2;32400;0;0;20100;2010;0;option3;86400;0;0;34400;3440;0;option4;172800;0;0;50300;5030;0
+G_Elves_FactoryPaper_15;Schriftrollenmanufaktur;elves;goods;15;4;4;40680;1551;;90000;155;0;0;;option1;10800;0;0;11700;1170;0;option2;32400;0;0;21400;2140;0;option3;86400;0;0;36600;3660;0;option4;172800;0;0;53700;5370;0
+G_Elves_FactoryPaper_16;Schriftrollenmanufaktur;elves;goods;16;4;5;55680;2387;;140000;720;0;0;;option1;10800;0;0;15800;1580;0;option2;32400;0;0;28800;2880;0;option3;86400;0;0;49400;4940;0;option4;172800;0;0;72400;7240;0
+G_Elves_FactoryPaper_17;Schriftrollenmanufaktur;elves;goods;17;4;5;55980;2767;;149000;295;0;0;;option1;10800;0;0;17000;1700;0;option2;32400;0;0;31000;3100;0;option3;86400;0;0;53200;5320;0;option4;172800;0;0;77900;7790;0
+G_Elves_FactoryPaper_18;Schriftrollenmanufaktur;elves;goods;18;4;5;56280;3206;;157000;339;0;0;;option1;10800;0;0;18300;1830;0;option2;32400;0;0;33500;3350;0;option3;86400;0;0;57500;5750;0;option4;172800;0;0;84200;8420;0
+G_Elves_FactoryPaper_19;Schriftrollenmanufaktur;elves;goods;19;4;5;56460;3717;;166000;392;0;0;;option1;10800;0;0;19800;1980;0;option2;32400;0;0;36200;3620;0;option3;86400;0;0;62000;6200;0;option4;172800;0;0;90800;9080;0
+G_Elves_FactoryPaper_20;Schriftrollenmanufaktur;elves;goods;20;5;4;58740;4275;;197000;419;0;0;;option1;10800;0;0;21300;2130;0;option2;32400;0;0;39000;3900;0;option3;86400;0;0;66800;6680;0;option4;172800;0;0;97800;9780;0
+G_Elves_FactoryPaper_21;Schriftrollenmanufaktur;elves;goods;21;5;4;59280;4956;;207000;516;0;0;;option1;10800;0;0;23000;2300;0;option2;32400;0;0;42000;4200;0;option3;86400;0;0;72100;7210;0;option4;172800;0;0;106000;10600;0
+G_Elves_FactoryPaper_22;Schriftrollenmanufaktur;elves;goods;22;5;4;59880;5746;;220000;596;0;0;;option1;10800;0;0;24800;2480;0;option2;32400;0;0;45400;4540;0;option3;86400;0;0;77800;7780;0;option4;172800;0;0;114000;11400;0
+G_Elves_FactoryPaper_23;Schriftrollenmanufaktur;elves;goods;23;5;4;60360;6663;;232000;687;0;0;;option1;10800;0;0;26700;2670;0;option2;32400;0;0;48900;4890;0;option3;86400;0;0;83800;8380;0;option4;172800;0;0;123000;12300;0
+G_Elves_FactoryPaper_24;Schriftrollenmanufaktur;elves;goods;24;8;3;74460;9272;;324000;1984;0;0;;option1;10800;0;0;34600;3460;0;option2;32400;0;0;63400;6340;0;option3;86400;0;0;109000;10900;0;option4;172800;0;0;159000;15900;0
+G_Elves_FactoryPaper_25;Schriftrollenmanufaktur;elves;goods;25;8;3;75000;10754;;340000;1098;0;0;;option1;10800;0;0;37400;3740;0;option2;32400;0;0;68400;6840;0;option3;86400;0;0;117000;11700;0;option4;172800;0;0;172000;17200;0
+G_Elves_FactoryPaper_26;Schriftrollenmanufaktur;elves;goods;26;8;3;75660;12472;;358000;1266;0;0;;option1;10800;0;0;40300;4030;0;option2;32400;0;0;73800;7380;0;option3;86400;0;0;127000;12700;0;option4;172800;0;0;185000;18500;0
+G_Elves_FactoryPaper_27;Schriftrollenmanufaktur;elves;goods;27;8;3;76200;14467;;375000;1461;0;0;;option1;10800;0;0;43500;4350;0;option2;32400;0;0;79600;7960;0;option3;86400;0;0;137000;13700;0;option4;172800;0;0;200000;20000;0
+G_Elves_FactoryFabric_1;Seidenmanufaktur;elves;goods;1;2;3;1860;84;;;;;;;option1;10800;0;0;720;72;0;option2;32400;0;0;1280;128;0;option3;86400;0;0;2240;224;0;option4;172800;0;0;3280;328;0
+G_Elves_FactoryFabric_2;Seidenmanufaktur;elves;goods;2;2;3;2820;102;;1000;9;0;0;;option1;10800;0;0;960;96;0;option2;32400;0;0;1760;176;0;option3;86400;0;0;3040;304;0;option4;172800;0;0;4400;440;0
+G_Elves_FactoryFabric_3;Seidenmanufaktur;elves;goods;3;2;3;6060;122;;2100;11;0;0;;option1;10800;0;0;1200;120;0;option2;32400;0;0;2160;216;0;option3;86400;0;0;3760;376;0;option4;172800;0;0;5520;552;0
+G_Elves_FactoryFabric_4;Seidenmanufaktur;elves;goods;4;3;3;11520;218;;5000;69;0;0;;option1;10800;0;0;2160;216;0;option2;32400;0;0;3920;392;0;option3;86400;0;0;6800;680;0;option4;172800;0;0;9920;992;0
+G_Elves_FactoryFabric_5;Seidenmanufaktur;elves;goods;5;3;3;14340;256;;7000;19;0;0;;option1;10800;0;0;2560;256;0;option2;32400;0;0;4720;472;0;option3;86400;0;0;8000;800;0;option4;172800;0;0;11800;1180;0
+G_Elves_FactoryFabric_6;Seidenmanufaktur;elves;goods;6;3;3;17520;284;;9000;21;0;0;;option1;10800;0;0;2960;296;0;option2;32400;0;0;5440;544;0;option3;86400;0;0;9280;928;0;option4;172800;0;0;13600;1360;0
+G_Elves_FactoryFabric_7;Seidenmanufaktur;elves;goods;7;3;3;18120;322;;12000;31;0;0;;option1;10800;0;0;3360;336;0;option2;32400;0;0;6160;616;0;option3;86400;0;0;10600;1060;0;option4;172800;0;0;15400;1540;0
+G_Elves_FactoryFabric_8;Seidenmanufaktur;elves;goods;8;3;4;25020;489;;20000;129;0;0;;option1;10800;0;0;4960;496;0;option2;32400;0;0;9040;904;0;option3;86400;0;0;15600;1560;0;option4;172800;0;0;22800;2280;0
+G_Elves_FactoryFabric_9;Seidenmanufaktur;elves;goods;9;3;4;25860;552;;23000;50;0;0;;option1;10800;0;0;5520;552;0;option2;32400;0;0;10100;1010;0;option3;86400;0;0;17400;1740;0;option4;172800;0;0;25400;2540;0
+G_Elves_FactoryFabric_10;Seidenmanufaktur;elves;goods;10;3;4;26700;629;;28000;62;0;0;;option1;10800;0;0;6000;600;0;option2;32400;0;0;11000;1100;0;option3;86400;0;0;18800;1880;0;option4;172800;0;0;27600;2760;0
+G_Elves_FactoryFabric_11;Seidenmanufaktur;elves;goods;11;3;4;27480;719;;34000;75;0;0;;option1;10800;0;0;6560;656;0;option2;32400;0;0;12000;1200;0;option3;86400;0;0;20600;2060;0;option4;172800;0;0;30200;3020;0
+G_Elves_FactoryFabric_12;Seidenmanufaktur;elves;goods;12;3;4;28260;838;;43000;101;0;0;;option1;10800;0;0;7120;712;0;option2;32400;0;0;13000;1300;0;option3;86400;0;0;22300;2230;0;option4;172800;0;0;32700;3270;0
+G_Elves_FactoryFabric_13;Seidenmanufaktur;elves;goods;13;3;4;29040;960;;50000;102;0;0;;option1;10800;0;0;7680;768;0;option2;32400;0;0;14100;1410;0;option3;86400;0;0;24100;2410;0;option4;172800;0;0;35300;3530;0
+G_Elves_FactoryFabric_14;Seidenmanufaktur;elves;goods;14;3;4;29760;1086;;60000;104;0;0;;option1;10800;0;0;8240;824;0;option2;32400;0;0;15000;1500;0;option3;86400;0;0;25800;2580;0;option4;172800;0;0;37800;3780;0
+G_Elves_FactoryFabric_15;Seidenmanufaktur;elves;goods;15;3;4;30480;1239;;70000;129;0;0;;option1;10800;0;0;8720;872;0;option2;32400;0;0;15900;1590;0;option3;86400;0;0;27400;2740;0;option4;172800;0;0;40100;4010;0
+G_Elves_FactoryFabric_16;Seidenmanufaktur;elves;goods;16;4;5;55680;2387;;140000;919;0;0;;option1;10800;0;0;15800;1580;0;option2;32400;0;0;28800;2880;0;option3;86400;0;0;49400;4940;0;option4;172800;0;0;72400;7240;0
+G_Elves_FactoryFabric_17;Seidenmanufaktur;elves;goods;17;4;5;55980;2767;;149000;295;0;0;;option1;10800;0;0;17000;1700;0;option2;32400;0;0;31000;3100;0;option3;86400;0;0;53200;5320;0;option4;172800;0;0;77900;7790;0
+G_Elves_FactoryFabric_18;Seidenmanufaktur;elves;goods;18;4;5;56280;3206;;157000;339;0;0;;option1;10800;0;0;18300;1830;0;option2;32400;0;0;33500;3350;0;option3;86400;0;0;57500;5750;0;option4;172800;0;0;84200;8420;0
+G_Elves_FactoryFabric_19;Seidenmanufaktur;elves;goods;19;4;5;56460;3717;;166000;392;0;0;;option1;10800;0;0;19800;1980;0;option2;32400;0;0;36200;3620;0;option3;86400;0;0;62000;6200;0;option4;172800;0;0;90800;9080;0
+G_Elves_FactoryFabric_20;Seidenmanufaktur;elves;goods;20;5;4;58740;4275;;197000;419;0;0;;option1;10800;0;0;21300;2130;0;option2;32400;0;0;39000;3900;0;option3;86400;0;0;66800;6680;0;option4;172800;0;0;97800;9780;0
+G_Elves_FactoryFabric_21;Seidenmanufaktur;elves;goods;21;5;4;59280;4956;;207000;516;0;0;;option1;10800;0;0;23000;2300;0;option2;32400;0;0;42000;4200;0;option3;86400;0;0;72100;7210;0;option4;172800;0;0;106000;10600;0
+G_Elves_FactoryFabric_22;Seidenmanufaktur;elves;goods;22;5;4;59880;5746;;220000;596;0;0;;option1;10800;0;0;24800;2480;0;option2;32400;0;0;45400;4540;0;option3;86400;0;0;77800;7780;0;option4;172800;0;0;114000;11400;0
+G_Elves_FactoryFabric_23;Seidenmanufaktur;elves;goods;23;5;4;60360;6663;;232000;687;0;0;;option1;10800;0;0;26700;2670;0;option2;32400;0;0;48900;4890;0;option3;86400;0;0;83800;8380;0;option4;172800;0;0;123000;12300;0
+G_Elves_FactoryFabric_24;Seidenmanufaktur;elves;goods;24;3;8;74460;9272;;324000;1984;0;0;;option1;10800;0;0;34600;3460;0;option2;32400;0;0;63400;6340;0;option3;86400;0;0;109000;10900;0;option4;172800;0;0;159000;15900;0
+G_Elves_FactoryFabric_25;Seidenmanufaktur;elves;goods;25;3;8;75000;10754;;340000;1098;0;0;;option1;10800;0;0;37400;3740;0;option2;32400;0;0;68400;6840;0;option3;86400;0;0;117000;11700;0;option4;172800;0;0;172000;17200;0
+G_Elves_FactoryFabric_26;Seidenmanufaktur;elves;goods;26;3;8;75660;12472;;358000;1266;0;0;;option1;10800;0;0;40300;4030;0;option2;32400;0;0;73800;7380;0;option3;86400;0;0;127000;12700;0;option4;172800;0;0;185000;18500;0
+G_Elves_FactoryFabric_27;Seidenmanufaktur;elves;goods;27;3;8;76200;14467;;375000;1461;0;0;;option1;10800;0;0;43500;4350;0;option2;32400;0;0;79600;7960;0;option3;86400;0;0;137000;13700;0;option4;172800;0;0;200000;20000;0
+G_Elves_FactoryElixir_1;Elixiermanufaktur;elves;goods;1;4;3;5280;211;;;;;;;option1;10800;0;0;5760;576;0;option2;32400;0;0;10600;1060;0;option3;86400;0;0;17900;1790;0;option4;172800;0;0;26600;2660;0
+G_Elves_FactoryElixir_2;Elixiermanufaktur;elves;goods;2;4;3;7980;254;;2000;24;0;0;;option1;10800;0;0;7680;768;0;option2;32400;0;0;14100;1410;0;option3;86400;0;0;24000;2400;0;option4;172800;0;0;35200;3520;0
+G_Elves_FactoryElixir_3;Elixiermanufaktur;elves;goods;3;4;3;17100;298;;5000;26;0;0;;option1;10800;0;0;9280;928;0;option2;32400;0;0;17000;1700;0;option3;86400;0;0;29100;2910;0;option4;172800;0;0;42600;4260;0
+G_Elves_FactoryElixir_4;Elixiermanufaktur;elves;goods;4;4;3;21480;351;;10000;29;0;0;;option1;10800;0;0;11500;1150;0;option2;32400;0;0;21100;2110;0;option3;86400;0;0;36200;3620;0;option4;172800;0;0;52800;5280;0
+G_Elves_FactoryElixir_5;Elixiermanufaktur;elves;goods;5;4;4;35640;545;;16000;139;0;0;;option1;10800;0;0;17900;1790;0;option2;32400;0;0;32600;3260;0;option3;86400;0;0;56300;5630;0;option4;172800;0;0;82200;8220;0
+G_Elves_FactoryElixir_6;Elixiermanufaktur;elves;goods;6;4;4;43560;606;;21000;48;0;0;;option1;10800;0;0;20800;2080;0;option2;32400;0;0;38100;3810;0;option3;86400;0;0;65300;6530;0;option4;172800;0;0;95700;9570;0
+G_Elves_FactoryElixir_7;Elixiermanufaktur;elves;goods;7;4;4;45180;688;;30000;68;0;0;;option1;10800;0;0;23700;2370;0;option2;32400;0;0;43200;4320;0;option3;86400;0;0;74200;7420;0;option4;172800;0;0;109000;10900;0
+G_Elves_FactoryElixir_8;Elixiermanufaktur;elves;goods;8;4;4;46740;785;;36000;81;0;0;;option1;10800;0;0;26600;2660;0;option2;32400;0;0;48600;4860;0;option3;86400;0;0;83200;8320;0;option4;172800;0;0;122000;12200;0
+G_Elves_FactoryElixir_9;Elixiermanufaktur;elves;goods;9;4;5;60420;1107;;50000;260;0;0;;option1;10800;0;0;36800;3680;0;option2;32400;0;0;67200;6720;0;option3;86400;0;0;116000;11600;0;option4;172800;0;0;169000;16900;0
+G_Elves_FactoryElixir_10;Elixiermanufaktur;elves;goods;10;4;5;62280;1263;;70000;131;0;0;;option1;10800;0;0;40300;4030;0;option2;32400;0;0;73900;7390;0;option3;86400;0;0;126000;12600;0;option4;172800;0;0;185000;18500;0
+G_Elves_FactoryElixir_11;Elixiermanufaktur;elves;goods;11;4;5;64200;1447;;80000;157;0;0;;option1;10800;0;0;43800;4380;0;option2;32400;0;0;80300;8030;0;option3;86400;0;0;138000;13800;0;option4;172800;0;0;201000;20100;0
+G_Elves_FactoryElixir_12;Elixiermanufaktur;elves;goods;12;4;5;66000;1688;;100000;210;0;0;;option1;10800;0;0;47400;4740;0;option2;32400;0;0;86700;8670;0;option3;86400;0;0;148000;14800;0;option4;172800;0;0;218000;21800;0
+G_Elves_FactoryElixir_13;Elixiermanufaktur;elves;goods;13;4;5;67800;1935;;120000;214;0;0;;option1;10800;0;0;51200;5120;0;option2;32400;0;0;93800;9380;0;option3;86400;0;0;161000;16100;0;option4;172800;0;0;235000;23500;0
+G_Elves_FactoryElixir_14;Elixiermanufaktur;elves;goods;14;4;5;69540;2191;;140000;218;0;0;;option1;10800;0;0;54700;5470;0;option2;32400;0;0;100000;10000;0;option3;86400;0;0;172000;17200;0;option4;172800;0;0;252000;25200;0
+G_Elves_FactoryElixir_15;Elixiermanufaktur;elves;goods;15;4;5;71220;2504;;160000;271;0;0;;option1;10800;0;0;58200;5820;0;option2;32400;0;0;107000;10700;0;option3;86400;0;0;183000;18300;0;option4;172800;0;0;268000;26800;0
+G_Elves_FactoryElixir_16;Elixiermanufaktur;elves;goods;16;4;5;78000;2708;;220000;81;0;0;;option1;10800;0;0;63000;6300;0;option2;32400;0;0;115000;11500;0;option3;86400;0;0;198000;19800;0;option4;172800;0;0;290000;29000;0
+G_Elves_FactoryElixir_17;Elixiermanufaktur;elves;goods;17;4;5;78000;3138;;232000;333;0;0;;option1;10800;0;0;67800;6780;0;option2;32400;0;0;124000;12400;0;option3;86400;0;0;213000;21300;0;option4;172800;0;0;312000;31200;0
+G_Elves_FactoryElixir_18;Elixiermanufaktur;elves;goods;18;4;5;79200;3636;;246000;384;0;0;;option1;10800;0;0;73300;7330;0;option2;32400;0;0;134000;13400;0;option3;86400;0;0;230000;23000;0;option4;172800;0;0;337000;33700;0
+G_Elves_FactoryElixir_19;Elixiermanufaktur;elves;goods;19;4;5;80400;4214;;256000;443;0;0;;option1;10800;0;0;79000;7900;0;option2;32400;0;0;145000;14500;0;option3;86400;0;0;248000;24800;0;option4;172800;0;0;363000;36300;0
+G_Elves_FactoryElixir_20;Elixiermanufaktur;elves;goods;20;6;4;99360;5863;;367000;1280;0;0;;option1;10800;0;0;102000;10200;0;option2;32400;0;0;188000;18800;0;option3;86400;0;0;321000;32100;0;option4;172800;0;0;470000;47000;0
+G_Elves_FactoryElixir_21;Elixiermanufaktur;elves;goods;21;6;4;100800;6797;;386000;708;0;0;;option1;10800;0;0;110000;11000;0;option2;32400;0;0;202000;20200;0;option3;86400;0;0;347000;34700;0;option4;172800;0;0;507000;50700;0
+G_Elves_FactoryElixir_22;Elixiermanufaktur;elves;goods;22;6;4;102240;7881;;409000;817;0;0;;option1;10800;0;0;119000;11900;0;option2;32400;0;0;218000;21800;0;option3;86400;0;0;373000;37300;0;option4;172800;0;0;547000;54700;0
+G_Elves_FactoryElixir_23;Elixiermanufaktur;elves;goods;23;6;4;102240;9138;;420000;943;0;0;;option1;10800;0;0;129000;12900;0;option2;32400;0;0;236000;23600;0;option3;86400;0;0;404000;40400;0;option4;172800;0;0;591000;59100;0
+G_Elves_FactoryElixir_24;Elixiermanufaktur;elves;goods;24;5;6;131400;13246;;620000;3128;0;0;;option1;10800;0;0;173000;17300;0;option2;32400;0;0;317000;31700;0;option3;86400;0;0;544000;54400;0;option4;172800;0;0;797000;79700;0
+G_Elves_FactoryElixir_25;Elixiermanufaktur;elves;goods;25;5;6;133200;15362;;650000;1568;0;0;;option1;10800;0;0;187000;18700;0;option2;32400;0;0;342000;34200;0;option3;86400;0;0;588000;58800;0;option4;172800;0;0;860000;86000;0
+G_Elves_FactoryElixir_26;Elixiermanufaktur;elves;goods;26;5;6;133200;17818;;690000;1810;0;0;;option1;10800;0;0;201000;20100;0;option2;32400;0;0;368000;36800;0;option3;86400;0;0;631000;63100;0;option4;172800;0;0;924000;92400;0
+G_Elves_FactoryElixir_27;Elixiermanufaktur;elves;goods;27;5;6;135000;20667;;720000;2087;0;0;;option1;10800;0;0;215000;21500;0;option2;32400;0;0;393000;39300;0;option3;86400;0;0;674000;67400;0;option4;172800;0;0;987000;98700;0
+G_Elves_FactoryMagic_1;Magiestaubmanufaktur;elves;goods;1;4;3;5280;192;;;;;;;option1;10800;0;0;5760;576;0;option2;32400;0;0;10600;1060;0;option3;86400;0;0;17900;1790;0;option4;172800;0;0;26600;2660;0
+G_Elves_FactoryMagic_2;Magiestaubmanufaktur;elves;goods;2;4;3;7980;234;;2000;21;0;0;;option1;10800;0;0;7680;768;0;option2;32400;0;0;14100;1410;0;option3;86400;0;0;24000;2400;0;option4;172800;0;0;35200;3520;0
+G_Elves_FactoryMagic_3;Magiestaubmanufaktur;elves;goods;3;4;3;17100;278;;5000;24;0;0;;option1;10800;0;0;9280;928;0;option2;32400;0;0;17000;1700;0;option3;86400;0;0;29100;2910;0;option4;172800;0;0;42600;4260;0
+G_Elves_FactoryMagic_4;Magiestaubmanufaktur;elves;goods;4;4;4;28680;441;;13000;114;0;0;;option1;10800;0;0;15400;1540;0;option2;32400;0;0;28200;2820;0;option3;86400;0;0;48300;4830;0;option4;172800;0;0;70700;7070;0
+G_Elves_FactoryMagic_5;Magiestaubmanufaktur;elves;goods;5;4;4;35640;519;;16000;39;0;0;;option1;10800;0;0;17900;1790;0;option2;32400;0;0;32600;3260;0;option3;86400;0;0;56300;5630;0;option4;172800;0;0;82200;8220;0
+G_Elves_FactoryMagic_6;Magiestaubmanufaktur;elves;goods;6;4;4;43560;577;;21000;44;0;0;;option1;10800;0;0;20800;2080;0;option2;32400;0;0;38100;3810;0;option3;86400;0;0;65300;6530;0;option4;172800;0;0;95700;9570;0
+G_Elves_FactoryMagic_7;Magiestaubmanufaktur;elves;goods;7;4;4;45180;655;;30000;62;0;0;;option1;10800;0;0;23700;2370;0;option2;32400;0;0;43200;4320;0;option3;86400;0;0;74200;7420;0;option4;172800;0;0;109000;10900;0
+G_Elves_FactoryMagic_8;Magiestaubmanufaktur;elves;goods;8;5;4;58440;932;;40000;215;0;0;;option1;10800;0;0;33000;3300;0;option2;32400;0;0;60200;6020;0;option3;86400;0;0;103000;10300;0;option4;172800;0;0;151000;15100;0
+G_Elves_FactoryMagic_9;Magiestaubmanufaktur;elves;goods;9;5;4;60420;1051;;50000;94;0;0;;option1;10800;0;0;36800;3680;0;option2;32400;0;0;67200;6720;0;option3;86400;0;0;116000;11600;0;option4;172800;0;0;169000;16900;0
+G_Elves_FactoryMagic_10;Magiestaubmanufaktur;elves;goods;10;5;4;62280;1198;;70000;120;0;0;;option1;10800;0;0;40300;4030;0;option2;32400;0;0;73900;7390;0;option3;86400;0;0;126000;12600;0;option4;172800;0;0;185000;18500;0
+G_Elves_FactoryMagic_11;Magiestaubmanufaktur;elves;goods;11;5;4;64200;1372;;80000;143;0;0;;option1;10800;0;0;43800;4380;0;option2;32400;0;0;80300;8030;0;option3;86400;0;0;138000;13800;0;option4;172800;0;0;201000;20100;0
+G_Elves_FactoryMagic_12;Magiestaubmanufaktur;elves;goods;12;5;4;66000;1595;;100000;190;0;0;;option1;10800;0;0;47400;4740;0;option2;32400;0;0;86700;8670;0;option3;86400;0;0;148000;14800;0;option4;172800;0;0;218000;21800;0
+G_Elves_FactoryMagic_13;Magiestaubmanufaktur;elves;goods;13;5;4;67800;1828;;120000;195;0;0;;option1;10800;0;0;51200;5120;0;option2;32400;0;0;93800;9380;0;option3;86400;0;0;161000;16100;0;option4;172800;0;0;235000;23500;0
+G_Elves_FactoryMagic_14;Magiestaubmanufaktur;elves;goods;14;5;4;69540;2068;;140000;198;0;0;;option1;10800;0;0;54700;5470;0;option2;32400;0;0;100000;10000;0;option3;86400;0;0;172000;17200;0;option4;172800;0;0;252000;25200;0
+G_Elves_FactoryMagic_15;Magiestaubmanufaktur;elves;goods;15;5;4;71220;2360;;160000;246;0;0;;option1;10800;0;0;58200;5820;0;option2;32400;0;0;107000;10700;0;option3;86400;0;0;183000;18300;0;option4;172800;0;0;268000;26800;0
+G_Elves_FactoryMagic_16;Magiestaubmanufaktur;elves;goods;16;5;4;78000;2708;;220000;271;0;0;;option1;10800;0;0;63000;6300;0;option2;32400;0;0;115000;11500;0;option3;86400;0;0;198000;19800;0;option4;172800;0;0;290000;29000;0
+G_Elves_FactoryMagic_17;Magiestaubmanufaktur;elves;goods;17;5;4;78000;3138;;232000;333;0;0;;option1;10800;0;0;67800;6780;0;option2;32400;0;0;124000;12400;0;option3;86400;0;0;213000;21300;0;option4;172800;0;0;312000;31200;0
+G_Elves_FactoryMagic_18;Magiestaubmanufaktur;elves;goods;18;5;4;79200;3636;;246000;384;0;0;;option1;10800;0;0;73300;7330;0;option2;32400;0;0;134000;13400;0;option3;86400;0;0;230000;23000;0;option4;172800;0;0;337000;33700;0
+G_Elves_FactoryMagic_19;Magiestaubmanufaktur;elves;goods;19;5;4;80400;4214;;256000;443;0;0;;option1;10800;0;0;79000;7900;0;option2;32400;0;0;145000;14500;0;option3;86400;0;0;248000;24800;0;option4;172800;0;0;363000;36300;0
+G_Elves_FactoryMagic_20;Magiestaubmanufaktur;elves;goods;20;4;6;99360;5863;;367000;1280;0;0;;option1;10800;0;0;102000;10200;0;option2;32400;0;0;188000;18800;0;option3;86400;0;0;321000;32100;0;option4;172800;0;0;470000;47000;0
+G_Elves_FactoryMagic_21;Magiestaubmanufaktur;elves;goods;21;4;6;100800;6797;;386000;708;0;0;;option1;10800;0;0;110000;11000;0;option2;32400;0;0;202000;20200;0;option3;86400;0;0;347000;34700;0;option4;172800;0;0;507000;50700;0
+G_Elves_FactoryMagic_22;Magiestaubmanufaktur;elves;goods;22;4;6;102240;7881;;409000;817;0;0;;option1;10800;0;0;119000;11900;0;option2;32400;0;0;218000;21800;0;option3;86400;0;0;373000;37300;0;option4;172800;0;0;547000;54700;0
+G_Elves_FactoryMagic_23;Magiestaubmanufaktur;elves;goods;23;4;6;102240;9138;;420000;943;0;0;;option1;10800;0;0;129000;12900;0;option2;32400;0;0;236000;23600;0;option3;86400;0;0;404000;40400;0;option4;172800;0;0;591000;59100;0
+G_Elves_FactoryMagic_24;Magiestaubmanufaktur;elves;goods;24;6;5;131400;13246;;620000;3128;0;0;;option1;10800;0;0;173000;17300;0;option2;32400;0;0;317000;31700;0;option3;86400;0;0;544000;54400;0;option4;172800;0;0;797000;79700;0
+G_Elves_FactoryMagic_25;Magiestaubmanufaktur;elves;goods;25;6;5;133200;15362;;650000;1568;0;0;;option1;10800;0;0;187000;18700;0;option2;32400;0;0;342000;34200;0;option3;86400;0;0;588000;58800;0;option4;172800;0;0;860000;86000;0
+G_Elves_FactoryMagic_26;Magiestaubmanufaktur;elves;goods;26;6;5;133200;17818;;690000;1810;0;0;;option1;10800;0;0;201000;20100;0;option2;32400;0;0;368000;36800;0;option3;86400;0;0;631000;63100;0;option4;172800;0;0;924000;92400;0
+G_Elves_FactoryMagic_27;Magiestaubmanufaktur;elves;goods;27;6;5;135000;20667;;720000;2087;0;0;;option1;10800;0;0;215000;21500;0;option2;32400;0;0;393000;39300;0;option3;86400;0;0;674000;67400;0;option4;172800;0;0;987000;98700;0
+G_Elves_FactoryGems_1;Edelsteinmanufaktur;elves;goods;1;3;4;5280;173;;;;;;;option1;10800;0;0;5760;576;0;option2;32400;0;0;10600;1060;0;option3;86400;0;0;17900;1790;0;option4;172800;0;0;26600;2660;0
+G_Elves_FactoryGems_2;Edelsteinmanufaktur;elves;goods;2;3;4;7980;215;;2000;19;0;0;;option1;10800;0;0;7680;768;0;option2;32400;0;0;14100;1410;0;option3;86400;0;0;24000;2400;0;option4;172800;0;0;35200;3520;0
+G_Elves_FactoryGems_3;Edelsteinmanufaktur;elves;goods;3;3;4;17100;258;;5000;21;0;0;;option1;10800;0;0;9280;928;0;option2;32400;0;0;17000;1700;0;option3;86400;0;0;29100;2910;0;option4;172800;0;0;42600;4260;0
+G_Elves_FactoryGems_4;Edelsteinmanufaktur;elves;goods;4;4;4;28680;415;;13000;103;0;0;;option1;10800;0;0;15400;1540;0;option2;32400;0;0;28200;2820;0;option3;86400;0;0;48300;4830;0;option4;172800;0;0;70700;7070;0
+G_Elves_FactoryGems_5;Edelsteinmanufaktur;elves;goods;5;4;4;35640;493;;16000;35;0;0;;option1;10800;0;0;17900;1790;0;option2;32400;0;0;32600;3260;0;option3;86400;0;0;56300;5630;0;option4;172800;0;0;82200;8220;0
+G_Elves_FactoryGems_6;Edelsteinmanufaktur;elves;goods;6;4;4;43560;548;;21000;39;0;0;;option1;10800;0;0;20800;2080;0;option2;32400;0;0;38100;3810;0;option3;86400;0;0;65300;6530;0;option4;172800;0;0;95700;9570;0
+G_Elves_FactoryGems_7;Edelsteinmanufaktur;elves;goods;7;4;4;45180;621;;30000;56;0;0;;option1;10800;0;0;23700;2370;0;option2;32400;0;0;43200;4320;0;option3;86400;0;0;74200;7420;0;option4;172800;0;0;109000;10900;0
+G_Elves_FactoryGems_8;Edelsteinmanufaktur;elves;goods;8;4;5;58440;884;;40000;194;0;0;;option1;10800;0;0;33000;3300;0;option2;32400;0;0;60200;6020;0;option3;86400;0;0;103000;10300;0;option4;172800;0;0;151000;15100;0
+G_Elves_FactoryGems_9;Edelsteinmanufaktur;elves;goods;9;4;5;60420;996;;50000;85;0;0;;option1;10800;0;0;36800;3680;0;option2;32400;0;0;67200;6720;0;option3;86400;0;0;116000;11600;0;option4;172800;0;0;169000;16900;0
+G_Elves_FactoryGems_10;Edelsteinmanufaktur;elves;goods;10;4;5;62280;1133;;70000;107;0;0;;option1;10800;0;0;40300;4030;0;option2;32400;0;0;73900;7390;0;option3;86400;0;0;126000;12600;0;option4;172800;0;0;185000;18500;0
+G_Elves_FactoryGems_11;Edelsteinmanufaktur;elves;goods;11;4;5;64200;1295;;80000;129;0;0;;option1;10800;0;0;43800;4380;0;option2;32400;0;0;80300;8030;0;option3;86400;0;0;138000;13800;0;option4;172800;0;0;201000;20100;0
+G_Elves_FactoryGems_12;Edelsteinmanufaktur;elves;goods;12;4;5;66000;1504;;100000;172;0;0;;option1;10800;0;0;47400;4740;0;option2;32400;0;0;86700;8670;0;option3;86400;0;0;148000;14800;0;option4;172800;0;0;218000;21800;0
+G_Elves_FactoryGems_13;Edelsteinmanufaktur;elves;goods;13;4;5;67800;1719;;120000;174;0;0;;option1;10800;0;0;51200;5120;0;option2;32400;0;0;93800;9380;0;option3;86400;0;0;161000;16100;0;option4;172800;0;0;235000;23500;0
+G_Elves_FactoryGems_14;Edelsteinmanufaktur;elves;goods;14;4;5;69540;1944;;140000;179;0;0;;option1;10800;0;0;54700;5470;0;option2;32400;0;0;100000;10000;0;option3;86400;0;0;172000;17200;0;option4;172800;0;0;252000;25200;0
+G_Elves_FactoryGems_15;Edelsteinmanufaktur;elves;goods;15;4;5;71220;2217;;160000;222;0;0;;option1;10800;0;0;58200;5820;0;option2;32400;0;0;107000;10700;0;option3;86400;0;0;183000;18300;0;option4;172800;0;0;268000;26800;0
+G_Elves_FactoryGems_16;Edelsteinmanufaktur;elves;goods;16;5;4;78000;2708;;220000;460;0;0;;option1;10800;0;0;63000;6300;0;option2;32400;0;0;115000;11500;0;option3;86400;0;0;198000;19800;0;option4;172800;0;0;290000;29000;0
+G_Elves_FactoryGems_17;Edelsteinmanufaktur;elves;goods;17;5;4;78000;3138;;232000;333;0;0;;option1;10800;0;0;67800;6780;0;option2;32400;0;0;124000;12400;0;option3;86400;0;0;213000;21300;0;option4;172800;0;0;312000;31200;0
+G_Elves_FactoryGems_18;Edelsteinmanufaktur;elves;goods;18;5;4;79200;3636;;246000;384;0;0;;option1;10800;0;0;73300;7330;0;option2;32400;0;0;134000;13400;0;option3;86400;0;0;230000;23000;0;option4;172800;0;0;337000;33700;0
+G_Elves_FactoryGems_19;Edelsteinmanufaktur;elves;goods;19;5;4;80400;4214;;256000;443;0;0;;option1;10800;0;0;79000;7900;0;option2;32400;0;0;145000;14500;0;option3;86400;0;0;248000;24800;0;option4;172800;0;0;363000;36300;0
+G_Elves_FactoryGems_20;Edelsteinmanufaktur;elves;goods;20;4;6;99360;5863;;367000;1280;0;0;;option1;10800;0;0;102000;10200;0;option2;32400;0;0;188000;18800;0;option3;86400;0;0;321000;32100;0;option4;172800;0;0;470000;47000;0
+G_Elves_FactoryGems_21;Edelsteinmanufaktur;elves;goods;21;4;6;100800;6797;;386000;708;0;0;;option1;10800;0;0;110000;11000;0;option2;32400;0;0;202000;20200;0;option3;86400;0;0;347000;34700;0;option4;172800;0;0;507000;50700;0
+G_Elves_FactoryGems_22;Edelsteinmanufaktur;elves;goods;22;4;6;102240;7881;;409000;817;0;0;;option1;10800;0;0;119000;11900;0;option2;32400;0;0;218000;21800;0;option3;86400;0;0;373000;37300;0;option4;172800;0;0;547000;54700;0
+G_Elves_FactoryGems_23;Edelsteinmanufaktur;elves;goods;23;4;6;102240;9138;;420000;943;0;0;;option1;10800;0;0;129000;12900;0;option2;32400;0;0;236000;23600;0;option3;86400;0;0;404000;40400;0;option4;172800;0;0;591000;59100;0
+G_Elves_FactoryGems_24;Edelsteinmanufaktur;elves;goods;24;6;5;131400;13246;;620000;3128;0;0;;option1;10800;0;0;173000;17300;0;option2;32400;0;0;317000;31700;0;option3;86400;0;0;544000;54400;0;option4;172800;0;0;797000;79700;0
+G_Elves_FactoryGems_25;Edelsteinmanufaktur;elves;goods;25;6;5;133200;15362;;650000;1568;0;0;;option1;10800;0;0;187000;18700;0;option2;32400;0;0;342000;34200;0;option3;86400;0;0;588000;58800;0;option4;172800;0;0;860000;86000;0
+G_Elves_FactoryGems_26;Edelsteinmanufaktur;elves;goods;26;6;5;133200;17818;;690000;1810;0;0;;option1;10800;0;0;201000;20100;0;option2;32400;0;0;368000;36800;0;option3;86400;0;0;631000;63100;0;option4;172800;0;0;924000;92400;0
+G_Elves_FactoryGems_27;Edelsteinmanufaktur;elves;goods;27;6;5;135000;20667;;720000;2087;0;0;;option1;10800;0;0;215000;21500;0;option2;32400;0;0;393000;39300;0;option3;86400;0;0;674000;67400;0;option4;172800;0;0;987000;98700;0
+A_Elves_Signpost_1;Leuchtender Wegweiser;elves;culture;1;1;1;10;0;;;;;
+A_Elves_PurpleTrees_1;Purpurblütenbäume;elves;culture;1;1;3;60;0;;;;;
+A_Elves_Premium_Shrine_1;Enars Schrein;elves;culture;1;3;3;10;0;;;;;
+A_Elves_Boat_1;Fliegendes Boot;elves;culture;1;3;3;8580;0;;;;;
+A_Elves_Premium_Anchor_1;Ankerpunkt;elves;culture;1;3;1;10;0;;;;;
+A_Elves_Tree_1;Flüsterhain;elves;culture;1;4;3;14280;0;;;;;
+A_Elves_Premium_Flower_1;Blumenkäfig;elves;culture;1;1;1;10;0;;;;;
+A_Elves_Premium_Youth_1;Brunnen der Schwimmenden Inseln;elves;culture_residential;1;4;3;10;0;;;;;
+A_Elves_Runes_1;Antike Runen;elves;culture;1;2;1;2880;0;;;;;
+A_Elves_OrangeTrees_1;Orangenbeerenbäume;elves;culture;1;3;1;4380;0;;;;;
+A_Elves_Premium_Phoenix_1;Hüter des Waldes;elves;culture;1;4;3;10;0;;;;;
+A_Elves_Statue_1;Statue des heiligen Weisen;elves;culture;1;1;2;3540;0;;;;;
+A_Elves_Gift_1;Gabe der Naturfee;elves;culture;1;1;1;1740;0;;;;;
+A_Elves_Premium_Seasnake_1;Vallorianische Seeschlange;elves;culture;1;3;4;10;0;;;;;
+A_Elves_Cyclone_1;Geheimnisvoller Zyklon;elves;culture;1;3;3;17220;0;;;;;
+A_Elves_Premium_Stairway_1;Treppe des Windes;elves;culture;1;1;3;10;0;;;;;
+A_Elves_Stone_1;Prächtiger Stein der Kunst;elves;culture;1;3;1;5880;0;;;;;
+A_Elves_Crop_1;Saat der Freude;elves;culture;1;1;2;3900;0;;;;;
+A_Elves_Premium_Mothertree_1;Mutterbaum;elves;culture;1;2;2;10;0;;;;;
+A_Elves_Temple_1;Tempel der Zeitalter;elves;culture;1;5;4;41880;0;;;;;
+A_Elves_Premium_Unicorn_1;Enars Einhorn;elves;culture;1;2;1;10;0;;;;;
+A_Elves_Premium_Fertility_1;Göttin der Fruchtbarkeit;elves;culture_residential;1;3;3;10;0;;;;;
+A_Elves_Altar_1;Altar der Vorväter;elves;culture;1;1;3;6420;0;;;;;
+A_Elves_NaturesBlessing_1;Segen der Natur;elves;culture;1;2;1;4260;0;;;;;
+A_Elves_Premium_Tower_1;Turm der goldenen Flamme;elves;culture;1;3;3;10;0;;;;;
+A_Elves_Garden_1;Garten der Harmonie;elves;culture;1;5;6;66120;0;;;;;
+A_Elves_Premium_Boardwalk_1;Harmonischer Holzsteg;elves;culture;1;1;2;10;0;;;;;
+B_Elves_AW1_1;Kloster der Kampfkünste;elves;ancient_wonder;1;5;5;29700;0;;;;;
+B_Elves_AW1_2;Kloster der Kampfkünste;elves;ancient_wonder;2;5;5;55500;179;;0;0;0;0
+B_Elves_AW1_3;Kloster der Kampfkünste;elves;ancient_wonder;3;5;5;73080;429;;0;0;0;0
+B_Elves_AW1_4;Kloster der Kampfkünste;elves;ancient_wonder;4;5;5;86040;749;;0;0;0;0
+B_Elves_AW1_5;Kloster der Kampfkünste;elves;ancient_wonder;5;5;5;93600;1129;;0;0;0;0
+B_Elves_AW1_6;Kloster der Kampfkünste;elves;ancient_wonder;6;5;5;100800;1129;;0;0;0;0
+B_Elves_AW1_7;Kloster der Kampfkünste;elves;ancient_wonder;7;5;5;108000;1629;;0;0;0;0
+B_Elves_AW1_8;Kloster der Kampfkünste;elves;ancient_wonder;8;5;5;115200;2179;;0;0;0;0
+B_Elves_AW1_9;Kloster der Kampfkünste;elves;ancient_wonder;9;5;5;118800;2779;;0;0;0;0
+B_Elves_AW1_10;Kloster der Kampfkünste;elves;ancient_wonder;10;5;5;122400;3429;;0;0;0;0
+B_Elves_AW1_11;Kloster der Kampfkünste;elves;ancient_wonder;11;5;5;129600;3429;;0;0;0;0
+B_Elves_AW1_12;Kloster der Kampfkünste;elves;ancient_wonder;12;5;5;129600;4169;;0;0;0;0
+B_Elves_AW1_13;Kloster der Kampfkünste;elves;ancient_wonder;13;5;5;133200;4949;;0;0;0;0
+B_Elves_AW1_14;Kloster der Kampfkünste;elves;ancient_wonder;14;5;5;136800;5779;;0;0;0;0
+B_Elves_AW1_15;Kloster der Kampfkünste;elves;ancient_wonder;15;5;5;140400;6649;;0;0;0;0
+B_Elves_AW1_16;Kloster der Kampfkünste;elves;ancient_wonder;16;5;5;140400;6649;;0;0;0;0
+B_Elves_AW1_17;Kloster der Kampfkünste;elves;ancient_wonder;17;5;5;144000;7589;;0;0;0;0
+B_Elves_AW1_18;Kloster der Kampfkünste;elves;ancient_wonder;18;5;5;144000;8569;;0;0;0;0
+B_Elves_AW1_19;Kloster der Kampfkünste;elves;ancient_wonder;19;5;5;147600;9589;;0;0;0;0
+B_Elves_AW1_20;Kloster der Kampfkünste;elves;ancient_wonder;20;5;5;147600;10639;;0;0;0;0
+B_Elves_AW1_21;Kloster der Kampfkünste;elves;ancient_wonder;21;5;5;151200;10639;;0;0;0;0
+B_Elves_AW1_22;Kloster der Kampfkünste;elves;ancient_wonder;22;5;5;151200;11759;;0;0;0;0
+B_Elves_AW1_23;Kloster der Kampfkünste;elves;ancient_wonder;23;5;5;154800;12909;;0;0;0;0
+B_Elves_AW1_24;Kloster der Kampfkünste;elves;ancient_wonder;24;5;5;154800;14099;;0;0;0;0
+B_Elves_AW1_25;Kloster der Kampfkünste;elves;ancient_wonder;25;5;5;154800;15319;;0;0;0;0
+B_Elves_AW1_26;Kloster der Kampfkünste;elves;ancient_wonder;26;5;5;158400;15319;;0;0;0;0
+B_Elves_AW1_27;Kloster der Kampfkünste;elves;ancient_wonder;27;5;5;158400;16599;;0;0;0;0
+B_Elves_AW1_28;Kloster der Kampfkünste;elves;ancient_wonder;28;5;5;158400;17909;;0;0;0;0
+B_Elves_AW1_29;Kloster der Kampfkünste;elves;ancient_wonder;29;5;5;162000;19249;;0;0;0;0
+B_Elves_AW1_30;Kloster der Kampfkünste;elves;ancient_wonder;30;5;5;162000;20619;;0;0;0;0
+B_Elves_AW2_1;Kristall-Leuchtturm;elves;ancient_wonder;1;6;4;28980;0;;;;;
+B_Elves_AW2_2;Kristall-Leuchtturm;elves;ancient_wonder;2;6;4;54120;175;;0;0;0;0
+B_Elves_AW2_3;Kristall-Leuchtturm;elves;ancient_wonder;3;6;4;71280;425;;0;0;0;0
+B_Elves_AW2_4;Kristall-Leuchtturm;elves;ancient_wonder;4;6;4;83940;735;;0;0;0;0
+B_Elves_AW2_5;Kristall-Leuchtturm;elves;ancient_wonder;5;6;4;93600;1115;;0;0;0;0
+B_Elves_AW2_6;Kristall-Leuchtturm;elves;ancient_wonder;6;6;4;100800;1115;;0;0;0;0
+B_Elves_AW2_7;Kristall-Leuchtturm;elves;ancient_wonder;7;6;4;108000;1605;;0;0;0;0
+B_Elves_AW2_8;Kristall-Leuchtturm;elves;ancient_wonder;8;6;4;111600;2145;;0;0;0;0
+B_Elves_AW2_9;Kristall-Leuchtturm;elves;ancient_wonder;9;6;4;115200;2735;;0;0;0;0
+B_Elves_AW2_10;Kristall-Leuchtturm;elves;ancient_wonder;10;6;4;122400;3365;;0;0;0;0
+B_Elves_AW2_11;Kristall-Leuchtturm;elves;ancient_wonder;11;6;4;126000;3365;;0;0;0;0
+B_Elves_AW2_12;Kristall-Leuchtturm;elves;ancient_wonder;12;6;4;129600;4085;;0;0;0;0
+B_Elves_AW2_13;Kristall-Leuchtturm;elves;ancient_wonder;13;6;4;129600;4845;;0;0;0;0
+B_Elves_AW2_14;Kristall-Leuchtturm;elves;ancient_wonder;14;6;4;133200;5655;;0;0;0;0
+B_Elves_AW2_15;Kristall-Leuchtturm;elves;ancient_wonder;15;6;4;136800;6495;;0;0;0;0
+B_Elves_AW2_16;Kristall-Leuchtturm;elves;ancient_wonder;16;6;4;136800;6495;;0;0;0;0
+B_Elves_AW2_17;Kristall-Leuchtturm;elves;ancient_wonder;17;6;4;140400;7415;;0;0;0;0
+B_Elves_AW2_18;Kristall-Leuchtturm;elves;ancient_wonder;18;6;4;140400;8375;;0;0;0;0
+B_Elves_AW2_19;Kristall-Leuchtturm;elves;ancient_wonder;19;6;4;144000;9365;;0;0;0;0
+B_Elves_AW2_20;Kristall-Leuchtturm;elves;ancient_wonder;20;6;4;144000;10395;;0;0;0;0
+B_Elves_AW2_21;Kristall-Leuchtturm;elves;ancient_wonder;21;6;4;147600;10395;;0;0;0;0
+B_Elves_AW2_22;Kristall-Leuchtturm;elves;ancient_wonder;22;6;4;147600;11485;;0;0;0;0
+B_Elves_AW2_23;Kristall-Leuchtturm;elves;ancient_wonder;23;6;4;151200;12615;;0;0;0;0
+B_Elves_AW2_24;Kristall-Leuchtturm;elves;ancient_wonder;24;6;4;151200;13775;;0;0;0;0
+B_Elves_AW2_25;Kristall-Leuchtturm;elves;ancient_wonder;25;6;4;151200;14965;;0;0;0;0
+B_Elves_AW2_26;Kristall-Leuchtturm;elves;ancient_wonder;26;6;4;154800;14965;;0;0;0;0
+B_Elves_AW2_27;Kristall-Leuchtturm;elves;ancient_wonder;27;6;4;154800;16215;;0;0;0;0
+B_Elves_AW2_28;Kristall-Leuchtturm;elves;ancient_wonder;28;6;4;154800;17495;;0;0;0;0
+B_Elves_AW2_29;Kristall-Leuchtturm;elves;ancient_wonder;29;6;4;154800;18805;;0;0;0;0
+B_Elves_AW2_30;Kristall-Leuchtturm;elves;ancient_wonder;30;6;4;158400;20145;;0;0;0;0

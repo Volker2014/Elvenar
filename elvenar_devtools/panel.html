@@ -9,7 +9,19 @@
                 <button id="copy_citymap">Kopieren</button>
             </td>
         </tr>
-        <tr><td><textarea id="citymap_text" rows="10" readonly="readonly"></textarea>
+        <tr>
+            <td><textarea id="citymap_text" rows="10" readonly="readonly"></textarea>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" id="resources_check" value="resources">Ressourcen von </input>
+                <label id="resources_label"></label>
+                <button id="copy_resources">Kopieren</button>
+            </td>
+        </tr>
+        <tr>
+            <td><textarea id="resources_text" rows="10" readonly="readonly"></textarea>
+        </tr>
         <tr>
             <td>
                 <input type="checkbox" id="guild_check" value="guild">Gilde</input>
@@ -29,21 +41,39 @@
             <td><textarea id="tournament_text" rows="10" cols="30" readonly="readonly"></textarea></td>
         </tr>
     </table>
-    <table style="visibility:hidden">
-        <tr>
-            <td>
-                <input type="checkbox" id="ranking_check" value="ranking">Rangliste</input>
-                <button id="copy_ranking">Kopieren</button>
-            </td>
-        </tr>
-        <tr><td><textarea id="ranking_text" rows="10" readonly="readonly"></textarea></tr>
+    <div style="visibility:visible">
+        <div style="margin-bottom:10px">
+            <select id="service_select">
+                <option value="" selected="selected"> </option>
+                <option value="quest">Aufgaben</option>
+                <option value="notification">Meldungen</option>
+                <option value="ranking">Rangliste</option>
+                <option value="development">Entwicklung</option>
+            </select>
+        </div>
+        <div style="margin-bottom:10px">
+            <textarea id="service_text" rows="20" cols="20"></textarea>
+        </div>
+        <div>
+            <button id="copy_service">Kopieren</button>
+        </div>
+    </div>
+    <table style="visibility:visible">
         <tr>
             <td style="width:50%">
-                <input type="checkbox" id="cityentities_check" value="cityentities">Liste der Stadtgebilde</input>
+                <input type="checkbox" id="cityentities_check" value="cityentities">Liste der Stadtgebilde</input>  
+                <select id="cityentities_race">
+                    <option value="humans" selected="selected">Menschen</option>
+                    <option value="elves">Elfen</option>
+                </select>
                 <button id="copy_cityentities">Kopieren</button>
             </td>
             <td style="width:50%">
                 <input type="checkbox" id="research_check" value="research">Liste der Forschungen</input>
+                <select id="research_race">
+                    <option value="humans" selected="selected">Menschen</option>
+                    <option value="elves">Elfen</option>
+                </select>
                 <button id="copy_research">Kopieren</button>
             </td>
         </tr>
@@ -51,10 +81,6 @@
             <td style="width:50%"><textarea id="cityentities_text" rows="20" cols="40" readonly="readonly"></textarea></td>
             <td style="width:50%"><textarea id="research_text" rows="20" cols="40" readonly="readonly"></textarea></td>
         </tr>
-        <tr><td>
-            <input type="checkbox" id="development_check" value="development">Entwicklung</input>
-        </td></tr>
-        <tr><td><textarea id="development_text" rows="10" readonly="readonly"></textarea></td></tr>
     </table>
     <script src="panel.js"></script>
 </body>
