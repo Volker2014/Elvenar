@@ -107,11 +107,15 @@
     <Compile Include="MacroWindow.xaml.cs">
       <DependentUpon>MacroWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OtherViewModel.cs" />
+    <Compile Include="PolierenViewModel.cs" />
+    <Compile Include="QuestViewModel.cs" />
     <Compile Include="Symbol.cs" />
     <Compile Include="SymbolViewModel.cs" />
     <Compile Include="SymbolWindow.xaml.cs">
       <DependentUpon>SymbolWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModelBase.cs" />
     <Page Include="MacroWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

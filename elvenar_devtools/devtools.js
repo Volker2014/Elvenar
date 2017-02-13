@@ -10,6 +10,8 @@ function setContent(content, id)
 function addContent(content, id) {
     var element = _window.document.getElementById(id);
     if (element == null) return;
+    if (element.innerHTML == null)
+        element.innerHTML = "";
     element.innerHTML = element.innerHTML + content + "\n";
 }
 
@@ -57,7 +59,7 @@ function createGuild(responseData)
 
 function createTournament(responseData)
 {
-    if (responseData.contributors == undefined) return;
+    if (responseData.contributors === undefined) return;
     var line = "";
     for (var i = 0; i < responseData.contributors.length; i++)
     {
@@ -70,7 +72,7 @@ function createTournament(responseData)
 function createRanking(responseData)
 {
     if (getOption("service_select") != "ranking") return;
-    if (responseData.rankings == undefined) return;
+    if (responseData.rankings === undefined) return;
     var line = "";
     for (var i = 0; i < responseData.rankings.length; i++)
     {
@@ -95,7 +97,8 @@ function createQuest(responseData)
         var quest = responseData[j];
         var line = quest.title + ";";
         for (var i = 0; i < quest.successConditions.length; i++)
-            line = line + ";" + quest.successConditions[i].description + ";" + quest.successConditions[i].maxProgress;
+            line = line + ";" + quest.successConditions[i].description + ";" +
+                (quest.successConditions[i].currentProgress || 0) + ";" + quest.successConditions[i].maxProgress;
         line = line + ";";
         for (var i = 0; i < quest.rewards.length; i++)
             line = line + ";" + quest.rewards[i].subType + ";" + quest.rewards[i].amount;

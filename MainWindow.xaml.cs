@@ -13,35 +13,43 @@ using System.Windows.Forms;
 
 namespace Elvenar
 {
+    public enum TElvenarViews
+    {
+        Quest = 0,
+        Polieren,
+        Other
+    };
+
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public ObservableCollection<Macro> Macros { get; set; }
-        public ObservableCollection<string> PolierenList { get; set; }
-        public ObservableCollection<string> QuestList { get; set; }
-        public int MyPosition { get; set; }
+        public ViewModelBase CurrentView { get { return _views[(int)_selectedView]; } }
+
+        private TElvenarViews _selectedView;
+        private ObservableCollection<ViewModelBase> _views;
 
         public Brush SaveBorder { get; set; }
 
-        public string NewQuest
-        {
-            set
-            {
-                if (cbxQuestCurrent.SelectedItem != null)
-                {
-                    if (string.IsNullOrEmpty(cbxQuestCurrent.SelectedItem as string))
-                        cbxQuestCurrent.Items.RemoveAt(cbxQuestCurrent.SelectedIndex);
-                    return;
-                }
-                if (!string.IsNullOrEmpty(value))
-                {
-                    QuestList.Add(value);
-                    cbxQuestCurrent.SelectedItem = value;
-                }
-            }
-        }
+        //public string NewQuest
+        //{
+        //    set
+        //    {
+        //        if (cbxQuestCurrent.SelectedItem != null)
+        //        {
+        //            if (string.IsNullOrEmpty(cbxQuestCurrent.SelectedItem as string))
+        //                cbxQuestCurrent.Items.RemoveAt(cbxQuestCurrent.SelectedIndex);
+        //            return;
+        //        }
+        //        if (!string.IsNullOrEmpty(value))
+        //        {
+        //            QuestList.Add(value);
+        //            cbxQuestCurrent.SelectedItem = value;
+        //        }
+        //    }
+        //}
 
         private string _filename = "";
         private bool _isModified = false;
@@ -55,7 +63,7 @@ namespace Elvenar
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void NotifyPropertyChanged(String propertyName)
+        protected void NotifyPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
@@ -64,6 +72,7 @@ namespace Elvenar
         {
             InitializeComponent();
             DataContext = this;
+            _selectedView = TElvenarViews.Quest;
             _elvenarService = new ElvenarService();
             InitServices(new ElvenarEnv());
             Loaded += Load;
@@ -73,11 +82,32 @@ namespace Elvenar
         private void InitServices(ElvenarEnv elvenar)
         {
             _elvenar = elvenar;
-            MyPosition = elvenar.MyPosition;
-            Macros = new ObservableCollection<Macro>(elvenar.Macros ?? new Macro[0]);
-            PolierenList = new ObservableCollection<string>(elvenar.Polieren ?? new string[0]);
-            QuestList = new ObservableCollection<string>(elvenar.Quests ?? new string[0]);
-            _macroService = new MacroService(elvenar.Symbols, LeftClick, GetMousePosition, KeyPress);
+            _macroService = new MacroService(elvenar.Symbols, elvenar.Macros, LeftClick, GetMousePosition, KeyPress);
+            _views = new ObservableCollection<ViewModelBase>
+            {
+                new QuestViewModel(elvenar.Quests, _macroService),
+                new PolierenViewModel(elvenar.Polieren, elvenar.MyPosition, _macroService),
+                new OtherViewModel(),
+            };
+            NotifyPropertyChanged("CurrentView");
+        }
+
+        private void Quest(object sender, RoutedEventArgs e)
+        {
+            _selectedView = TElvenarViews.Quest;
+            NotifyPropertyChanged("CurrentView");
+        }
+
+        private void Polieren(object sender, RoutedEventArgs e)
+        {
+            _selectedView = TElvenarViews.Polieren;
+            NotifyPropertyChanged("CurrentView");
+        }
+
+        private void Other(object sender, RoutedEventArgs e)
+        {
+            _selectedView = TElvenarViews.Other;
+            NotifyPropertyChanged("CurrentView");
         }
 
         private void Load(object sender, RoutedEventArgs e)
@@ -98,11 +128,6 @@ namespace Elvenar
 
             ElvenarEnv elvenar = _elvenarService.Load(_filename);
             InitServices(elvenar);
-
-            NotifyPropertyChanged("Macros");
-            NotifyPropertyChanged("PolierenList");
-            NotifyPropertyChanged("QuestList");
-            NotifyPropertyChanged("MyPosition");
         }
 
         private void ShowHelp(object sender, RoutedEventArgs e)
@@ -124,7 +149,7 @@ namespace Elvenar
             if (symbolWindow.ShowDialog() != true) return;
 
             _elvenar.Symbols = viewModel.Symbols.ToArray();
-            var service = new MacroService(_elvenar.Symbols, LeftClick, GetMousePosition, KeyPress);
+            var service = new MacroService(_elvenar.Symbols, _elvenar.Macros, LeftClick, GetMousePosition, KeyPress);
             foreach (var replace in viewModel.ReplaceSymbolNames)
                 service.ReplaceSymbolName(Macros, replace.Key, replace.Value);
             SetModified(true);
@@ -143,9 +168,9 @@ namespace Elvenar
 
         private void RunMacro(object sender, RoutedEventArgs e)
         {
-            var macro = dataGridMacros.SelectedItem as Macro;
-            if (macro == null) return;
-            StartTask(() => _macroService.Run(macro.Steps), () => dataGridMacros.SelectedItem = null);
+            //var macro = dataGridMacros.SelectedItem as Macro;
+            //if (macro == null) return;
+            //StartTask(() => _macroService.Run(macro.Steps), () => dataGridMacros.SelectedItem = null);
         }
 
         private void StartTask(Action startAction, Action endAction)
@@ -187,82 +212,43 @@ namespace Elvenar
 
         private void RunPolieren(object sender, RoutedEventArgs e)
         {
-            var polieren = cbxPolieren.SelectedItem as string;
-            var macro = Macros.FirstOrDefault(m => m.Name == polieren);
-            if (macro == null) return;
-            StartTask(() => _macroService.Run(macro.Steps), () => 
-                {
-                    cbxPolieren.SelectedIndex = GetNextIndex(cbxPolieren.SelectedIndex, cbxPolieren.Items.Count);
-                    if (cbxPolieren.SelectedIndex+1 == MyPosition)
-                        cbxPolieren.SelectedIndex = GetNextIndex(cbxPolieren.SelectedIndex, cbxPolieren.Items.Count);
-                    NotifyPropertyChanged("PolierenList");
-                });
+            var polieren = CurrentView as PolierenViewModel;
+            polieren.Run();
         }
 
         private void RunKampfPaladin(object sender, RoutedEventArgs e)
         {
-            StartTask(() => RunMacro("Autom. Kampf Paladin"), () => { });
+            StartTask(() => _macroService.Run("Autom. Kampf Paladin"), () => { });
         }
 
         private void RunKampf(object sender, RoutedEventArgs e)
         {
-            StartTask(() => RunMacro("Autom. Kampf"), () => { });
+            StartTask(() => _macroService.Run("Autom. Kampf"), () => { });
         }
 
         private void RunProvinz(object sender, RoutedEventArgs e)
         {
-            StartTask(() => RunMacro("zur Provinz"), () => { });
+            StartTask(() => _macroService.Run("zur Provinz"), () => { });
         }
 
         private void RunFinish(object sender, RoutedEventArgs e)
         {
-            RunQuestLoop("Quest Abschliessen");
+            var quest = CurrentView as QuestViewModel;
+            quest.RunFinish();
         }
 
         private void RunCancel(object sender, RoutedEventArgs e)
         {
-            RunQuestLoop("Quest Ablehnen");
+            var quest = CurrentView as QuestViewModel;
+            quest.RunCancel();
         }
 
-        private void RunQuestLoop(string questMacro)
+        private void RemovePolieren(object sender, RoutedEventArgs e)
         {
-            if (cbxQuestNext.SelectedIndex == -1)
-                cbxQuestNext.SelectedIndex = GetNextIndex(cbxQuestCurrent.SelectedIndex, QuestList.Count);
-            int currentIndex = cbxQuestCurrent.SelectedIndex;
-            int nextIndex = cbxQuestNext.SelectedIndex;
-            StartTask(() =>
-            {
-                currentIndex = RunQuest(questMacro, currentIndex);
-                while (currentIndex != nextIndex)
-                {
-                    currentIndex = RunQuest("Quest Ablehnen", currentIndex);
-                }
-            }, () =>
-            {
-                cbxQuestCurrent.SelectedIndex = cbxQuestNext.SelectedIndex;
-                cbxQuestNext.SelectedIndex = GetNextIndex(currentIndex, QuestList.Count);
-                NotifyPropertyChanged("QuestList");
-            });
         }
 
-        private int RunQuest(string questMacro, int index)
+        private void AddPolieren(object sender, RoutedEventArgs e)
         {
-            if (!RunMacro(questMacro)) return index;
-            return GetNextIndex(index, QuestList.Count);
-        }
-
-        private int GetNextIndex(int index, int count)
-        {
-            if (index + 1 < count)
-                return index+1;
-            return 0;
-        }
-
-        private bool RunMacro(string macroName)
-        {
-            var macro = Macros.FirstOrDefault(m => m.Name == macroName);
-            if (macro == null) return false;
-            return _macroService.Run(macro.Steps);
         }
 
         private void LeftClick(int x, int y, int delay)
@@ -293,7 +279,8 @@ namespace Elvenar
                 _filename = dlg.FileName;
             }
 
-            _elvenarService.Save(_elvenar, MyPosition, PolierenList, QuestList, _filename);
+            _elvenarService.Save(_elvenar, ((PolierenViewModel)_views[(int)TElvenarViews.Polieren]).MyPosition, ((PolierenViewModel)_views[(int)TElvenarViews.Polieren]).PolierenList, 
+                ((QuestViewModel)_views[(int)TElvenarViews.Quest]).QuestList, _filename);
 
             SetModified(_elvenarService.IsModified);
         }
@@ -305,25 +292,6 @@ namespace Elvenar
                 SaveBorder = Brushes.Red;
             else
                 SaveBorder = Brushes.Black;
-        }
-
-        private void RemovePolieren(object sender, RoutedEventArgs e)
-        {
-            var selectedPolieren = cbxPolieren.SelectedItem as string;
-            if (selectedPolieren == null) return;
-            PolierenList.Remove(selectedPolieren);
-            SetModified(true);
-            NotifyPropertyChanged("PolierenList");
-        }
-
-        private void AddPolieren(object sender, RoutedEventArgs e)
-        {
-            var macro = dataGridMacros.SelectedItem as Macro;
-            if (macro == null) return;
-            if (PolierenList.Contains(macro.Name)) return;
-            PolierenList.Add(macro.Name);
-            SetModified(true);
-            NotifyPropertyChanged("PolierenList");
         }
     }
 }
